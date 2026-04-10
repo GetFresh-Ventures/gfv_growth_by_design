@@ -14,7 +14,7 @@ This repository installs the **"Brain Architecture"** directly onto your machine
 
 1. **Clone the Repo:**
    ```bash
-   git clone git@github.com:getfreshventures/gfv_growth_by_design.git ~/.gfv_growth_by_design
+   git clone git@github.com:GetFresh-Ventures/gfv_growth_by_design.git ~/.gfv_growth_by_design
    ```
 
 2. **Run the Bootstrap Script:**
