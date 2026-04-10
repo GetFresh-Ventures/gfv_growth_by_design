@@ -55,6 +55,49 @@ if command -v claude &> /dev/null || [ -d "$CLAUDE_DIR" ]; then
     mkdir -p "$CLAUDE_HOOKS_DIR"
     mkdir -p "$CLAUDE_SKILLS_DIR"
     
+    # Advanced Tooling (Dippy & ccflare)
+    echo "📦 Installing Advanced Claude Tools (Dippy & ccflare)..."
+    if command -v brew &> /dev/null; then
+        brew tap ldayton/dippy || true
+        brew install dippy || true
+        
+        # Wire up Dippy in settings.json safely
+        if [ -f "$CLAUDE_DIR/settings.json" ]; then
+            python3 -c "
+import json, os
+path = os.path.expanduser('~/.claude/settings.json')
+try:
+    with open(path, 'r') as f:
+        data = json.load(f)
+except Exception:
+    data = {}
+if 'hooks' not in data: data['hooks'] = {}
+if 'PreToolUse' not in data['hooks']: data['hooks']['PreToolUse'] = []
+# Avoid duplicates
+if not any(h.get('matcher') == 'Bash' for h in data['hooks']['PreToolUse']):
+    data['hooks']['PreToolUse'].append({
+        'matcher': 'Bash',
+        'hooks': [{'type': 'command', 'command': 'dippy'}]
+    })
+    with open(path, 'w') as f:
+        json.dump(data, f, indent=2)
+    print('  → Dippy hook wired into ~/.claude/settings.json')
+"
+        fi
+    else
+        echo "  ⚠️ Homebrew not found. Skipping Dippy installation."
+    fi
+
+    if command -v npm &> /dev/null; then
+        npm i -g ccflare || true
+        echo "  → ccflare installed globally."
+        echo "  🧠 Installing Claude-Mem (Persistent Vector Memory)..."
+        npx claude-mem install || true
+        echo "  → Claude-Mem installed system-wide."
+    else
+        echo "  ⚠️ NPM not found. Skipping ccflare and claude-mem installation."
+    fi
+
     # Pre-send review hook
     ln -sf "$REPO_DIR/hooks/pre-send-review.py" "$CLAUDE_HOOKS_DIR/pre-send-review.py"
     chmod +x "$REPO_DIR/hooks/pre-send-review.py"

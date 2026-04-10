@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2026-04-10 10:10 AM CT — v1.2.0 — Awesome Claude Edition
+
+### Added
+- Integrated `claude-mem` for persistent background vector-database memory across sessions natively via `bootstrap.sh`.
+- Added the `/autoresearch` meta-skill for autonomous multi-loop skill evaluation and mutation testing.
+- Integrated `ccflare` dashboard for cost and latency token visualization.
+- Implemented `Dippy` friction removal to auto-approve non-destructive system tools.
+- Included the "Ralph" (`tools/gfv-ralph.sh`) background execution loop.
+- Wrote `guides/prompt-eval-guide.md` to standardize custom binary evaluations.
+
+### Changed
+- Promoted `README.md` to version 1.2.0, documenting all new awesome-claude capabilities.
+- Redefined `AGENT.md` to mandate proactive consumption of `# search`, `# timeline`, and `# get_observations` memory events prior to polling the user.
+
 ## 2026-04-09 9:44 PM CT — v1.1.0 — Agent Agnostic Universal Architecture
 
 ### Added
