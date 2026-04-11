@@ -71,9 +71,9 @@ Every Google Doc created by any agent MUST comply with ALL of these rules. They 
 ### Heading Rules
 
 - All headings use `keepWithNext: true` so they never orphan at page bottoms
-- H1 has 14pt above, 6pt below spacing
-- H2 has 12pt above, 4pt below spacing
-- H3 has 8pt above, 4pt below spacing
+- H1 has **28pt above, 10pt below** spacing (major section break)
+- H2 has **22pt above, 8pt below** spacing (sub-section break)
+- H3 has **16pt above, 6pt below** spacing (minor sub-section)
 - Line spacing: headings at 100%, body at 115%
 
 ### Table Design — MANDATORY
