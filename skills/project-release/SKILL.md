@@ -56,7 +56,7 @@ echo "=== GIT STATUS ===" && git status --short && echo "=== UNCOMMITTED ===" &&
 Add a new entry at the TOP of `CHANGELOG.md` (right below the main `# Changelog` header) following this exact format:
 
 ```markdown
-## YYYY-MM-DD H:MM AM/PM CT — vX.Y.Z — Release Title
+## YYYY-MM-DD H:MM AM/PM PT — vX.Y.Z — Release Title
 
 ### Why it matters
 A 1-3 sentence summary of the strategic impact of this release and why the changes were necessary.
@@ -76,7 +76,7 @@ A 1-3 sentence summary of the strategic impact of this release and why the chang
 ```
 
 Rules:
-- Time must be in **Central Time (CT)**
+- Time must be in **Pacific Time (PT)** — GFV is headquartered in North Vancouver, BC
 - Use sections: Added, Changed, Fixed, Removed (only include non-empty sections)
 - Each item must be a concrete change with the component/file bolded, not vague
 - "Why it matters" is **mandatory** — explain the strategic impact

@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## 2026-04-10 6:53 PM CT — v1.3.0 — Autonomous Execution Hardening
+## 2026-04-10 4:53 PM PT — v1.3.0 — Autonomous Execution Hardening
 
 ### Why it matters
 This release hardens the GFV Enablement Kit from a static prompt library into a self-monitoring autonomous agent framework. CEOs now have native tooling for token cost visibility, secure deployment reviews, and persistent memory consolidation — closing the gap between ad-hoc AI usage and governed, repeatable execution.
@@ -30,7 +30,7 @@ This release hardens the GFV Enablement Kit from a static prompt library into a 
 - tools/ccflare.py, tools/gfv-audit.sh, tools/gfv-dream.sh, tools/gfv-ralph.sh, tools/lint-agent.sh
 
 
-## 2026-04-10 10:10 AM CT — v1.2.0 — Awesome Claude Edition
+## 2026-04-10 8:10 AM PT — v1.2.0 — Awesome Claude Edition
 
 ### Added
 - Integrated `claude-mem` for persistent background vector-database memory across sessions natively via `bootstrap.sh`.
@@ -44,7 +44,7 @@ This release hardens the GFV Enablement Kit from a static prompt library into a 
 - Promoted `README.md` to version 1.2.0, documenting all new awesome-claude capabilities.
 - Redefined `AGENT.md` to mandate proactive consumption of `# search`, `# timeline`, and `# get_observations` memory events prior to polling the user.
 
-## 2026-04-09 9:44 PM CT — v1.1.0 — Agent Agnostic Universal Architecture
+## 2026-04-09 7:44 PM PT — v1.1.0 — Agent Agnostic Universal Architecture
 
 ### Added
 - `ONBOARDING_PROMPT.md` template for zero-friction agent spinning and quickstarts.
@@ -57,7 +57,7 @@ This release hardens the GFV Enablement Kit from a static prompt library into a 
 - Refactored `bootstrap.sh` to conditionally symlink skills into `.claude/skills` only if Claude is detected.
 - Updated README to reflect universal availability across Claude Code, Cursor, and Gemini architectures.
 
-## 2026-04-09 8:50 PM CT — v1.0.0 — Initial Release: Enablement Kit Foundation
+## 2026-04-09 6:50 PM PT — v1.0.0 — Initial Release: Enablement Kit Foundation
 
 ### Added
 - Core enablement `README.md` containing full architecture reference.
