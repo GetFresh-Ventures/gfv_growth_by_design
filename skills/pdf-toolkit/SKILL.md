@@ -1,0 +1,193 @@
+---
+name: pdf-toolkit
+description: "Process PDF files — read, merge, split, fill forms, watermark, encrypt, extract images, and OCR scanned documents. Use when the CEO mentions contracts, NDAs, term sheets, proposals, agreements, or any .pdf file operation. Triggers on 'pdf,' 'contract,' 'NDA,' 'term sheet,' 'agreement,' 'merge pdfs,' or 'sign document.'"
+metadata:
+  version: 1.0.0
+  category: document-processing
+  triggers:
+    - pdf
+    - contract
+    - NDA
+    - term sheet
+    - agreement
+    - merge
+    - sign
+---
+
+# PDF Toolkit
+
+Process PDF files for CEO workflows — contracts, proposals, term sheets, and document management.
+
+## When to Activate
+
+- Reading or extracting text/tables from PDFs (contracts, reports, term sheets)
+- Merging multiple PDFs (combining proposal + appendices)
+- Splitting PDFs (extracting specific pages)
+- Filling PDF forms (applications, compliance forms)
+- Adding watermarks (DRAFT, CONFIDENTIAL)
+- Encrypting/decrypting PDFs (secure document sharing)
+- OCR on scanned PDFs (making scanned contracts searchable)
+- Creating new PDFs from data
+
+## Quick Reference
+
+| Task | Tool |
+|------|------|
+| Read/extract text | `pypdf` or `pdfplumber` |
+| Merge PDFs | `pypdf` PdfWriter |
+| Split PDF | `pypdf` per-page extraction |
+| Fill forms | `pypdf` with AcroForm |
+| Watermark | `reportlab` + `pypdf` |
+| OCR scanned docs | `pytesseract` + `pdf2image` |
+| Create new PDF | `reportlab` |
+
+## Core Operations
+
+### Extract Text
+```python
+from pypdf import PdfReader
+
+reader = PdfReader("contract.pdf")
+for page in reader.pages:
+    text = page.extract_text()
+    print(text)
+```
+
+### Merge PDFs
+```python
+from pypdf import PdfWriter, PdfReader
+
+writer = PdfWriter()
+for pdf in ["proposal.pdf", "appendix_a.pdf", "appendix_b.pdf"]:
+    reader = PdfReader(pdf)
+    for page in reader.pages:
+        writer.add_page(page)
+
+with open("combined_proposal.pdf", "wb") as f:
+    writer.write(f)
+```
+
+### Split PDF
+```python
+reader = PdfReader("input.pdf")
+for i, page in enumerate(reader.pages):
+    writer = PdfWriter()
+    writer.add_page(page)
+    with open(f"page_{i+1}.pdf", "wb") as f:
+        writer.write(f)
+```
+
+### Add Watermark
+```python
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import letter
+from pypdf import PdfWriter, PdfReader
+import io
+
+# Create watermark
+packet = io.BytesIO()
+c = canvas.Canvas(packet, pagesize=letter)
+c.setFont("Helvetica", 60)
+c.setFillAlpha(0.3)
+c.translate(300, 400)
+c.rotate(45)
+c.drawCentredString(0, 0, "CONFIDENTIAL")
+c.save()
+packet.seek(0)
+
+# Apply watermark
+watermark = PdfReader(packet)
+reader = PdfReader("document.pdf")
+writer = PdfWriter()
+
+for page in reader.pages:
+    page.merge_page(watermark.pages[0])
+    writer.add_page(page)
+
+with open("watermarked.pdf", "wb") as f:
+    writer.write(f)
+```
+
+### Fill PDF Forms
+```python
+from pypdf import PdfReader, PdfWriter
+
+reader = PdfReader("form.pdf")
+writer = PdfWriter()
+writer.append(reader)
+
+# Get form fields
+fields = reader.get_form_text_fields()
+print(f"Available fields: {list(fields.keys())}")
+
+# Fill fields
+writer.update_page_form_field_values(
+    writer.pages[0],
+    {
+        "company_name": "GetFresh Ventures",
+        "date": "2026-04-11",
+        "signatory": "Diraj Goel"
+    }
+)
+
+with open("filled_form.pdf", "wb") as f:
+    writer.write(f)
+```
+
+### Encrypt PDF
+```python
+from pypdf import PdfWriter, PdfReader
+
+reader = PdfReader("sensitive.pdf")
+writer = PdfWriter()
+
+for page in reader.pages:
+    writer.add_page(page)
+
+writer.encrypt("secure_password_here")
+
+with open("encrypted.pdf", "wb") as f:
+    writer.write(f)
+```
+
+### Extract Metadata
+```python
+reader = PdfReader("document.pdf")
+meta = reader.metadata
+print(f"Title: {meta.title}")
+print(f"Author: {meta.author}")
+print(f"Pages: {len(reader.pages)}")
+```
+
+## CEO-Specific Workflows
+
+### Contract Review Prep
+1. Extract all text from the contract PDF
+2. Identify key terms: payment terms, termination clauses, IP ownership, non-compete
+3. Flag unusual or non-standard clauses
+4. Summarize in a decision-ready format
+
+### Term Sheet Comparison
+1. Extract text from multiple term sheets
+2. Create comparison table: valuation, dilution, board seats, pro-rata, liquidation preference
+3. Highlight material differences
+
+### Document Assembly
+1. Merge proposal + team bios + case studies + pricing into single PDF
+2. Add page numbers and table of contents
+3. Apply CONFIDENTIAL watermark if needed
+
+## Quality Gate
+
+Before delivering:
+- [ ] All text extracted cleanly (no garbled characters)
+- [ ] Merged PDFs maintain original formatting
+- [ ] Form fields filled correctly
+- [ ] Watermarks are visible but don't obscure content
+- [ ] Encrypted files open with provided password
+
+## Related Skills
+
+- `doc-builder` — Word document creation
+- `board-deck-builder` — Visual presentations
+- `deal-review` — Deal evaluation and analysis

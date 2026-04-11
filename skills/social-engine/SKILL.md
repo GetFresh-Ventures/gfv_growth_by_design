@@ -1,0 +1,158 @@
+---
+name: social-engine
+description: "Create platform-native content for LinkedIn, X/Twitter, Instagram, and newsletters — adapted to each platform's format, character limits, and engagement patterns. Also handles content repurposing from articles, meetings, or internal notes into social-ready formats. Use when the CEO mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'what should I post,' 'repurpose this,' or 'personal brand.'"
+metadata:
+  version: 1.0.0
+  category: growth-engine
+  triggers:
+    - LinkedIn post
+    - Twitter thread
+    - social media
+    - content calendar
+    - what should I post
+    - repurpose
+    - personal brand
+    - social content
+---
+
+# Social Engine
+
+Build platform-native content without flattening the CEO's real voice into generic AI slop.
+
+## When to Activate
+
+- Writing LinkedIn posts or articles
+- Drafting X threads or standalone posts
+- Repurposing articles, meeting notes, or internal docs into social content
+- Building a content cadence or posting calendar
+- Creating launch sequences across platforms
+- Building the CEO's personal brand
+
+## Non-Negotiables
+
+1. **Start from source material** — never from generic post formulas
+2. **Adapt format for platform** — not persona
+3. **One post = one actual claim** — no kitchen-sink posts
+4. **Specificity beats adjectives** — "grew from 5 to 47 customers" not "experienced massive growth"
+5. **No engagement bait** unless explicitly requested
+
+## Hard Bans
+
+Delete and rewrite:
+- "I'm thrilled to announce"
+- "Agree? 👇"
+- "Here's what nobody tells you about..."
+- Humblebrags disguised as "lessons learned"
+- 🚀 emoji as a substitute for substance
+- "Drop a comment below if you..."
+
+## Source-First Workflow
+
+Before drafting, identify the source material:
+- Published articles, blogs, or case studies
+- Internal memos, strategy docs, or meeting notes
+- Real conversations, customer feedback, or data insights
+- Personal experiences, decisions made, or lessons learned
+
+**If the CEO says "write something about X," ask for the source.** The post should contain real insight, not synthesized platitudes.
+
+## Platform-Specific Rules
+
+### LinkedIn
+
+**Format:** 1,300 character sweet spot (max 3,000)
+**Structure:**
+- Hook in first 2 lines (visible before "see more")
+- Short paragraphs (1-3 sentences)
+- White space between paragraphs
+- Optional: end with a question or clear CTA
+
+**What works:**
+- Contrarian takes backed by personal experience
+- Behind-the-scenes decisions ("Why we turned down a $500K deal")
+- Data + narrative ("We tracked X for 6 months. Here's what we found.")
+- Framework posts (3-5 numbered insights)
+
+**What doesn't:**
+- Motivational quotes without context
+- "Day 1 of 365" posts
+- Posts that read like a press release
+
+### X / Twitter
+
+**Format:** 280 characters per post, threads for depth
+**Thread structure:**
+1. Hook tweet (the claim — must stand alone)
+2. Context (why this matters)
+3. 3-5 supporting points (one per tweet)
+4. Conclusion or takeaway
+5. Optional: CTA or link
+
+**What works:**
+- Hot takes with receipts
+- Number-driven insights ("We spent $X on Y. Here's the real ROI.")
+- Threads that teach one specific thing
+
+### Newsletter / Email
+
+**Format:** 500-800 words, conversational
+**Structure:**
+- Subject line: specific, curiosity-driven (not clickbait)
+- Opening: one personal/concrete observation
+- Body: one main idea, well-supported
+- Close: one clear takeaway or CTA
+
+## Content Calendar Framework
+
+### Weekly Cadence (for CEOs with limited time)
+
+| Day | Platform | Type |
+|-----|----------|------|
+| Mon | LinkedIn | Industry insight or framework post |
+| Wed | X | Thread or hot take based on Mon's topic |
+| Fri | LinkedIn | Personal story, behind-the-scenes, or lesson learned |
+
+### Monthly Theme Approach
+
+1. **Week 1:** Industry/market insight
+2. **Week 2:** Customer story or case study
+3. **Week 3:** Behind-the-scenes / how we work
+4. **Week 4:** Contrarian take or prediction
+
+## Repurposing Workflow
+
+### From Article → Social
+
+1. Extract the single most provocative claim
+2. Build a LinkedIn post around that claim with one supporting story
+3. Build an X thread with 5 numbered supporting points
+4. Create a newsletter teaser linking to the full article
+
+### From Meeting Notes → Social
+
+1. Identify one insight from the meeting the world doesn't know
+2. Anonymize if needed
+3. Frame as a decision or lesson: "We just decided to X instead of Y. Here's why."
+
+### From Internal Data → Social
+
+1. Find one surprising data point
+2. Contextualize: "Most people think X. Our data shows Y."
+3. Add the implication: what this means for the industry/market
+
+## Quality Gate
+
+Before delivering:
+- [ ] Post contains a specific claim, not a vague observation
+- [ ] Voice sounds like the CEO, not like AI
+- [ ] Platform-specific formatting is correct
+- [ ] No engagement bait or banned phrases
+- [ ] A reader can get value without clicking anything external
+- [ ] If using `voice-model` skill, voice profile was applied
+
+## Related Skills
+
+- `voice-model` — CEO voice profile
+- `content-strategy` — Strategic content planning
+- `outreach-sequence` — Email outreach
+- `email-composer` — Email drafting
