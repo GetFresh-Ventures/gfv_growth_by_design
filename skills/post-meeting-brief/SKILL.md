@@ -1,26 +1,82 @@
 ---
 name: post-meeting-brief
-description: Extract action items, decisions, and follow-up email drafts from meeting notes or transcripts. Never let action items fall through the cracks.
+description: "Extract action items, decisions, and follow-up tasks from meeting notes or transcripts. NOT 'handled' until all outputs are pushed into live systems (Linear, HubSpot, calendar). Use when meeting notes arrive from Fathom, manual notes, calendar events, or any transcript source."
+metadata:
+  version: 2.0.0
+  category: execution-infrastructure
+  origin: GFV v1 + clawchief meeting-notes ingestion pattern
+  triggers:
+    - meeting notes
+    - post-meeting
+    - meeting summary
+    - action items
+    - what came out of the meeting
+    - process my notes
 ---
 
 # Post-Meeting Brief
 
-Turn meeting notes into action within 15 minutes of the meeting ending.
+Turn meeting notes into system-level action within 15 minutes. A meeting note is NOT "handled" just because it was read — it's handled when all outputs are pushed into live systems.
 
-## When to Use
+## When to Activate
+
 - Immediately after any client, prospect, or partner meeting
-- When you have a transcript (Fathom, Otter, Krisp, manual notes)
-- Before the meeting fades from memory
+- When Fathom/Otter transcript arrives
+- When manual notes are provided (bullets, stream of consciousness)
+- During heartbeat sweeps when unprocessed meeting notes are detected
 
-## How It Works
+## The Non-Negotiable Rule
+
+**A meeting note is NOT handled until:**
+- [ ] Tasks are created in Linear (with correct assignee and due date)
+- [ ] Deal state is updated in HubSpot (stage, amount, close date)
+- [ ] Follow-up events are on the calendar
+- [ ] Follow-up email is drafted (using `email-composer` rules)
+- [ ] Any commitments made are tracked
+
+Reading ≠ Processing. Summarizing ≠ Processing. Only action counts.
+
+## Processing Workflow
 
 ### Step 1: Ingest Meeting Content
-Accept meeting notes from any format:
-- Transcript from Fathom/Otter/Krisp
-- Manual notes (bullet points, stream of consciousness)
-- Calendar event description + your verbal summary
+
+Accept from any format:
+- Fathom AI transcript/summary
+- Manual bullet notes
+- Stream of consciousness voice dump
+- Calendar event + verbal debrief
 
 ### Step 2: Extract Intelligence
+
+Look specifically for:
+- **Explicit action items** — things someone said they'd do
+- **Implied follow-ups** — things that clearly need to happen even if nobody said "action item"
+- **Deadlines** — any dates or time commitments mentioned
+- **Promises the CEO made** — commitments Diraj owes
+- **Introductions to send** — people to connect
+- **Documents/materials to share** — decks, proposals, files promised
+- **Scheduling next steps** — when to meet again
+- **Deal-state changes** — stage movement, pricing discussions, new information
+- **Key learnings** — things about the prospect/client we didn't know before
+
+### Step 3: Classify and Route
+
+For each extracted item, classify through the priority map:
+- **P0 items** → Create immediately, alert Diraj
+- **P1 items** → Create task, include in summary
+- **P2 items** → Create task with future due date
+- **Auto-resolvable** → Handle directly (send intro, update tracker, schedule follow-up)
+
+### Step 4: Update ALL Live Systems
+
+In the same turn:
+1. **Linear** → Create tasks with owner + deadline
+2. **HubSpot** → Update deal stage/amount/close date if changed
+3. **Calendar** → Book follow-up meeting if agreed
+4. **Email** → Draft follow-up email for Diraj's approval
+5. **PIL** → Log key relationship insights
+
+### Step 5: Output Brief
 
 ```markdown
 # Post-Meeting Brief: [Company] — [Date]
@@ -28,51 +84,59 @@ Accept meeting notes from any format:
 ## Meeting Details
 - **Attendees**: [names and roles]
 - **Duration**: [length]
-- **Type**: [Discovery / Follow-up / Negotiation / Check-in]
+- **Type**: [Discovery / Follow-up / Negotiation / Close]
 
 ## Key Decisions Made
 1. [Decision with context]
-2. [Decision with context]
 
-## Action Items
+## Action Items Created
 
-### Ours (We Committed To)
-| Action | Owner | Deadline | Priority |
-|--------|-------|----------|----------|
+### Ours (commit tracker)
+| Action | Owner | Deadline | System Updated |
+|--------|-------|----------|----------------|
+| [item] | Diraj | [date] | ✅ Linear GFV-XXX |
 
-### Theirs (They Committed To)
+### Theirs (we verify)
 | Action | Who | Expected By |
 |--------|-----|-------------|
 
-## Key Insights
-- [Something we learned about their business/needs]
-- [Buying signal or concern]
-- [Relationship dynamic observation]
-
 ## Deal Impact
-- **Stage change**: [Yes/No — if yes, what stage?]
-- **Amount change**: [Yes/No — if yes, new amount?]
+- **Stage change**: [Yes/No — Linear + HubSpot updated]
+- **Amount change**: [Yes/No]
 - **Close date**: [Confirmed / Moved / At risk]
-- **Next meeting**: [Scheduled? When?]
+- **Next meeting**: [Scheduled on calendar? When?]
+
+## Key Insights (for PIL)
+- [Learning about their business/needs]
+- [Buying signal or concern]
 
 ## Follow-Up Email Draft
-[Draft follow-up email using email-composer rules]
+[Draft below — awaiting Diraj's "send it" approval]
 ```
 
-### Step 3: Update Systems
-1. Create tasks in CRM for "Our" action items
-2. Update deal stage/amount if changed
-3. Save brief to `~/brain/meetings/[date]-[company]-post.md`
-4. Log any learnings in `~/brain/learnings.md`
+## Auto-Resolve Bias
 
-## Quality Check
-- [ ] Every action item has an owner and deadline
+Meeting notes often contain operational follow-ups that can be auto-resolved:
+- ✅ Add tasks for Diraj or the assistant
+- ✅ Create follow-up reminders
+- ✅ Update deal tracker after outcome is clear
+- ✅ Schedule follow-up when time was agreed
+- ❌ Draft-first: investor/board messaging, legal wording, pricing commitments
+- ❌ Escalate: unclear commitments, ambiguous outcomes
+
+## Quality Gate
+
+Before marking a meeting note as processed:
+- [ ] Every action item has an owner AND deadline
+- [ ] All affected systems (Linear, HubSpot, Calendar) are updated
 - [ ] Follow-up email references specific meeting content
 - [ ] Deal impact is honestly assessed (not just "went well")
-- [ ] CRM is updated (not just the markdown file)
+- [ ] Key insights logged for future reference
+- [ ] CEO has received the brief with draft email for approval
 
-## Example Prompt
-```
-Process my notes from the Acme Corp meeting that just ended.
-Here are my notes: [paste notes]. Use the post-meeting-brief skill.
-```
+## Related Skills
+
+- `email-composer` — For follow-up email drafting
+- `chief-of-staff` — For heartbeat-driven meeting note detection
+- `meeting-prep` — For preparing BEFORE meetings
+- `deal-review` — For evaluating deal impact from meetings
