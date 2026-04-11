@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2026-04-11 12:10 PM PT — v1.10.0 — System Resilience Protocol
+
+### Why it matters
+This release closes the final two structural vulnerabilities in the GFV Enterprise OS. First, it implements a headless daemon (`pil_morning_digest.py`) allowing the agentic OS to synthesize CRM/Linear data entirely behind the scenes without requiring an active chat session. Second, it enforces "Untrusted DOM Paranoia" to prevent malicious Prompt Injection from parsing third-party web properties.
+
+### Added
+- **`SKILL-AUTHORING-STANDARD.md`** — Added Pattern 28: Prompt Injection Barrier (Untrusted DOM). Banned the primary orchestrator from directly parsing untrusted external DOMs and mandated sandboxed subagent extraction.
+- **`gfv-brain/scripts/pil_morning_digest.py`** — Created the headless Orchestrator daemon that sequentially sweeps Linear, HubSpot APIs, and WhatsApp to update the PIL without active user context.
+- **`.agents/skills/ui-ux-pro-max/`** — Installed the core intelligence engine to mathematically enforce frontend aesthetics.
+
+### Files Modified
+- CHANGELOG.md, README.md, SKILL-AUTHORING-STANDARD.md
+- gfv-brain/scripts/pil_morning_digest.py, .agents/skills/REGISTRY.md
+
 ## 2026-04-11 12:05 PM PT — v1.9.0 — Structural Map Priority
 
 ### Why it matters

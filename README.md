@@ -1,5 +1,5 @@
 # Growth by Design
-**Version**: v1.9.0  
+**Version**: v1.10.0  
 **A GTM Enablement Kit for the AI-Powered Executive**
 
 *An exclusive framework for GFV Portfolio CEOs.*
@@ -297,6 +297,11 @@ To add a new workflow:
 ---
 
 ## Release History
+
+### What's New in v1.10.0 (System Resilience Protocol)
+- **Headless Synthesis Daemon:** Built `pil_morning_digest.py` to allow the OS to update the Supabase Proactive Intelligence Layer from Linear/HubSpot automatically in the background.
+- **Prompt Injection Guard (Pattern 28):** Instituted a hard parity boundary banning orchestrators from directly reading browser UI DOMs, mitigating adversarial prompt attacks.
+- **UI/UX Intelligence Engine:** Shipped the `ui-ux-pro-max` BM25 search engine to mathematically govern 161 industry-specific design systems without LLM diffusion.
 
 ### What's New in v1.9.0 (Structural Map Priority)
 - **Anti-File-Dump Constraint (Pattern 27):** Hard ban on pulling 500+ line files into standard context windows without first extracting a line-bounded structural map/outline of functions and classes.
