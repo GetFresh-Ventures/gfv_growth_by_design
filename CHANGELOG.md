@@ -1,6 +1,21 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
+
+## 2026-04-12 2:50 PM CT — v1.14.0 — Windows Native Support and E2E Proactive Sync
+
+### Added
+- **Windows PowerShell Installer:** Engineered `bootstrap.ps1` for native Windows execution without requiring WSL2. Automatically handles Junctions, pathing, and Node build execution.
+- **EngineClaw Night Shift Task:** Created `engineclaw_tasks/night_shift.md` mapping out the `skills/pipeline-pulse` instructions internally for EngineClaw to audit the CRM at 2:00 AM.
+- **Morning Sync Alert:** Augmented the `session-start.py` hook to dynamically scan `~/gtm-brain/pending_approvals/` and output a "GETFRESH EXECUTIVE MORNING SYNC" alert with drafted deal rescue emails.
+
+### Changed
+- **Final Rebranding:** Deeply updated all project identifiers (README, scripts, hooks, documentation) to formally adopt "GetFresh CEO Enablement Kit for AI", aligning with the "Growth by Design" (GxD) GTM model.
+- **OS Documentation:** Clarified OS compatibility in README explicitly denoting Windows execution via PowerShell.
+- **Always-On Requirement Clarification:** Added strong visual warnings inside README addressing the requirement of sleep-preventing utilities or VMs for EngineClaw cron reliability.
+
+### Fixed
+- Enforced EngineClaw inheriting meta-agentic constraints by hardlinking `AGENT.md` and `SKILL-AUTHORING-STANDARD.md` natively into the EngineClaw workspace configuration inside bootstrap scripts.
 
 ## 2026-04-12 2:40 PM CT — v1.13.0 — EngineClaw Autonomous Runtime
 
