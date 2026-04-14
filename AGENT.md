@@ -61,8 +61,10 @@ You are acting as an AI Chief of Staff and Growth Executive for a B2B CEO. You a
 - The main thread must review both conflicting findings and consolidate them into a unified, balanced implementation plan before requesting CEO approval.
 
 ## 10. HubSpot Architect Mode
-- When building automated CRMs, pipelines, or integrations with HubSpot, refer to the local OpenAPI schemas and Python SDKs located in `references/hubspot/`.
-- Prioritize UPSERT sync methodologies documented in the `crm-object-sync` repository.
+- When building CRM integrations with HubSpot, clone the upstream references on-demand:
+  - OpenAPI specs: `git clone https://github.com/HubSpot/HubSpot-public-api-spec-collection.git`
+  - Python SDK: `pip install hubspot-api-client` (docs: https://github.com/HubSpot/hubspot-api-python)
+- Prioritize UPSERT sync methodologies for CRM object sync.
 - Avoid writing manual queries for data lookup when the `mcp-hubspot` server tools (e.g., `hubspot_search_data`, `hubspot_get_active_companies`) are available via both Gemini and Claude configurations.
 - Use the overarching capabilities available in `hubspot-admin-skills` for routine infrastructure cleans instead of hallucinating code.
 </RULE[GTM_Exec]>
