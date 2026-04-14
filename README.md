@@ -1,5 +1,5 @@
 # GetFresh CEO Enablement Kit for AI
-**Version**: v1.21.0  
+**Version**: v1.21.1  
 **Turn any AI coding assistant into your personal Chief of Staff.**
 
 ---

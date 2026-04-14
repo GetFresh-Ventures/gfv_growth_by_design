@@ -2,6 +2,43 @@
 
 All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
 
+## 2026-04-14 3:30 PM PT — v1.21.1 — Foundational Tools for All Tiers
+
+### Why it matters
+Beginners were promised cross-session memory and frictionless UX but the tools that deliver it (claude-mem, Dippy, ccflare) were gated behind Tier 2+. This patch moves all foundational tools to every tier.
+
+### Changed
+- **`bootstrap.sh`**: Moved claude-mem, Dippy, and ccflare installation out of Tier 2+ gate — all tiers now get cross-session memory, auto-approve safe commands, and token cost dashboards.
+- **`skills/onboard/SKILL.md`**: Updated beginner defaults to include `cross_session_memory`, `auto_approve_safe`, `cost_dashboard`, and `inline_insights`.
+- **`README.md`** and **`AGENT-GUIDE.md`**: Added 3 new rows to feature progression tables (claude-mem, Dippy, ccflare).
+
+### Files Modified
+- bootstrap.sh, skills/onboard/SKILL.md, README.md, AGENT-GUIDE.md
+
+---
+
+## 2026-04-14 3:20 PM PT — v1.21.0 — Adaptive Onboarding: Beginner/Intermediate/Advanced
+
+### Why it matters
+Complete redesign of the onboarding experience. The previous tier system (Novice/Practitioner/Orchestrator) was vague and didn't adapt questions or features to the user's actual experience level. The new system uses clear personas with progressive feature unlocking.
+
+### Added
+- **3-level persona system**: Beginner ("Keep it simple"), Intermediate ("Plug into my business"), Advanced ("Full autonomy")
+- **Persona-specific setup questions**: Beginners answer 2 questions; Advanced answer 4
+- **Progressive feature table**: Visual matrix showing what turns on at each level
+- **Level-specific "A-Ha" moment**: Immediate value delivery tailored to each persona after onboarding
+
+### Changed
+- **`bootstrap.sh`**: Rewritten installer with visual level selection, selective skill installation (15/45/72), profile.json and preferences.json creation
+- **`skills/onboard/SKILL.md`**: Adaptive 6-phase wizard — different questions per level, auto-configures memory/tips/feedback preferences
+- **`README.md`**: Simplified for new users — level descriptions with "try this first" suggestions, feature progression table
+- **`AGENT-GUIDE.md`**: Updated experience levels section with feature progression table and agent behavior instructions
+
+### Files Modified
+- bootstrap.sh, skills/onboard/SKILL.md, README.md, AGENT-GUIDE.md
+
+---
+
 ## 2026-04-14 9:15 AM PT — v1.18.1 — Interactive Tier Installer
 
 ### Why it matters
