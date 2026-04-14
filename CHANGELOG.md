@@ -2,6 +2,41 @@
 
 All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
 
+## 2026-04-14 9:00 AM PT — v1.18.0 — Security Hardening & Executive Walkthrough
+
+### Why it matters
+This release closes two critical gaps: (1) a full credential hygiene sweep removing all hardcoded API secrets from infrastructure scripts and replacing them with OS-native credential store lookups, and (2) the first comprehensive executive onboarding document — `GETTING-STARTED.md` — a 30-minute step-by-step walkthrough designed for non-technical CEOs and senior leaders who are installing the kit for the first time. Additionally, 4 core skills were upgraded with advanced operational patterns extracted from ruflo Phase 2 analysis.
+
+### Added
+- **`GETTING-STARTED.md`** — Executive Enablement Walkthrough: 30-minute guide covering installation, onboarding wizard phases, first task recommendations, full skill category map, safety guarantees, weekly cadence recommendations, and troubleshooting. Written for non-technical executives.
+
+### Enhanced — Security Infrastructure
+- **Credential Hygiene Sweep:** Removed hardcoded Linear API keys from 5 infrastructure scripts across `gfv-brain/`:
+  - `scripts/linear_cache.sh` → macOS Keychain lookup
+  - `hooks/check-linear-task.sh` → macOS Keychain + graceful fallback
+  - `scripts/check-linear-task.sh` → macOS Keychain + graceful fallback
+  - `hooks/linear-manager.py` → subprocess Keychain lookup
+  - `scripts/pull_transcripts.py` → subprocess Keychain lookup
+- **Zero hardcoded secrets remaining** across the entire codebase (verified via `grep -rn 'lin_api_'`)
+
+### Enhanced — 4 Existing Skills
+- **`openclaw-orchestrator`** — Added Auto-Complexity Detection with 11 numbered Routing Codes for automatic single-agent vs. multi-agent dispatch decisions
+- **`security-pii-scanner`** — Added Protected File Patterns (7 file types requiring CEO approval), Hardcoded Credential Scanner, and Outbound Communication Lockout protocol
+- **`gfv-dream-mode`** — Added Three-Phase Memory Protocol (STATUS → PROGRESS → COMPLETE) with checkpoint resumption and background worker scheduling via launchd
+- **`hook-automation`** — Added Protected File Patterns with pre-edit hooks and Atomic Rollback Protocol for multi-system operations (Git, GitHub, Linear, HubSpot, PIL)
+
+### Changed
+- **`README.md`** — Bumped version to v1.18.0. Fixed stale skill counts (66→74, 49→74). Added GETTING-STARTED.md reference. Updated repo structure section.
+- **`bootstrap.sh`** — Updated skill count references from 49 to 74.
+
+### Files Modified
+- GETTING-STARTED.md (new), CHANGELOG.md, README.md
+- gfv-brain/scripts/linear_cache.sh, gfv-brain/hooks/check-linear-task.sh
+- gfv-brain/scripts/check-linear-task.sh, gfv-brain/hooks/linear-manager.py
+- gfv-brain/scripts/pull_transcripts.py
+- .agents/skills/openclaw-orchestrator/SKILL.md, .agents/skills/security-pii-scanner/SKILL.md
+- .agents/skills/gfv-dream-mode/SKILL.md, .agents/skills/hook-automation/SKILL.md
+
 ## 2026-04-14 8:20 AM PT — v1.17.0 — Ruflo Swarm Intelligence Integration (74 Skills)
 
 ### Why it matters

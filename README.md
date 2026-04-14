@@ -1,5 +1,5 @@
 # GetFresh CEO Enablement Kit for AI
-**Version**: v1.17.0  
+**Version**: v1.18.0  
 **A GTM Enablement Kit for the AI-Powered Executive**
 *Leveraging our Growth by Design (GxD) GTM model.*
 
@@ -61,7 +61,7 @@ This downloads the entire kit to a hidden folder on your machine. You only do th
 3. The script will dynamically:
    - Sets up the Claude Code hooks (the startup prompt logic)
    - Creates your personal `~/ceo-brain` (for personal tasks/voice) and `~/gtm-brain` (for active deals and campaigns)
-   - Symlinks the 49 skills into the Claude Code path
+   - Symlinks all 74 skills into the Claude Code path
    - Detects which AI tool you use (Claude Code, Cursor, or other) and wires things up accordingly
    - If you're on Claude Code: installs native `/slash` commands for instant skill access, sets up Dippy (auto-approves safe commands so you never see "Y/n" prompts), and wires session hooks
    - If you're on Cursor: creates `.cursorrules` so the AI reads your operating rules automatically
@@ -84,7 +84,9 @@ The AI will walk you through an interactive wizard to configure your voice model
 
 ## What Can It Do?
 
-Once installed, you have access to **66 pre-built skills** and **4 multi-step workflows** that cover everything from day-to-day execution to strategic C-suite advisory. You invoke them by saying their name (e.g., "run email-composer") or, on Claude Code, by typing the `/slash` command directly.
+Once installed, you have access to **74 pre-built skills** and **4 multi-step workflows** that cover everything from day-to-day execution to strategic C-suite advisory. You invoke them by saying their name (e.g., "run email-composer") or, on Claude Code, by typing the `/slash` command directly.
+
+> 📖 **New to this?** Read the **[Getting Started Guide](GETTING-STARTED.md)** — a step-by-step executive walkthrough that takes you from zero to productive in 30 minutes.
 
 ### Skills — Day-to-Day Execution
 
@@ -344,6 +346,12 @@ To add a new workflow:
 
 ## Release History
 
+### What's New in v1.18.0 (Security Hardening & Executive Walkthrough)
+- **Credential Hygiene Sweep:** Removed all hardcoded API keys from 5 infrastructure scripts. All secrets now read from OS-native credential stores (macOS Keychain / Windows Credential Manager) at runtime — zero secrets in source code.
+- **Executive Enablement Guide:** Shipped `GETTING-STARTED.md` — a comprehensive 30-minute walkthrough for CEOs and executives covering installation, onboarding wizard, first tasks, skill discovery, safety guarantees, and weekly cadence.
+- **Skill Enhancements:** Upgraded 4 core skills with advanced operational patterns: auto-complexity routing (openclaw-orchestrator), protected file gates (security-pii-scanner, hook-automation), 3-phase memory protocol (gfv-dream-mode), and atomic rollback for multi-system operations (hook-automation).
+- **Bootstrap Modernization:** Updated installer skill count and documentation to reflect current 74-skill architecture.
+
 ### What's New in v1.13.0 (EngineClaw Autonomous Runtime)
 - **Zero-Touch Config:** Provided a built-in toggle in the `bootstrap.sh` script to install the highly autonomous EngineClaw agentic runtime.
 - **Dual-Brain Alignment:** Ensured the EngineClaw instance natively wires its memory and contextual workspace into `~/ceo-brain` and `~/gtm-brain` to ensure a unified system of record.
@@ -432,13 +440,14 @@ To add a new workflow:
 gfv_growth_by_design/
 ├── AGENT.md                         ← AI operating rules (universal)
 ├── CHANGELOG.md                     ← Versioned release history
-├── ONBOARDING_PROMPT.md             ← Copy-paste prompt for first session
+├── GETTING-STARTED.md               ← Executive enablement walkthrough (start here)
 ├── README.md                        ← This file
-├── SKILL-AUTHORING-STANDARD.md      ← The 28 absolute rules for structural integrity
-├── bootstrap.sh                     ← One-command setup script
+├── SKILL-AUTHORING-STANDARD.md      ← The 31 absolute rules for structural integrity
+├── SKILLS-REGISTRY.md               ← Complete skill registry (74 skills, 8 categories)
+├── bootstrap.sh                     ← One-command setup script (Mac/Linux)
+├── bootstrap.ps1                    ← One-command setup script (Windows)
 ├── claude_settings.template.json    ← Claude Code settings template
-├── SKILLS-REGISTRY.md               ← Complete skill registry (48 skills, 6 categories)
-├── skills/                          ← 48 pre-built skills (slash commands)
+├── skills/                          ← 74 pre-built skills (slash commands)
 │   ├── agent-protocol/              ← Inter-agent communication standard
 │   ├── chief-of-staff/              ← C-suite orchestration layer
 │   ├── ceo-advisor/                 ← Strategic advisory
