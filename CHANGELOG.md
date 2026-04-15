@@ -2,6 +2,23 @@
 
 All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
 
+## 2026-04-15 9:15 AM PT — v1.23.1 — Tier List Parity + Stale Reference Cleanup
+
+### Why it matters
+Second-pass audit found email-composer (the #1 beginner skill) was never getting installed via bootstrap.sh. Tier skill lists between .sh and .ps1 didn't match.
+
+### Fixed
+- **6 skills missing from tier lists**: email-composer, executive-mentor, spreadsheet-builder, google-doc-creation added to Beginner. All 72 skills now assigned (18+28+26) — [GTM-858]
+- **bootstrap.sh ↔ ps1 parity**: Both scripts now install identical skills per tier — [GTM-859]
+- **Stale paths**: voice-model-guide.md ~/brain/ → ~/ceo-brain/, onboard team.json → profile.json — [GTM-860]
+- **Internal tool refs**: AGENT.md Dream Protocol cleaned, AGENT-GUIDE.md tools table adds "Who Uses It" column — [GTM-861]
+
+### Files Modified
+6 files, +26/-24 lines
+
+---
+
+
 ## 2026-04-14 7:25 PM PT — v1.23.0 — Full Codebase Audit Remediation
 
 ### Why it matters
