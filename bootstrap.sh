@@ -160,6 +160,19 @@ CLAUDE_HOOKS_DIR="$CLAUDE_DIR/hooks"
 CLAUDE_SKILLS_DIR="$CLAUDE_DIR/skills"
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# 0. Set up Python Virtual Environment (Isolation)
+echo "  🐍 Initializing Python Virtual Environment..."
+if [ ! -d "$REPO_DIR/venv" ]; then
+    python3 -m venv "$REPO_DIR/venv"
+    echo "  → Created isolated venv at $REPO_DIR/venv"
+fi
+# Activate and install dependencies
+source "$REPO_DIR/venv/bin/activate"
+if [ -f "$REPO_DIR/requirements.txt" ]; then
+    pip install -r "$REPO_DIR/requirements.txt" --quiet
+    echo "  → Dependencies installed successfully"
+fi
+
 # 1. Create brain structure
 echo "  📁 Creating ~/ceo-brain and ~/gtm-brain..."
 mkdir -p "$CEO_BRAIN_DIR/meetings"
@@ -260,6 +273,7 @@ CRITICAL:
 1. Access the shared executive brain at ~/ceo-brain/profile.json and ~/ceo-brain/voice-model.md for context before generating external communications.
 2. For specialized tasks, reference the .agents/skills/ directory.
 3. Never bypass explicit 'requires_human_approval' flags.
+4. Always execute python scripts using the local virtual environment bounding the kit: `./venv/bin/python`
 EOF
 echo "  → Generated native .cursorrules integration"
 
@@ -271,6 +285,7 @@ CRITICAL:
 1. Access the shared executive brain at ~/ceo-brain/profile.json and ~/ceo-brain/voice-model.md for context before generating external communications.
 2. For specialized tasks, reference the .agents/skills/ directory.
 3. Never bypass explicit 'requires_human_approval' flags.
+4. Always execute python scripts using the local virtual environment bounding the kit: `./venv/bin/python`
 EOF
 echo "  → Generated native .windsurfrules integration"
 

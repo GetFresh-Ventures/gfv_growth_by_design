@@ -13,6 +13,7 @@ import sys
 import json
 from pathlib import Path
 from datetime import datetime
+import subprocess
 
 CEO_BRAIN_DIR = Path(os.environ.get("GFV_CEO_BRAIN", Path.home() / "ceo-brain"))
 GTM_BRAIN_DIR = Path(os.environ.get("GFV_GTM_BRAIN", Path.home() / "gtm-brain"))
@@ -44,6 +45,35 @@ def load_profile():
         except (json.JSONDecodeError, OSError):
             pass
     return {}
+
+
+def check_for_updates():
+    """Check local git tag vs GitHub remote tag for OTA updates."""
+    try:
+        import urllib.request
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        repo_dir = os.path.dirname(script_dir)
+        
+        # Get local tag
+        result = subprocess.run(
+            ["git", "describe", "--tags", "--abbrev=0"], 
+            cwd=repo_dir, capture_output=True, text=True, check=True
+        )
+        local_tag = result.stdout.strip()
+        
+        # Get remote latest release tag (simplified check against GitHub API without auth)
+        # Using a brief timeout so it never blocks the session start
+        url = "https://api.github.com/repos/GetFresh-Ventures/gfv_growth_by_design/releases/latest"
+        req = urllib.request.Request(url, headers={'User-Agent': 'GFV-Kit-OTA-Check'})
+        with urllib.request.urlopen(req, timeout=2.0) as response:
+            data = json.loads(response.read().decode())
+            remote_tag = data.get("tag_name", "")
+            
+        if remote_tag and remote_tag != local_tag:
+            return f"🚀 **UPDATE AVAILABLE**: You are on {local_tag}, but {remote_tag} is available. Ask me to upgrade your kit."
+    except Exception:
+        pass
+    return None
 
 
 def main():
@@ -162,6 +192,12 @@ def main():
         context_parts.append("🚀 **Ready for more?** You're on the Beginner tier (18 skills).")
         context_parts.append("   Upgrade to **Intermediate** (46 skills) to unlock CRM, pipeline, and strategy tools.")
         context_parts.append('   Just say: *"What would I get if I upgraded?"* or re-run `./bootstrap.sh`')
+
+    # 5. OTA Version Check
+    update_msg = check_for_updates()
+    if update_msg:
+        context_parts.append("")
+        context_parts.append(update_msg)
 
     # Output context
     output = "\n".join(context_parts)

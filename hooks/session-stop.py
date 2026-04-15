@@ -14,10 +14,7 @@ import json
 from pathlib import Path
 from datetime import datetime
 
-try:
-    import fcntl
-except ImportError:
-    fcntl = None
+import portalocker
 
 CEO_BRAIN_DIR = Path(os.environ.get("GFV_CEO_BRAIN", Path.home() / "ceo-brain"))
 GTM_BRAIN_DIR = Path(os.environ.get("GFV_GTM_BRAIN", Path.home() / "gtm-brain"))
@@ -56,13 +53,13 @@ def main():
     if prefs.get("auto_memory", True):
         learnings_file = gtm_brain_dir / "learnings.md"
         with open(learnings_file, "a", encoding="utf-8") as f:
-            if fcntl: fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+            portalocker.lock(f, portalocker.LOCK_EX)
             try:
                 f.write(f"\n---\n### Session: {timestamp}\n")
                 f.write(f"**Level**: {prefs.get('level', 'unknown')}\n")
                 f.write("<!-- Auto-saved session marker. Key learnings from this session: -->\n\n")
             finally:
-                if fcntl: fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+                portalocker.unlock(f)
 
     # 2. Session summary for beginners and intermediates
     if prefs.get("session_summary", False):
@@ -70,14 +67,14 @@ def main():
         summary_dir.mkdir(parents=True, exist_ok=True)
         summary_file = summary_dir / f"session-{datetime.now().strftime('%Y-%m-%d')}.md"
         with open(summary_file, "a", encoding="utf-8") as f:
-            if fcntl: fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+            portalocker.lock(f, portalocker.LOCK_EX)
             try:
                 f.write(f"\n## Session: {timestamp}\n")
                 f.write("<!-- Auto-generated session summary -->\n")
                 f.write("<!-- Claude: Replace this with a 3-bullet session recap -->\n")
                 f.write("- \n- \n- \n\n")
             finally:
-                if fcntl: fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+                portalocker.unlock(f)
 
     # 3. Feedback loop state for intermediate+
     if prefs.get("feedback_loops", False):
@@ -85,12 +82,12 @@ def main():
         feedback_dir.mkdir(parents=True, exist_ok=True)
         feedback_file = feedback_dir / "feedback-log.md"
         with open(feedback_file, "a", encoding="utf-8") as f:
-            if fcntl: fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+            portalocker.lock(f, portalocker.LOCK_EX)
             try:
                 f.write(f"\n### {timestamp}\n")
                 f.write("<!-- Auto-saved feedback checkpoint -->\n\n")
             finally:
-                if fcntl: fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+                portalocker.unlock(f)
 
     # 4. Dream Mode flag for advanced users
     if prefs.get("dream_mode", False):

@@ -98,6 +98,21 @@ New-Item -ItemType Directory -Force -Path (Join-Path $GTM_BRAIN_DIR "pipeline") 
 New-Item -ItemType Directory -Force -Path (Join-Path $GTM_BRAIN_DIR "logs") | Out-Null
 
 # ─────────────────────────────────────────────────────────
+# 1.5 Python Virtual Environment (Isolation)
+# ─────────────────────────────────────────────────────────
+Write-Host "🐍 Initializing Python Virtual Environment..." -ForegroundColor Green
+$venvPath = Join-Path $REPO_DIR "venv"
+if (!(Test-Path $venvPath)) {
+    python -m venv $venvPath
+    Write-Host "  → Created isolated venv at $venvPath"
+}
+$reqPath = Join-Path $REPO_DIR "requirements.txt"
+if (Test-Path $reqPath) {
+    & (Join-Path $venvPath "Scripts\python.exe") -m pip install -r $reqPath -q
+    Write-Host "  → Dependencies installed successfully"
+}
+
+# ─────────────────────────────────────────────────────────
 # 2. Profile + Preferences (NEW — matches bootstrap.sh)
 # ─────────────────────────────────────────────────────────
 $profilePath = Join-Path $CEO_BRAIN_DIR "profile.json"
