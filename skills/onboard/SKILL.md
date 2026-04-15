@@ -337,4 +337,10 @@ After onboarding, the AI maintains continuity based on level:
 
 **The goal:** Beginners get an AI that "just works" with zero effort — memory persists, safe commands auto-approve, costs are visible, and the AI proactively helps. Intermediates get an AI that gets smarter over time. Advanced users get an AI that operates autonomously.
 
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to set up your voice model so I sound like you? Use `voice-model`."
+- "Ready to prep for your next meeting? Try `meeting-prep`."
+- "Want me to review your pipeline? Try `pipeline-pulse`."
+
 **[END SKILL]**

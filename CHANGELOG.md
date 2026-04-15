@@ -2,6 +2,29 @@
 
 All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
 
+## 2026-04-15 10:06 AM PT — v1.24.0 — Runtime Verification Pass
+
+### Why it matters
+First audit pass to actually EXECUTE every hook, tool, and script. Found a critical Python 3.9 crash in task_manager.py that 5 static passes missed.
+
+### Fixed
+- **task_manager.py**: Python 3.10+ union type syntax crashed on macOS default Python 3.9
+- **12 phantom skill references**: Skills referencing external GFV tools not in this repo
+- **lint-claude-md.sh**: grep "invalid character range" regex error
+
+### Also Fixed (full audit)
+- **Version strings**: Synced README + GETTING-STARTED to v1.24.0
+- **onboard skill**: Added missing "After This Skill" proactive tip chain (last of 18 beginner skills)
+- **gfv-generalist.sh**: Fixed shebang from #!/bin/bash to #!/usr/bin/env bash
+
+### Verified Working
+session-start.py, session-stop.py, pre-send-review.py, generate_audio.py, ccflare.py, task_manager.py (all 3 modes: linear/dag/debate), lint-agent.sh, lint-claude-md.sh, gfv-cost-estimator.sh, gfv-memento.py
+
+### Files Modified
+12 files, ~30 net changes
+
+---
+
 ## 2026-04-15 9:36 AM PT — v1.23.3 — Beginner Proactive Tip Chains
 
 ### Why it matters

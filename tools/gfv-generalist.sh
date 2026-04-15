@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # gfv-generalist.sh - Executes background python or bash scripts safely with logging.
 # Used for Context Sponge Headless Offloading (Pattern 22)
 
