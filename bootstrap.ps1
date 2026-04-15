@@ -1,9 +1,16 @@
 <#
 .SYNOPSIS
-GetFresh CEO Enablement Kit for AI — Windows Bootstrap Script (v1.23.0)
+GetFresh CEO Enablement Kit for AI — Windows Bootstrap Script (v1.27.0)
 Initializes the brain directory, configures tier-appropriate skills, installs
 hooks, and sets up Agent-Agnostic Contexts (Cursor, Claude, Gemini) for Windows.
+
+.PARAMETER Quick
+Skip all interactive prompts and use defaults (Tier 2 Intermediate).
+Usage: .\bootstrap.ps1 -Quick
 #>
+param(
+    [switch]$Quick
+)
 $ErrorActionPreference = "Stop"
 
 Clear-Host
@@ -30,6 +37,7 @@ Write-Host "====================================================================
 Write-Host ""
 Write-Host "To configure your system perfectly, please select your AI expertise level:"
 Write-Host ""
+if (-not $Quick) {
 Write-Host " [1] Beginner — I'm new to AI coding assistants" -ForegroundColor Green
 Write-Host "     14 core skills: email, meetings, documents, contracts, pipeline."
 Write-Host "     Proactive tips enabled. Auto-save learnings. Guided experience."
@@ -46,7 +54,11 @@ Write-Host ""
 Write-Host "NOTE: You can re-run this script anytime to change your tier."
 Write-Host "=======================================================================" -ForegroundColor Cyan
 $userTier = Read-Host "Select Tier [1, 2, or 3]"
-if ([string]::IsNullOrWhiteSpace($userTier)) { $userTier = "1" }
+} else {
+    Write-Host "  ⚡ Quick mode — using defaults (Tier 2 Intermediate)" -ForegroundColor Yellow
+    $userTier = "2"
+}
+if ([string]::IsNullOrWhiteSpace($userTier)) { $userTier = "2" }
 
 $tierNames = @{ "1" = "beginner"; "2" = "intermediate"; "3" = "advanced" }
 $tierName = $tierNames[$userTier]
@@ -60,7 +72,9 @@ if ($userTier -eq "3") {
 
 Write-Host ""
 Write-Host "=======================================================================" -ForegroundColor Cyan
-Read-Host "Press [Enter] to authorize installation and enable the Executive Kit..."
+if (-not $Quick) {
+    Read-Host "Press [Enter] to authorize installation and enable the Executive Kit..."
+}
 Write-Host ""
 
 Write-Host "🚀 Initializing GetFresh CEO Enablement Kit for AI..." -ForegroundColor Green
@@ -88,12 +102,19 @@ New-Item -ItemType Directory -Force -Path (Join-Path $GTM_BRAIN_DIR "logs") | Ou
 # ─────────────────────────────────────────────────────────
 $profilePath = Join-Path $CEO_BRAIN_DIR "profile.json"
 if (!(Test-Path $profilePath)) {
-    Write-Host ""
-    Write-Host "📋 Quick Profile Setup (used to personalize your AI):" -ForegroundColor Cyan
-    $userName = Read-Host "  Your name"
-    $userCompany = Read-Host "  Your company name"
-    $userRole = Read-Host "  Your role (e.g., CEO, Founder)"
-    $userIndustry = Read-Host "  Your industry"
+    if ($Quick) {
+        $userName = "CEO"
+        $userCompany = "My Company"
+        $userRole = "CEO"
+        $userIndustry = "Technology"
+    } else {
+        Write-Host ""
+        Write-Host "📋 Quick Profile Setup (used to personalize your AI):" -ForegroundColor Cyan
+        $userName = Read-Host "  Your name"
+        $userCompany = Read-Host "  Your company name"
+        $userRole = Read-Host "  Your role (e.g., CEO, Founder)"
+        $userIndustry = Read-Host "  Your industry"
+    }
 
     $profile = @{
         name = $userName

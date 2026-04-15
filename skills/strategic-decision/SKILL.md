@@ -227,7 +227,7 @@ scores: {market: H/M/L, financial: H/M/L, ops: H/M/L, strategic: H/M/L, risk: H/
 
 **Goal:** Convert the GO decision into an executable plan.
 
-### Process
+### Decision Process
 
 1. **Break into phases** — Maximum 3 phases, each independently valuable
 2. **Define milestones** — Each phase ends with a measurable gate
