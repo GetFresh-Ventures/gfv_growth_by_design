@@ -200,7 +200,7 @@ Maintain a running log of hook tests:
 - `voice-model` — Brand voice consistency
 - `social-engine` — Social media content
 - `larry-loop` — Content doubling-down engine
-- `aeo-optimizer` — AI search optimization
+- `ai-search-optimizer` — AI search optimization
 
 ## Troubleshooting
 

@@ -2,6 +2,23 @@
 
 All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
 
+## 2026-04-15 10:28 AM PT — v1.27.0 — Tip Chains + Upgrade Path
+
+### Why it matters
+Every skill now guides CEOs to their next logical step, and beginners get proactive nudges to upgrade when they're ready.
+
+### Added
+- **Tip chains for ALL 72 skills**: Each skill's "After This Skill" section suggests 2-3 logical next skills with descriptions
+- **Upgrade path (3 layers)**:
+  - session-start.py: Proactive "Ready for more?" nudge for established beginners
+  - 18 beginner skills: "Ready for More?" section with upgrade instructions
+  - GETTING-STARTED.md: "Signs You're Ready" table + "What Each Level Unlocks" catalog
+
+### Stats
+66 files changed, 468 insertions(+)
+
+---
+
 ## 2026-04-15 10:22 AM PT — v1.26.0 — Complete CEO UX Overhaul
 
 ### Why it matters

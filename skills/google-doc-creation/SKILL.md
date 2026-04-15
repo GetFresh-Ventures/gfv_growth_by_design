@@ -43,7 +43,7 @@ url = create_formatted_doc(
 ```
 
 ```bash
-# From CLI
+# From the terminal
 python3 ~/Documents/Code/gfv-brain/scripts/create_google_doc.py \
     --input content.md \
     --title "My Document" \
@@ -53,7 +53,7 @@ python3 ~/Documents/Code/gfv-brain/scripts/create_google_doc.py \
 ### Auth
 
 - **Preferred:** Service Account at `~/.config/gfv/gfv_service_account.json` with domain-wide delegation (impersonates `{{CEO_EMAIL}}`)
-- **Fallback:** `gws` CLI for content insertion, SA for styling pass
+- **Fallback:** `gws` command-line tool for content insertion, service account for styling pass
 
 ### What It Does Automatically
 
