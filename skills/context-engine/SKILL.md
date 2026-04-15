@@ -1,6 +1,7 @@
 ---
 name: context-engine
 description: "Loads and manages company context for all C-suite advisory skills. Reads company-context.md, detects stale context, enriches context during conversations, and enforces privacy/anonymization rules. Every advisory skill loads this first."
+short_description: "Load company context for advisory skills"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), wired to GFV PIL and live systems.
 metadata:
   version: 1.0.0
@@ -14,6 +15,14 @@ metadata:
 The memory layer for C-suite advisors. Every advisor skill loads this first. Context is what turns generic advice into specific insight.
 
 ---
+
+
+## Quick Start
+Just say any of these:
+- "Load all company context from Supabase"
+- "What does the system know about [entity]?"
+- "Refresh my context engine data"
+
 
 ## Load Protocol (Run at Start of Every C-Suite Session)
 

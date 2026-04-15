@@ -1,11 +1,20 @@
 ---
 name: review-pr
 description: "Perform a structured code review on a pull request or git diff. Use when asked to review code, check a PR, audit changes, or before merging any branch."
+short_description: "Structured code review for pull requests"
 ---
 
 # Code Review
 
 Perform a rigorous, structured review of code changes. Never rubber-stamp. Every review must produce actionable findings or an explicit clean bill.
+
+
+## Quick Start
+Just say any of these:
+- "Review this pull request"
+- "Check this diff for issues"
+- "Code review the changes in [branch]"
+
 
 ## When to Use
 

@@ -1,6 +1,7 @@
 ---
 name: strategic-decision
 description: >
+short_description: "Framework for high-stakes strategic choices"
   Multi-phase strategic decision framework for CEO founders. Orchestrates research, feasibility,
   planning, and implementation for any business initiative — product launches, market entry,
   hiring, fundraising, partnerships, or pivots. Triggers on "should we", "evaluate", "feasibility",
@@ -15,6 +16,14 @@ description: >
 **Purpose:** Prevent wasted effort on non-viable initiatives. Ensure every major decision has a structured audit trail.
 
 ---
+
+
+## Quick Start
+Just say any of these:
+- "Walk me through this strategic decision"
+- "What's the best framework for deciding [X]?"
+- "Help me evaluate these 3 options rigorously"
+
 
 ## When to Use
 

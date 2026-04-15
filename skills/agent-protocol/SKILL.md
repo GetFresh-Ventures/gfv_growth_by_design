@@ -1,6 +1,7 @@
 ---
 name: agent-protocol
 description: "Inter-agent communication protocol for C-suite advisory skills. Defines invocation syntax, loop prevention, isolation rules, quality verification loops, and standardized output formats. Every advisory skill MUST follow this protocol."
+short_description: "C-suite advisory inter-agent communication"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), hardened for GFV portfolio context.
 metadata:
   version: 1.0.0
@@ -14,6 +15,14 @@ metadata:
 How C-suite agents communicate. Rules that prevent chaos, loops, circular reasoning, and unverified output reaching the CEO.
 
 ---
+
+
+## Quick Start
+Just say any of these:
+- "Configure inter-agent communication"
+- "Set up handoff protocols between advisors"
+- "How do my C-suite agents share context?"
+
 
 ## Invocation Syntax
 

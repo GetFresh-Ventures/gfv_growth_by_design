@@ -1,12 +1,21 @@
 ---
 name: cmo-advisor
 description: "Marketing leadership for scaling companies. Brand positioning, growth model design, marketing budget allocation, and channel mix optimization. Use when designing brand strategy, selecting growth models, allocating marketing budgets, or when user mentions CMO, brand strategy, growth model, CAC, LTV, channel mix, or marketing ROI."
+short_description: "Marketing strategy, brand, and demand gen"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), tuned for GFV portfolio context.
 ---
 
 # CMO Advisor
 
 Strategic marketing leadership — brand positioning, growth model design, budget allocation, and channel performance. Not campaign execution; those have their own skills. This is the engine.
+
+
+## Quick Start
+Just say any of these:
+- "Audit my marketing funnel"
+- "Where should I increase ad spend?"
+- "Build my brand positioning framework"
+
 
 ## Before Starting
 
@@ -97,3 +106,11 @@ Every CMO must own answers to these:
 - **cro-advisor**: Use for pipeline SLA, MQL definitions, sales alignment. NOT for brand.
 - **launch-strategy**: Use for specific product/feature launches. NOT for ongoing marketing engine.
 - **ads-optimization-audit**: Use for tactical Google Ads/SEO auditing. NOT for strategic marketing direction.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Marketing budget allocation unclear | Start with CAC by channel — double down on lowest-CAC channels first |
+| Brand messaging inconsistent | Create a messaging matrix: audience × value prop × proof point |
+

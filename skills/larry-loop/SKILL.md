@@ -1,6 +1,7 @@
 ---
 name: larry-loop
 description: An autonomous content validation system. Focuses on distribution, iteration, and algorithmic doubling down over raw creativity.
+short_description: "Autonomous content validation system"
 license: MIT
 metadata:
   author: GFV Proactive Intelligence
@@ -11,6 +12,14 @@ metadata:
 # /larry-loop
 
 **Usage**: Utilize this skill when the CEO wants to scale their social or marketing content systematically rather than relying on manual, creative one-offs.
+
+
+## Quick Start
+Just say any of these:
+- "Validate my content against distribution targets"
+- "Run a content quality loop on [asset]"
+- "Check if this content meets our standards"
+
 
 ## The Paradigm: System over Creativity
 The core secret of the "Larry" architecture is that automation alone will not save a bad hook. The system leverages:

@@ -1,6 +1,7 @@
 ---
 name: autoresearch
 description: "Autonomously optimize any Claude Code skill by running it repeatedly, scoring outputs against binary evals, mutating the prompt, and keeping improvements. Based on Karpathy's autoresearch methodology. Use when: optimize this skill, improve this skill, run autoresearch on, make this skill better, self-improve skill, benchmark skill, eval my skill, run evals on. Outputs: an improved SKILL.md, a results log, and a changelog of every mutation tried."
+short_description: "Autonomously optimize skills through iteration"
 ---
 
 # Autoresearch for Skills
@@ -10,6 +11,14 @@ Most skills work about 70% of the time. The other 30% you get garbage. The fix i
 This skill adapts Andrej Karpathy's autoresearch methodology (autonomous experimentation loops) to Claude Code skills. Instead of optimizing ML training code, we optimize skill prompts.
 
 ---
+
+
+## Quick Start
+Just say any of these:
+- "Optimize [skill] through autonomous testing"
+- "Research best practices for [topic] autonomously"
+- "Run an improvement loop on [component]"
+
 
 ## the core job
 

@@ -1,6 +1,7 @@
 ---
 name: analyze-issue
 description: "Systematically debug any bug, error, or unexpected behavior. Use before proposing fixes — find root cause first, never guess."
+short_description: "Debug any bug or unexpected behavior"
 ---
 
 # Systematic Issue Analysis
@@ -8,6 +9,14 @@ description: "Systematically debug any bug, error, or unexpected behavior. Use b
 Find root cause before attempting fixes. Guessing wastes time and creates new bugs.
 
 **The Iron Law:** No fixes without root cause investigation first.
+
+
+## Quick Start
+Just say any of these:
+- "Debug this error: [paste error]"
+- "Why is [feature] broken?"
+- "Systematically find the root cause of [bug]"
+
 
 ## When to Use
 

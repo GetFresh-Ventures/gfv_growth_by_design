@@ -117,7 +117,7 @@ Marketing, content, and growth optimization.
 | [`conversion-optimizer`](skills/conversion-optimizer/) | Forms, signups, landing pages, onboarding CRO | Fix the leaks |
 | [`financial-analyst`](skills/financial-analyst/) | Ratio analysis, DCF, budget variance, rolling forecasts | Deep number work |
 | [`copy-master`](skills/copy-master/) | 7-pillar copywriting with narrative submode and persuasion tactics | The Rule of One |
-| [`aeo-optimizer`](skills/aeo-optimizer/) | Answer Engine Optimization — get AI assistants to recommend your brand | Own the AI answer |
+| [`ai-search-optimizer`](skills/ai-search-optimizer/) | Answer Engine Optimization — get AI assistants to recommend your brand | Own the AI answer |
 | [`social-scheduler`](skills/social-scheduler/) | Cross-post to 28+ channels with CEO approval gate | One command, all channels |
 | [`ugc-video`](skills/ugc-video/) | Script-to-video UGC production with AI talking heads | Video at scale |
 | [`voice-synth`](skills/voice-synth/) | AI voice synthesis for narration, podcasts, and audio content | Sound human anywhere |
@@ -130,7 +130,7 @@ Infrastructure skills for the technical operator.
 |-------|-------------|-------------|
 | [`onboard`](skills/onboard/) | Interactive setup wizard for the CEO Kit | First-run config |
 | [`context-prime`](skills/context-prime/) | Repository scanning for baseline context | Map before moving |
-| [`create-prd`](skills/create-prd/) | Rough idea → structured 6-part PRD | Idea to spec |
+| [`product-spec`](skills/product-spec/) | Rough idea → structured 6-part PRD | Idea to spec |
 | [`analyze-issue`](skills/analyze-issue/) | GitHub/Linear issue → implementation plan | Issue to plan |
 | [`review-pr`](skills/review-pr/) | PR security, logic, and strategy review | Code gate |
 | [`commit-fast`](skills/commit-fast/) | Automated semantic git commits | Ship. Now. |
@@ -197,5 +197,5 @@ Skills are most powerful when composed:
 | [autoagent](https://github.com/kevinrgu/autoagent) | experiment-loop (hill-climbing methodology) |
 | [clawchief](https://github.com/snarktank/clawchief) | chief-of-staff v2 (3-layer architecture), post-meeting-brief v2, pipeline-pulse v2 |
 | [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | strategic-decision, gfv-hooks, authoring standard patterns 13-15 |
-| [LarryBrain Marketplace](https://larrybrain.com/skills) | 11 skills rewritten (contract-reader, negotiation-advisor, aeo-optimizer, etc.) + 17 enhancements |
+| [LarryBrain Marketplace](https://larrybrain.com/skills) | 11 skills rewritten (contract-reader, negotiation-advisor, ai-search-optimizer, etc.) + 17 enhancements |
 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Architectural patterns (hierarchical topology, memory tiers, consensus concepts) — skills were planned but not shipped |

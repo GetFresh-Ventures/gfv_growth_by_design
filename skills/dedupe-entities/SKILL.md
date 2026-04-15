@@ -1,11 +1,20 @@
 ---
 name: dedupe-entities
 description: "Resolve duplicate entities across CSV datasets using machine-learning record linkage. Use when CRM data has duplicates, data sources need reconciliation, or entity names are inconsistent."
+short_description: "Find and merge duplicate records in data"
 ---
 
 # Entity Deduplication
 
 Mathematically resolve duplicate records in datasets where the same entity appears under different names, spellings, or formats. Uses the `dedupe` library for active-learning record linkage.
+
+
+## Quick Start
+Just say any of these:
+- "Find duplicates in this CSV"
+- "Merge matching records across datasets"
+- "Clean up duplicate contacts in my CRM export"
+
 
 ## When to Use
 

@@ -1,12 +1,21 @@
 ---
 name: founder-coach
 description: "Personal leadership development for founders and CEOs. Covers founder archetype identification, delegation frameworks, energy management, CEO calendar audits, leadership style evolution, blind spot identification, imposter syndrome, and burnout prevention. Use when a founder feels like the bottleneck, struggles to delegate, is burning out, or transitioning from IC to executive."
+short_description: "Leadership development for founders and CEOs"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), tuned for GFV portfolio context.
 ---
 
 # Founder Coach
 
 Your company can only grow as fast as you do. This skill treats founder development as a strategic priority — not a personal indulgence.
+
+
+## Quick Start
+Just say any of these:
+- "I'm burned out — help me prioritize"
+- "How do I delegate better?"
+- "Coach me on this difficult conversation"
+
 
 ## How This Skill Works
 
@@ -132,3 +141,11 @@ Pull the last 4 weeks. Categorize every block:
 - **ceo-advisor**: Use for business strategy and decisions. NOT for personal development.
 - **executive-mentor**: Use for stress-testing plans. NOT for long-term leadership growth.
 - **weekly-ceo-brief**: Use for tactical weekly digest. NOT for deep self-reflection.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Advice feels impersonal | Share specific context about your situation — the more detail, the better |
+| Can't implement the coaching | Pick ONE behavior change per week. Track it daily |
+

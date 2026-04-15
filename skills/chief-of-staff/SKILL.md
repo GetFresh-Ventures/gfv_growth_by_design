@@ -1,6 +1,7 @@
 ---
 name: chief-of-staff
 description: "Operate as the CEO's always-on chief of staff — triage signals across all channels (email, Slack, calendar, CRM, Linear, meetings), auto-resolve low-risk operational items, escalate only what requires human judgment, and maintain a single source of truth for priorities, tasks, and resolution policy. Inspired by clawchief's separation of concerns: priority map (who/what matters) → auto-resolver (what to do) → heartbeat (orchestration). Use when the CEO mentions 'what's going on,' 'what do I need to do,' 'handle this,' 'triage,' 'check my inbox,' 'what's urgent,' 'daily brief,' 'what's on my plate,' or any ambient operational coordination."
+short_description: "Your always-on executive AI assistant"
 metadata:
   version: 2.0.0
   category: execution-infrastructure

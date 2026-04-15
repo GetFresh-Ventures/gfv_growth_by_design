@@ -1,6 +1,7 @@
 ---
 name: copy-master
 description: World-class copywriting intelligence engine overriding generic LLM communication tendencies with high-converting, proven direct-response architectures. 
+short_description: "Write world-class marketing copy"
 license: MIT
 metadata:
   author: GFV Proactive Intelligence
@@ -11,6 +12,14 @@ metadata:
 # /copy-master
 
 **Usage**: Utilize this skill when writing landing pages, sales sequences, ad copy, or high-stakes announcements. It acts as an orchestrator sitting *above* the `/email-composer` and `/social-engine` to inject direct-response mastery.
+
+
+## Quick Start
+Just say any of these:
+- "Write landing page copy for [product]"
+- "Rewrite this headline to be more compelling"
+- "Create ad copy for [campaign]"
+
 
 ## The Problem With AI Copy
 Out-of-the-box LLMs write with a recognizable "AI smell": overly verbose, heavy on adverbs, generic structure, and weak hooks. The `copy-master` skill prevents this by mathematically scoring and restricting output based on 7 core pillars.
@@ -63,3 +72,11 @@ When generating, the agent must present the CEO with:
 3. **The Scorecard** (A brief internal audit of how the draft meets the 7 pillars and integrates the CEO's specific voice).
 4. **The Story Option** (If narrative submode applies, present one StoryMaster 5-beat arc).
 5. **The Persuasion Layer** (Which tactics were applied, and why they fit this context).
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Copy sounds too 'AI' | Paste 3-5 examples of your best copy first to calibrate the voice |
+| Headlines don't convert | Test benefit-driven headlines vs curiosity-driven — track which wins |
+

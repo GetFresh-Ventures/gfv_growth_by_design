@@ -1,6 +1,7 @@
 ---
 name: create-skill
 description: "Create a new, production-quality skill from scratch. Guides through interview, writing, testing, and registration. Use when the user says 'create a skill', 'add a workflow', 'build a routine', or when converting a one-off process into a reusable pattern."
+short_description: "Create a new skill from scratch"
 metadata:
   version: 2.0.0
   category: technical-builder
@@ -16,6 +17,14 @@ metadata:
 # Create Skill
 
 Build a new production-quality SKILL.md from scratch. Every skill created through this process meets the quality bar: concrete steps, real commands, proper triggers, and tested scenarios.
+
+
+## Quick Start
+Just say any of these:
+- "Create a new skill for [use case]"
+- "Build a reusable automation for [workflow]"
+- "Package this process as a skill"
+
 
 ## When to Use
 

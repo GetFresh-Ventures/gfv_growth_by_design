@@ -1,6 +1,7 @@
 ---
 name: weekly-ceo-brief
 description: "Synthesize the week into a CEO-level summary — pipeline movement, key meetings, commitments, wins, risks, and priorities for next week. Resolves open items during synthesis, doesn't just report them. Use when the CEO asks 'how was the week,' 'weekly update,' 'board summary,' or on Friday afternoon."
+short_description: "Synthesize your week into a CEO summary"
 metadata:
   version: 2.0.0
   category: daily-operations

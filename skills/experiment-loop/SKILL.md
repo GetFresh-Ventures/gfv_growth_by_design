@@ -1,6 +1,7 @@
 ---
 name: experiment-loop
 description: "Apply the scientific method to any CEO initiative — define a metric, make ONE change per cycle, measure impact, keep or discard, repeat. Inspired by autoagent's autonomous hill-climbing methodology. Use when the CEO mentions 'test this,' 'experiment,' 'try and see,' 'A/B test,' 'iterate on,' 'what if we,' 'optimize,' 'is this working,' or any situation where systematic, measurable improvement beats guessing."
+short_description: "Apply the scientific method to initiatives"
 metadata:
   version: 1.0.0
   category: execution-infrastructure
@@ -19,6 +20,14 @@ metadata:
 # Experiment Loop
 
 Stop guessing. Use the scientific method to improve anything — ads, messaging, pricing, process, content, ops.
+
+
+## Quick Start
+Just say any of these:
+- "Design an experiment to test [hypothesis]"
+- "Track and measure the impact of [change]"
+- "What did we learn from the [experiment]?"
+
 
 ## When to Activate
 

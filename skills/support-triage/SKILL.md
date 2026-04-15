@@ -1,6 +1,7 @@
 ---
 name: support-triage
 description: "Classify, prioritize, and route inbound support requests from any channel. Use when monitoring social mentions, customer emails, or support tickets."
+short_description: "Classify and route inbound support requests"
 ---
 
 # Support Triage

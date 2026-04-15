@@ -1,6 +1,7 @@
 ---
 name: competitive-intel
 description: "Systematic competitor tracking that feeds CMO positioning, CRO battlecards, and CEO strategic decisions. Use when analyzing competitors, building sales battlecards, tracking market moves, or when user mentions competitive intelligence, competitor research, or market positioning."
+short_description: "Track competitors and market positioning"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), hardened for GFV portfolio context.
 metadata:
   version: 1.0.0
@@ -231,3 +232,11 @@ Competitors: varies by vertical
 - **Competitor funding announcement detected** → flag with 48-hour assessment
 - **Competitor pricing page changes** → alert CMO + CRO
 - **Market report mentions new entrant** → add to tracking list
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Can't find competitor data | Start with their job postings, press releases, and G2/Capterra reviews |
+| Analysis becomes stale | Set up Google Alerts for competitor names + key product terms |
+

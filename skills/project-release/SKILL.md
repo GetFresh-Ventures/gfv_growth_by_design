@@ -1,6 +1,7 @@
 ---
 name: project-release
 description: Governed release workflow for CEO enablement projects. Bumps semantic version, updates CHANGELOG and README, tags git, publishes GitHub Release, pushes to remote, and syncs release notes to Linear. Hard gates enforce no skipped steps.
+short_description: "Governed release workflow with version bumps"
 ---
 
 # `project-release`
@@ -8,6 +9,14 @@ description: Governed release workflow for CEO enablement projects. Bumps semant
 // turbo-all
 
 This skill provides a structured release process for AI-powered executives managing their own codebase and infrastructure. It ensures every release is documented, cleanly versioned, published to GitHub Releases, and broadcasted to Linear.
+
+
+## Quick Start
+Just say any of these:
+- "Release version [X] of [project]"
+- "Bump the version and create a changelog"
+- "Run the release workflow"
+
 
 ## Prerequisites
 - A git repository initialized with a `README.md` and `CHANGELOG.md`.

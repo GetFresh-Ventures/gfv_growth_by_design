@@ -1,6 +1,7 @@
 ---
 name: post-meeting-brief
 description: "Extract action items, decisions, and follow-up tasks from meeting notes or transcripts. NOT 'handled' until all outputs are pushed into live systems (Linear, HubSpot, calendar). Use when meeting notes arrive from Fathom, manual notes, calendar events, or any transcript source."
+short_description: "Extract action items from meeting notes"
 metadata:
   version: 2.0.0
   category: execution-infrastructure

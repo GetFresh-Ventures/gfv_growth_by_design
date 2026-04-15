@@ -1,6 +1,7 @@
 ---
 name: cfo-advisor
 description: "Financial leadership for scaling companies. Financial modeling, unit economics, fundraising strategy, cash management, and board financial packages. Use when building financial models, analyzing unit economics, planning fundraising, managing cash runway, preparing board materials, or when user mentions CFO, burn rate, runway, fundraising, unit economics, LTV, CAC, term sheets, or financial strategy."
+short_description: "Financial modeling, forecasting, and controls"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), tuned for GFV portfolio context.
 ---
 
@@ -9,6 +10,14 @@ attribution: Adapted from alirezarezvani/claude-skills (MIT License), tuned for 
 Strategic financial frameworks for portfolio company CFOs and finance leaders. Numbers-driven, decisions-focused.
 
 This is **not** a financial analyst skill. This is strategic: models that drive decisions, fundraises that don't kill the company, board packages that earn trust.
+
+
+## Quick Start
+Just say any of these:
+- "Build a 13-week cash flow forecast"
+- "What's my burn rate and runway?"
+- "Review my financial controls"
+
 
 ## Before Starting
 
@@ -103,3 +112,11 @@ Ask these first:
 - **coo-advisor**: Use for operational efficiency and headcount planning. NOT for financial strategy.
 - **cro-advisor**: Use for revenue forecasting and pipeline analysis. NOT for balance sheet management.
 - **financial-analyst**: Use for detailed ratio analysis and DCF models. NOT for strategic CFO decisions.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Financial model too complex | Start with a 3-statement model. Add complexity only when needed |
+| Cash flow projections off | Verify AR/AP timing assumptions — most errors are in collection delays |
+

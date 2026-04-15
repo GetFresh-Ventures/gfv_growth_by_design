@@ -1,11 +1,20 @@
 ---
 name: scheduling-infra
 description: "Set up scheduled tasks, cron jobs, and background automation on macOS and Linux. Use when the user needs something to run on a schedule — backups, reports, data syncs, health checks."
+short_description: "Set up cron jobs and background automation"
 ---
 
 # Scheduling Infrastructure
 
 Set up reliable, persistent scheduled tasks. Every scheduled job must have health monitoring — a silent failure is worse than no automation.
+
+
+## Quick Start
+Just say any of these:
+- "Set up my background automation infrastructure"
+- "Configure cron jobs for [tasks]"
+- "Build a task scheduling system"
+
 
 ## When to Use
 

@@ -1,12 +1,21 @@
 ---
 name: financial-analyst
 description: "Financial ratio analysis, DCF valuation, budget variance analysis, and rolling forecast construction. Use when analyzing financial statements, building valuation models, assessing budget variances, or constructing projections. Tactical counterpart to cfo-advisor."
+short_description: "Financial ratios, DCF, and budget analysis"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), tuned for GFV portfolio context.
 ---
 
 # Financial Analyst
 
 Production-ready financial analysis toolkit: ratio analysis, DCF valuation, budget variance, and rolling forecasts.
+
+
+## Quick Start
+Just say any of these:
+- "Run a DCF valuation on this opportunity"
+- "Analyze these financial ratios"
+- "Compare these two investment options"
+
 
 ## Before Starting
 
@@ -76,3 +85,11 @@ Driver-based revenue forecasting with scenario modeling.
 ## Related Skills
 - **cfo-advisor**: Use for strategic financial decisions. Financial Analyst is the tactical engine.
 - **ceo-advisor**: Use for capital allocation priorities. NOT for ratio analysis.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Valuation seems off | Check your discount rate and terminal growth assumptions first |
+| Too many ratios, unclear story | Focus on the 3-5 ratios your audience cares about most |
+

@@ -1,6 +1,7 @@
 ---
 name: contract-reader
 description: Paste any legal contract and get a plain-English summary with red-flag clauses highlighted. Know what you're signing before you sign it.
+short_description: "Summarize contracts in plain English"
 license: MIT
 metadata:
   author: GFV Proactive Intelligence

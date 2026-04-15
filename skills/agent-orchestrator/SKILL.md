@@ -1,6 +1,7 @@
 ---
 name: agent-orchestrator
 description: "Coordinate multi-agent pipeline tasks using Linear handoff, DAG parallel execution, and Debate cross-examination. Powered by hooks/task_manager.py. Use when you need multi-perspective analysis, parallel data gathering, or iterative build-review cycles."
+short_description: "Coordinate multi-agent task pipelines"
 metadata:
   version: 2.0.0
   category: agent-intelligence
@@ -18,6 +19,14 @@ metadata:
 Coordinate multi-agent pipeline tasks using three orchestration modes. All modes are powered by `hooks/task_manager.py`, which persists state to `~/gtm-brain/team-tasks/`.
 
 **This is a real system with real commands. Every example below is executable.**
+
+
+## Quick Start
+Just say any of these:
+- "Spin up a 3-agent pipeline for [task]"
+- "Coordinate research, writing, and review agents"
+- "Set up a parallel task execution workflow"
+
 
 ## When to Use
 

@@ -1,6 +1,7 @@
 ---
 name: meeting-prep
 description: "Build pre-meeting intelligence dossiers from CRM, email, calendar, PIL, and web research. Know who you're meeting, what matters to them, and what your angle is — before you walk in. Use when the CEO has an upcoming meeting, asks 'prep me for,' 'who am I meeting,' or 'get me ready for.'"
+short_description: "Build pre-meeting intelligence dossiers"
 metadata:
   version: 2.0.0
   category: daily-operations

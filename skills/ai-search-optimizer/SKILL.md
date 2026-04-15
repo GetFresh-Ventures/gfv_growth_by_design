@@ -1,6 +1,7 @@
 ---
-name: aeo-optimizer
+name: ai-search-optimizer
 description: Answer Engine Optimization — get AI assistants like ChatGPT, Perplexity, and Gemini to recommend your brand when users ask questions in your category.
+short_description: "Optimize your content for AI search engines"
 license: MIT
 metadata:
   author: GFV Proactive Intelligence
@@ -8,9 +9,17 @@ metadata:
   category: Growth Engine
 ---
 
-# /aeo-optimizer
+# /ai-search-optimizer
 
 **Usage**: Invoke when you want AI assistants (ChatGPT, Perplexity, Claude, Gemini) to surface your brand as a recommended answer when users ask category-relevant questions.
+
+
+## Quick Start
+Just say any of these:
+- "How visible am I in AI search results?"
+- "Optimize my FAQ page for ChatGPT/Perplexity"
+- "What questions are AI assistants answering about my space?"
+
 
 ## The New Discovery Layer
 

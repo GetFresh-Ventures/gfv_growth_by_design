@@ -1,6 +1,7 @@
 ---
 name: scenario-war-room
 description: "Cross-functional what-if modeling for cascading multi-variable scenarios. Models compound adversity across all business functions simultaneously. Use when facing complex risk scenarios, strategic decisions with major downside, or when the CEO asks 'what if X AND Y both happen?'"
+short_description: "What-if modeling for strategic decisions"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), hardened for GFV portfolio context.
 metadata:
   version: 1.0.0
@@ -16,6 +17,14 @@ Model cascading what-if scenarios across all business functions. Not single-assu
 **Trigger phrases:** "what if", "worst case", "what happens if we lose", "pre-mortem", "stress test", "scenario plan", "risk model"
 
 ---
+
+
+## Quick Start
+Just say any of these:
+- "What happens if we lose our biggest client?"
+- "Model the impact of a 20% price increase"
+- "Run a worst-case scenario for our Q3 forecast"
+
 
 ## What This Is NOT
 - **Not** a single-assumption stress test (that's executive-mentor stress-test)
@@ -237,3 +246,11 @@ RECOMMENDED DECISION
 - **Customer concentration > 30%** → flag and offer churn cascade modeling
 - **Key person risk detected** (from context or conversation) → offer departure scenario
 - **Market signal detected** (competitor raise, pricing change) → offer competitive scenario
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Too many variables to model | Fix 80% of variables, vary only the 2-3 that matter most |
+| Scenarios feel unrealistic | Ground them in historical data — 'what happened last time X occurred?' |
+

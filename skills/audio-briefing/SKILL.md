@@ -1,6 +1,7 @@
 ---
 name: audio-briefing
 description: "Generate a concise, audio-ready executive briefing script from data across your systems. Use when the user wants a morning brief, situation update, or a summary they can listen to on the go."
+short_description: "Generate audio-ready executive briefing scripts"
 ---
 
 # Audio Briefing

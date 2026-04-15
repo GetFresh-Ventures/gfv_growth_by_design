@@ -1,6 +1,7 @@
 ---
 name: negotiation-advisor
 description: Battle-tested negotiation frameworks for deal closers. Preparation, BATNA analysis, concession strategy, and real-time tactical guidance.
+short_description: "Battle-tested negotiation frameworks"
 license: MIT
 metadata:
   author: GFV Proactive Intelligence
@@ -11,6 +12,14 @@ metadata:
 # /negotiation-advisor
 
 **Usage**: Invoke before or during any high-stakes negotiation — vendor contracts, partnership terms, salary discussions, M&A terms, investor negotiations.
+
+
+## Quick Start
+Just say any of these:
+- "Prep me for a salary negotiation with [name]"
+- "What's my BATNA for this deal?"
+- "Help me negotiate this vendor contract"
+
 
 ## The Negotiation Operating System
 
@@ -52,3 +61,11 @@ The advisor produces a 1-page **Negotiation Battle Card** with:
 3. Opening position + fallback positions
 4. Tactical scripts for likely objections
 5. Walk-away threshold clearly stated
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Other party won't budge | Find their hidden interests — they may value something you can easily give |
+| Prep feels insufficient | Research their recent wins, losses, and public statements before the call |
+

@@ -1,6 +1,7 @@
 ---
 name: geopolitical-monitor
 description: Global intelligence pipeline with country instability scoring, geopolitical risk tracking, and supply chain impact analysis for international business.
+short_description: "Global intelligence and risk monitoring"
 license: MIT
 metadata:
   author: GFV Proactive Intelligence
@@ -11,6 +12,14 @@ metadata:
 # /geopolitical-monitor
 
 **Usage**: For CEOs with international exposure — track geopolitical events that could impact supply chains, market expansion plans, or client operations.
+
+
+## Quick Start
+Just say any of these:
+- "What's the risk level in [country]?"
+- "Monitor supply chain risks in [region]"
+- "Brief me on geopolitical events affecting [industry]"
+
 
 ## Intelligence Pipeline
 

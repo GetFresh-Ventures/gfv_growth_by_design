@@ -1,12 +1,21 @@
 ---
 name: cro-advisor
 description: "Revenue leadership for scaling companies. Revenue forecasting, sales model design, pricing strategy, net revenue retention, and pipeline management. Use when designing the revenue engine, setting quotas, evaluating pricing, building board forecasts, or when user mentions CRO, revenue strategy, sales model, pipeline, churn, pricing strategy, or sales capacity."
+short_description: "Revenue operations and growth strategy"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), tuned for GFV portfolio context.
 ---
 
 # CRO Advisor
 
 Revenue frameworks for building predictable, scalable revenue engines.
+
+
+## Quick Start
+Just say any of these:
+- "Build my revenue forecast model"
+- "What's leaking from my sales funnel?"
+- "Design my sales compensation plan"
+
 
 ## Before Starting
 
@@ -106,3 +115,11 @@ NRR = (Opening + Expansion - Contraction - Churn) / Opening
 - **cfo-advisor**: Use for budget validation and margin analysis. NOT for pipeline strategy.
 - **cmo-advisor**: Use for marketing-sourced pipeline and MQL quality. NOT for sales process.
 - **ceo-advisor**: Use for strategic direction and capital allocation. NOT for revenue operations.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Revenue forecast inaccurate | Weight by pipeline stage probability, not rep confidence |
+| Sales and marketing misaligned | Define MQL→SQL hand-off criteria. Review weekly with both teams |
+

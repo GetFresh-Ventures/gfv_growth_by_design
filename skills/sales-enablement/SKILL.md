@@ -1,6 +1,7 @@
 ---
 name: sales-enablement
 description: "Create sales collateral that reps actually use — pitch decks, one-pagers, objection handling docs, demo scripts, buyer persona cards, ROI calculators, proposal templates, and sales playbooks. Use when the CEO mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'objection handling,' 'demo script,' 'talk track,' 'sales playbook,' 'proposal template,' 'buyer persona,' 'help my sales team,' or 'what should I give my reps.'"
+short_description: "Create sales collateral reps actually use"
 metadata:
   version: 1.0.0
   category: revenue-enablement
@@ -19,6 +20,14 @@ metadata:
 # Sales Enablement
 
 Build sales collateral that helps reps close deals — not marketing theater.
+
+
+## Quick Start
+Just say any of these:
+- "Create a one-pager for [product]"
+- "Build a pitch deck for [audience]"
+- "Write battle cards against [competitor]"
+
 
 ## When to Activate
 
@@ -165,3 +174,11 @@ Before delivering:
 - `outreach-sequence` — Cold email and follow-up sequences
 - `deal-review` — Pipeline evaluation
 - `voice-model` — Brand voice consistency
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Sales reps don't use the materials | Ask reps what they actually need — build bottom-up, not top-down |
+| Collateral feels outdated | Set a quarterly refresh cadence. Link docs to your CRM for visibility |
+

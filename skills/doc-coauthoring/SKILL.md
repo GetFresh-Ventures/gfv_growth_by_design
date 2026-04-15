@@ -1,6 +1,7 @@
 ---
 name: doc-coauthoring
 description: "Structured document writing workflow with three stages: Context Gathering, Section-by-Section Refinement, and Reader Testing (sends to fresh AI with no context to catch blind spots). Use when the CEO needs to write strategy docs, board memos, proposals, decision docs, or any high-stakes document that must be clear to readers who weren't in the room."
+short_description: "Structured document co-writing workflow"
 metadata:
   version: 1.0.0
   category: document-processing
@@ -18,6 +19,14 @@ metadata:
 # Doc Coauthoring
 
 Write documents that work for readers who weren't in the room.
+
+
+## Quick Start
+Just say any of these:
+- "Co-write a strategy document with me"
+- "I have a rough draft — help me structure it"
+- "Build an outline, then we'll write together"
+
 
 ## When to Activate
 
@@ -140,3 +149,11 @@ Before delivering:
 - `doc-builder` — .docx file generation
 - `weekly-ceo-brief` — Weekly summary documents
 - `chief-of-staff` — Multi-role coordination
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Voice doesn't match mine | Load your voice model first — run `/voice-model` before co-authoring |
+| Structure feels wrong | Start with the outline stage — get agreement on structure before writing |
+

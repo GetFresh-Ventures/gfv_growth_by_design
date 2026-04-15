@@ -1,6 +1,7 @@
 ---
 name: voice-model
 description: Build and evolve your personal writing voice model. Captures word choices, sentence patterns, formality levels, and anti-patterns so AI output is indistinguishable from your own writing.
+short_description: "Build your personal writing voice model"
 ---
 
 # Voice Model

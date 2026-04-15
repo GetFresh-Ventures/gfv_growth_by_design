@@ -1,11 +1,20 @@
 ---
 name: domain-intel
 description: "Perform domain registration intelligence — WHOIS lookups, DNS analysis, SSL certificate inspection, and competitive domain research. Use when researching a prospect, auditing a client's domain infrastructure, or performing competitive intelligence."
+short_description: "WHOIS lookups, DNS, and domain research"
 ---
 
 # Domain Intelligence
 
 Extract actionable infrastructure intelligence from domain names. Every data point should inform a business decision.
+
+
+## Quick Start
+Just say any of these:
+- "Who owns [domain.com]?"
+- "Research all domains registered by [company]"
+- "Check DNS and hosting for [domain]"
+
 
 ## When to Use
 

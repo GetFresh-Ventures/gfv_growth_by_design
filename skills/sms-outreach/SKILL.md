@@ -1,6 +1,7 @@
 ---
 name: sms-outreach
 description: Compliant SMS/WhatsApp outreach with opt-in verification, Twilio integration, CRM logging, and TCPA safeguards.
+short_description: "Compliant SMS/WhatsApp outreach campaigns"
 license: MIT
 metadata:
   author: GFV Proactive Intelligence
@@ -14,6 +15,14 @@ metadata:
 
 > [!WARNING]
 > SMS marketing carries serious legal risk. TCPA violations are **$500-$1,500 per unsolicited message**. This skill enforces strict compliance gates.
+
+
+## Quick Start
+Just say any of these:
+- "Set up a compliant SMS campaign"
+- "Build a text follow-up sequence"
+- "Design opt-in flows for SMS outreach"
+
 
 ## Prerequisites
 

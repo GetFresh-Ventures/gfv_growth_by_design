@@ -1,6 +1,7 @@
 ---
 name: deal-review
 description: "Honest CRM pipeline review that resolves, not just reports. Flags stale deals, missing next steps, and unrealistic close dates — then creates follow-up tasks and drafts outreach in the same turn. Use when the CEO asks 'review the pipeline,' 'what deals are stale,' 'honest assessment,' or before board/investor meetings."
+short_description: "Pipeline review — flag stale deals, find gaps"
 metadata:
   version: 2.0.0
   category: revenue-enablement

@@ -1,6 +1,7 @@
 ---
 name: outreach-sequence
 description: "Design multi-touch outreach sequences with structured follow-up cadence, voice-model compliance, and CRM tracking. Use when building prospect outreach, re-engagement sequences, event follow-up, or cold outreach campaigns."
+short_description: "Design multi-touch outreach campaigns"
 metadata:
   version: 2.0.0
   category: revenue-enablement
@@ -17,6 +18,14 @@ metadata:
 # Outreach Sequence
 
 Design strategic multi-touch outreach for prospects who should know you — with structured cadence, CRM tracking, and experiment-loop integration.
+
+
+## Quick Start
+Just say any of these:
+- "Build an outreach sequence for [prospect type]"
+- "Write a cold email sequence for [industry]"
+- "Design a 5-touch follow-up cadence"
+
 
 ## When to Activate
 
@@ -149,3 +158,11 @@ After 10+ sequences, review the experiment ledger: What subject lines work? What
 - `pipeline-pulse` — For monitoring sequence effectiveness
 - `deal-review` — For reviewing stalled sequences
 - `experiment-loop` — For A/B testing sequence variations
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Low open rates | Test subject lines — personalized > generic. Include their company name |
+| No replies after 5 touches | Re-evaluate your ICP — you may be targeting the wrong personas |
+

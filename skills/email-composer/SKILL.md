@@ -1,6 +1,7 @@
 ---
 name: email-composer
 description: "Write emails in the CEO's authentic voice — no buzzwords, no AI smell. Loads voice model, checks CRM context, drafts with banned-word enforcement, and NEVER auto-sends. Use when drafting any outbound email, follow-up, intro, client communication, or prospect outreach."
+short_description: "Draft emails in your authentic voice"
 metadata:
   version: 2.0.0
   category: daily-operations

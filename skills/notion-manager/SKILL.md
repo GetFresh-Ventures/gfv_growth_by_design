@@ -1,11 +1,20 @@
 ---
 name: notion-manager
 description: "Query, create, and update pages and databases in Notion. Use when the user wants to manage their Notion workspace, sync data to Notion, or pull information from Notion databases."
+short_description: "Query and manage Notion pages and databases"
 ---
 
 # Notion Manager
 
 Interact with Notion workspaces through the API. Always verify database schemas before writing — blind writes corrupt data.
+
+
+## Quick Start
+Just say any of these:
+- "Create a project tracker in Notion"
+- "Query my Notion database for [criteria]"
+- "Organize my Notion workspace"
+
 
 ## When to Use
 
@@ -168,3 +177,11 @@ update_row("PAGE_ID", {
 - Used by `/weekly-ceo-brief` to pull status from Notion databases
 - Used by `/chief-of-staff` for task management
 - Syncs with Linear via manual export (no native integration)
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Database views are slow | Limit the number of relations and rollups — they compound query time |
+| Team not using Notion | Create a dashboard as their 'home' page — one click to everything |
+

@@ -1,6 +1,7 @@
 ---
 name: slack-connector
 description: Read, post, and manage Slack team communications. Channel monitoring, thread replies, and workflow notifications.
+short_description: "Read, post, and manage Slack messages"
 license: MIT
 metadata:
   author: GFV Proactive Intelligence
@@ -11,6 +12,14 @@ metadata:
 # /slack-connector
 
 **Usage**: Integrate Slack workspace communications into the CEO operating system. Monitor channels, post updates, search history, and route critical messages.
+
+
+## Quick Start
+Just say any of these:
+- "Post this update to #general"
+- "What did the team discuss today?"
+- "Set up a daily standup reminder"
+
 
 ## Prerequisites
 
@@ -159,3 +168,11 @@ Weekly automated check (requires CEO opt-in):
 - "Want me to set up daily channel summaries with `weekly-ceo-brief`?"
 - "Should I monitor #sales for deal mentions and cross-reference with `pipeline-pulse`?"
 - "Want me to draft a team update for #leadership?"
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Token expired or invalid | Re-authenticate: revoke old token in Slack admin, create new one |
+| Missing channels | Bot must be manually invited to private channels |
+

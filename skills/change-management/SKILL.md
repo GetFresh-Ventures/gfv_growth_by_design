@@ -1,12 +1,21 @@
 ---
 name: change-management
 description: "Framework for rolling out organizational changes without chaos. Covers ADKAR model, communication templates, resistance patterns, and change fatigue management. Use when announcing a reorg, switching tools, pivoting strategy, killing a product, changing leadership, or when user mentions change management, managing resistance, org change, or pivot communication."
+short_description: "Roll out organizational changes smoothly"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), tuned for GFV portfolio context.
 ---
 
 # Change Management
 
 Most changes fail at implementation, not design. The ADKAR model tells you why and how to fix it.
+
+
+## Quick Start
+Just say any of these:
+- "We're switching CRMs — plan the rollout"
+- "How do I get buy-in for [change]?"
+- "Build a communication plan for this reorg"
+
 
 ## How This Skill Works
 
@@ -114,3 +123,11 @@ The change sticks. **This is where most changes die.**
 - **coo-advisor**: Use for operational process design. NOT for change communication.
 - **ceo-advisor**: Use for strategic direction. NOT for managing the human side of change.
 - **founder-coach**: Use for personal leadership through change. NOT for organizational change management.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Team resists the change | Address WIIFM (What's In It For Me) for each stakeholder group |
+| Change stalls after announcement | Assign change champions in each team. They drive adoption peer-to-peer |
+

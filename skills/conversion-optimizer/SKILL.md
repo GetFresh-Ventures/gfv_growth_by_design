@@ -1,6 +1,7 @@
 ---
 name: conversion-optimizer
 description: "Optimize conversion rates across forms, signup flows, landing pages, and onboarding experiences. Use when the CEO mentions 'conversion rate,' 'not converting,' 'form optimization,' 'signup flow,' 'landing page optimization,' 'onboarding,' 'CRO,' 'A/B test,' 'drop-off,' or 'abandoned forms.'"
+short_description: "Optimize conversion rates across funnels"
 metadata:
   version: 1.0.0
   category: growth-engine
@@ -20,6 +21,14 @@ metadata:
 # Conversion Optimizer
 
 Find and fix the leaks in your conversion funnel — forms, signups, landing pages, and onboarding.
+
+
+## Quick Start
+Just say any of these:
+- "Audit my signup flow for conversion leaks"
+- "How do I improve my landing page conversion rate?"
+- "A/B test ideas for my checkout page"
+
 
 ## When to Activate
 
@@ -181,3 +190,11 @@ Before delivering CRO recommendations:
 - `seo-growth` — Traffic acquisition
 - `sales-enablement` — Post-lead conversion
 - `launch-strategy` — Go-to-market planning
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Can't identify the leak | Start with funnel analytics — where's the biggest drop-off? |
+| A/B tests inconclusive | You likely need more traffic volume. Run tests for at least 2 weeks |
+

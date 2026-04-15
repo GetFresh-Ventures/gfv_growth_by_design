@@ -1,6 +1,7 @@
 ---
 name: pipeline-pulse
 description: "Active pipeline management — not just reporting, but resolving. Monitor deal movement, auto-resolve obvious next steps, escalate stalled deals, and maintain the outreach tracker as a live source of truth. Use when the CEO asks 'what's happening in the pipeline,' 'are we closing anything,' 'what deals are stuck,' 'weekly pipeline,' or any deal-state monitoring."
+short_description: "Active pipeline management and deal tracking"
 metadata:
   version: 2.0.0
   category: revenue-enablement

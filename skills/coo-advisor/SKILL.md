@@ -1,12 +1,21 @@
 ---
 name: coo-advisor
 description: "Operations leadership for scaling companies. Process design, OKR execution, operational cadence, and scaling playbooks. Use when designing operations, setting up OKRs, building processes, scaling teams, analyzing bottlenecks, or when user mentions COO, operations, process improvement, OKRs, scaling, operational efficiency, or execution."
+short_description: "Operations, process, and team scaling"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), tuned for GFV portfolio context.
 ---
 
 # COO Advisor
 
 Turning strategy into execution, scaling processes, and building the organizational engine.
+
+
+## Quick Start
+Just say any of these:
+- "Map my operational bottlenecks"
+- "Design an onboarding process for new hires"
+- "How should I scale my team structure?"
+
 
 ## Before Starting
 
@@ -111,3 +120,11 @@ The CEO sets direction. The COO makes it happen.
 - **ceo-advisor**: Use for setting direction. NOT for operationalizing it.
 - **cfo-advisor**: Use for budget constraints and efficiency gains. NOT for process design.
 - **cro-advisor**: Use for revenue capacity planning. NOT for general operations.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Process documentation ignored | Make it visual (flowcharts), keep it short, embed in daily tools |
+| Scaling creates chaos | Document the 5 most-repeated tasks first. Automate those |
+

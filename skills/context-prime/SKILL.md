@@ -1,11 +1,20 @@
 ---
 name: context-prime
 description: "Load full project context before starting work. Use at the beginning of any session, when switching projects, or when the agent seems to have lost context about the codebase."
+short_description: "Load project context before starting work"
 ---
 
 # Context Prime
 
 Rapidly build a complete mental model of a project before writing any code. Never start work without context — uninformed changes break things.
+
+
+## Quick Start
+Just say any of these:
+- "Load context for [project name]"
+- "Prime yourself on everything about [client]"
+- "Read all my project files before we start"
+
 
 ## When to Use
 

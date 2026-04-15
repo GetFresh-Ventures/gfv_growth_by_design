@@ -1,11 +1,20 @@
 ---
 name: hubspot-architect
 description: "Build HubSpot CRM integrations, data pipelines, and sync workflows. Use when the user needs to set up HubSpot, create custom properties, build deal pipelines, or sync data between HubSpot and other systems."
+short_description: "Build HubSpot CRM integrations and pipelines"
 ---
 
 # HubSpot Architect
 
 Build production-grade HubSpot integrations. Never guess at API structures — always verify against the SDK and API docs.
+
+
+## Quick Start
+Just say any of these:
+- "Set up my HubSpot deal pipeline"
+- "Build a workflow that auto-assigns leads"
+- "Design my CRM data model"
+
 
 ## When to Use
 
@@ -177,3 +186,11 @@ client.crm.contacts.batch_api.create(batch)
 - Used by `/pipeline-pulse` for deal tracking
 - Used by `/chief-of-staff` for CRM health monitoring
 - Credentials stored in macOS Keychain or env vars — never in code
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Workflows not triggering | Check enrollment criteria — 'and' vs 'or' logic is the #1 mistake |
+| Data quality issues | Set required fields on deal stage transitions to enforce data entry |
+

@@ -1,6 +1,7 @@
 ---
 name: google-doc-creation
 description: Create professional, executive-ready Google Docs with branded styling. Use this whenever the user asks to create a Google Doc, report, strategy document, or any document in Google Drive. ALL agents must use this skill — never create raw/unstyled docs.
+short_description: "Create professional Google Docs in Drive"
 ---
 
 # Google Doc Creation — Professional Documents

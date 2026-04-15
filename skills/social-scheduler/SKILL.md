@@ -1,6 +1,7 @@
 ---
 name: social-scheduler
 description: Cross-post and schedule content to social channels from a single command. Unified posting with per-platform content adaptation.
+short_description: "Schedule and cross-post to social channels"
 license: MIT
 metadata:
   author: GFV Proactive Intelligence
@@ -11,6 +12,14 @@ metadata:
 # /social-scheduler
 
 **Usage**: Schedule posts across X, LinkedIn, Instagram, Facebook, and other platforms. One command, platform-adapted content with CEO approval.
+
+
+## Quick Start
+Just say any of these:
+- "Schedule this post for Tuesday at 9am"
+- "Cross-post this content to LinkedIn and Twitter"
+- "Set up my posting schedule for the week"
+
 
 ## The Multi-Channel Problem
 

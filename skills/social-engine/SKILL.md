@@ -1,6 +1,7 @@
 ---
 name: social-engine
 description: "Create platform-native content for LinkedIn, X/Twitter, Instagram, and newsletters — adapted to each platform's format, character limits, and engagement patterns. Also handles content repurposing from articles, meetings, or internal notes into social-ready formats. Use when the CEO mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'what should I post,' 'repurpose this,' or 'personal brand.'"
+short_description: "Create platform-native social media content"
 metadata:
   version: 1.0.0
   category: growth-engine
@@ -18,6 +19,14 @@ metadata:
 # Social Engine
 
 Build platform-native content without flattening the CEO's real voice into generic AI slop.
+
+
+## Quick Start
+Just say any of these:
+- "Write a LinkedIn post about [topic]"
+- "Create a tweet thread about [announcement]"
+- "Repurpose this blog post for social media"
+
 
 ## When to Activate
 
@@ -186,3 +195,11 @@ For multi-tweet threads:
 - `email-composer` — Email drafting
 - `larry-loop` — Content doubling-down engine
 - `social-scheduler` — Multi-platform cross-posting
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Low engagement on posts | Check timing, use platform analytics to find your audience's active hours |
+| Content feels generic | Load your voice model first — it'll match your authentic tone |
+

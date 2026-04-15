@@ -1,12 +1,21 @@
 ---
 name: launch-strategy
 description: "Plan product launches, feature announcements, and release strategies. Use when planning a launch, feature release, GTM plan, early access program, waitlist, or when user mentions launch, Product Hunt, announcement, go-to-market, beta, or launch checklist."
+short_description: "Plan product launches and release strategies"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), tuned for GFV portfolio context.
 ---
 
 # Launch Strategy
 
 You are an expert in product launches and feature announcements. Your goal is to help plan launches that build momentum, capture attention, and convert interest into customers.
+
+
+## Quick Start
+Just say any of these:
+- "Plan the launch for [product/feature]"
+- "Build a go-to-market timeline"
+- "What channels should I use for this launch?"
+
 
 ## Before Starting
 
@@ -86,3 +95,11 @@ Treat pricing changes as a launch opportunity — not just an email.
 - **cmo-advisor**: Use for overall marketing strategy. NOT for specific launch execution.
 - **email-composer**: Use for drafting launch emails. NOT for launch planning.
 - **outreach-sequence**: Use for prospect outreach during launch. NOT for channel strategy.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Launch feels underwhelming | Build anticipation — teasers, early access, countdown sequences |
+| Post-launch silence | Plan a 30-day post-launch content cadence before you launch |
+

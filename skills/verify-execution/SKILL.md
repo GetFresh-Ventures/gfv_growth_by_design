@@ -1,6 +1,7 @@
 ---
 name: verify-execution
 description: "Verify changes using runtime observation instead of diff-reading or unit tests. Includes autoagent's failure taxonomy for diagnosing what went wrong when verification fails."
+short_description: "Verify changes with runtime observation"
 metadata:
   version: 2.0.0
   category: execution-infrastructure
@@ -12,6 +13,14 @@ metadata:
 **Verification is runtime observation.** You build the app, run it, drive it to where the changed code executes, and capture what you see. That capture is your evidence. Nothing else is.
 
 **Do not run just unit tests.** CI runs tests. Running them again proves you can run CI. The time goes to running the actual application and interacting with the surface.
+
+
+## Quick Start
+Just say any of these:
+- "Verify this code change works in production"
+- "Run a runtime verification on [component]"
+- "Did our deployment actually work?"
+
 
 ## Core Rules
 

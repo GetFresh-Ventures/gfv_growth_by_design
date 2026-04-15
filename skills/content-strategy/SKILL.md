@@ -1,6 +1,7 @@
 ---
 name: content-strategy
 description: "Plan, prioritize, and execute content strategy — topic pillars, content calendars, keyword mapping by buyer stage, ideation from multiple sources (forums, competitors, sales calls, surveys), and prioritization scoring. Use when the CEO mentions 'content strategy,' 'what should we write about,' 'content calendar,' 'blog strategy,' 'content pillars,' 'editorial calendar,' or 'content plan.'"
+short_description: "Plan and execute your content calendar"
 metadata:
   version: 1.0.0
   category: growth-engine
@@ -17,6 +18,14 @@ metadata:
 # Content Strategy
 
 Build a content strategy that drives decisions, not just pageviews.
+
+
+## Quick Start
+Just say any of these:
+- "Plan my content calendar for the next quarter"
+- "What topics should I be creating content about?"
+- "Audit my existing content — what's working?"
+
 
 ## When to Activate
 
@@ -192,3 +201,11 @@ Maintain a running log of hook tests:
 - `social-engine` — Social media content
 - `larry-loop` — Content doubling-down engine
 - `aeo-optimizer` — AI search optimization
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| No content ideas | Start with competitor analysis — see what's ranking for them but not you |
+| Calendar feels overwhelming | Focus on 2-3 cornerstone pieces per month, repurpose across channels |
+

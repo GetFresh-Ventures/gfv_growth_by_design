@@ -1,6 +1,7 @@
 ---
 name: onboard
 description: "Interactive setup wizard that adapts to the user's experience level. Teaches the AI the user's voice, team, priorities, and working style. Run this after bootstrap.sh or anytime with /onboard."
+short_description: "Interactive setup wizard for new users"
 ---
 
 # CEO Enablement Kit: Onboarding Wizard

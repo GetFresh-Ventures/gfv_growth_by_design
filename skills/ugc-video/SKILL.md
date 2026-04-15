@@ -1,6 +1,7 @@
 ---
 name: ugc-video
 description: Script-to-video production pipeline. AI talking heads, B-roll, voiceover, and subtitles for social media content.
+short_description: "Script-to-video production pipeline"
 license: MIT
 metadata:
   author: GFV Proactive Intelligence
@@ -11,6 +12,14 @@ metadata:
 # /ugc-video
 
 **Usage**: Transform a script, blog post, or talking points into a finished UGC-style video with AI-generated talking head, B-roll, voiceover, and subtitles.
+
+
+## Quick Start
+Just say any of these:
+- "Script a 60-second product demo video"
+- "Create a talking-head video script for [topic]"
+- "Plan a video content series"
+
 
 ## The UGC Content Machine
 

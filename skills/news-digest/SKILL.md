@@ -1,11 +1,20 @@
 ---
 name: news-digest
 description: "Extract intelligence from news, industry feeds, and market signals relevant to the CEO's active portfolio and pipeline. Use for morning intel, competitive monitoring, or when the user asks 'what's happening in [industry]'."
+short_description: "Extract intelligence from news and feeds"
 ---
 
 # News Digest
 
 Produce a curated intelligence brief — not a raw RSS dump. Every item must be relevant to the CEO's active companies, deals, or competitive landscape.
+
+
+## Quick Start
+Just say any of these:
+- "What's happening in [my industry] today?"
+- "Build me a weekly industry digest"
+- "Track news about [competitor]"
+
 
 ## When to Use
 
@@ -95,3 +104,11 @@ Every news item gets a relevance score:
 - Triggered by `/chief-of-staff` morning sweep
 - Items can feed `/meeting-prep` for upcoming calls with mentioned companies
 - Save output to `~/ceo-brain/digests/` for trend tracking
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Too much noise | Narrow your keywords — be specific to your niche, not just industry |
+| Missing important stories | Add competitor names and key executive names to your watch list |
+

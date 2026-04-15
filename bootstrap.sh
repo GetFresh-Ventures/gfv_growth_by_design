@@ -5,6 +5,12 @@
 
 set -e
 
+# Quick mode: ./bootstrap.sh --quick (zero interaction, uses defaults)
+QUICK_MODE=false
+if [[ "${1:-}" == "--quick" || "${1:-}" == "-q" ]]; then
+    QUICK_MODE=true
+fi
+
 clear
 echo "╔═══════════════════════════════════════════════════════════════════╗"
 echo "║         CEO ENABLEMENT KIT  —  AI CHIEF OF STAFF                ║"
@@ -27,6 +33,7 @@ echo "════════════════════════�
 echo ""
 echo "  STEP 1 OF 2: Who are you?"
 echo ""
+if ! $QUICK_MODE; then
 echo "  ┌─────────────────────────────────────────────────────────────┐"
 echo "  │                                                             │"
 echo "  │  [1]  BEGINNER                                              │"
@@ -82,6 +89,7 @@ echo "  │                                                             │"
 echo "  └─────────────────────────────────────────────────────────────┘"
 echo ""
 read -p "  Select your level [1, 2, or 3]: " USER_TIER
+fi
 USER_TIER=${USER_TIER:-2}
 
 # Validate
@@ -101,32 +109,41 @@ echo ""
 echo "  STEP 2 OF 2: Quick setup questions"
 echo ""
 
-# All tiers get these basics
-read -p "  What's your first name? " USER_NAME
-USER_NAME=${USER_NAME:-"CEO"}
+if $QUICK_MODE; then
+    USER_NAME="CEO"
+    USER_COMPANY="My Company"
+    USER_CRM="none"
+    USER_AGENT="claude"
+    INSTALL_ENGINECLAW="n"
+    echo "  ⚡ Quick mode — using defaults (name=CEO, tier=Intermediate)"
+else
+    # All tiers get these basics
+    read -p "  What's your first name? " USER_NAME
+    USER_NAME=${USER_NAME:-"CEO"}
 
-read -p "  What company do you run? " USER_COMPANY
-USER_COMPANY=${USER_COMPANY:-"My Company"}
+    read -p "  What company do you run? " USER_COMPANY
+    USER_COMPANY=${USER_COMPANY:-"My Company"}
 
-if [[ "$USER_TIER" -ge 2 ]]; then
-    # Intermediate + Advanced get CRM question
-    echo ""
-    echo "  Which CRM do you use? (type the name, or 'none')"
-    read -p "  [HubSpot / Salesforce / Pipedrive / none]: " USER_CRM
-    USER_CRM=${USER_CRM:-"none"}
+    if [[ "$USER_TIER" -ge 2 ]]; then
+        # Intermediate + Advanced get CRM question
+        echo ""
+        echo "  Which CRM do you use? (type the name, or 'none')"
+        read -p "  [HubSpot / Salesforce / Pipedrive / none]: " USER_CRM
+        USER_CRM=${USER_CRM:-"none"}
 
-    echo ""
-    echo "  What AI tool are you using? (for skill wiring)"
-    read -p "  [claude / cursor / gemini / copilot]: " USER_AGENT
-    USER_AGENT=${USER_AGENT:-"claude"}
-fi
+        echo ""
+        echo "  What AI tool are you using? (for skill wiring)"
+        read -p "  [claude / cursor / gemini / copilot]: " USER_AGENT
+        USER_AGENT=${USER_AGENT:-"claude"}
+    fi
 
-if [[ "$USER_TIER" -ge 3 ]]; then
-    # Only advanced get automation question
-    echo ""
-    echo "  Do you want background automation (runs while you work)?"
-    read -p "  [y/n]: " INSTALL_ENGINECLAW
-    INSTALL_ENGINECLAW=${INSTALL_ENGINECLAW:-"n"}
+    if [[ "$USER_TIER" -ge 3 ]]; then
+        # Only advanced get automation question
+        echo ""
+        echo "  Do you want background automation (runs while you work)?"
+        read -p "  [y/n]: " INSTALL_ENGINECLAW
+        INSTALL_ENGINECLAW=${INSTALL_ENGINECLAW:-"n"}
+    fi
 fi
 
 echo ""
@@ -307,7 +324,7 @@ if not any(h.get('matcher') == 'Bash' for h in data['hooks']['PreToolUse']):
     
     INTERMEDIATE_SKILLS="content-strategy seo-growth social-engine copy-master conversion-optimizer outreach-sequence sales-enablement fundraise ceo-advisor cfo-advisor cmo-advisor coo-advisor cro-advisor competitive-intel board-deck-builder founder-coach financial-analyst scenario-war-room hubspot-architect notion-manager slack-connector news-digest negotiation-advisor doc-coauthoring change-management launch-strategy context-prime voice-synth"
     
-    ADVANCED_SKILLS="social-scheduler ugc-video larry-loop aeo-optimizer sms-outreach domain-intel geopolitical-monitor agent-orchestrator agent-protocol context-engine experiment-loop verify-execution create-prd create-skill commit-fast review-pr analyze-issue feature-architect autoresearch cron-scheduler scheduling-infra dedupe-entities gfv-hooks project-release strategic-decision automation-recommender"
+    ADVANCED_SKILLS="social-scheduler ugc-video larry-loop ai-search-optimizer sms-outreach domain-intel geopolitical-monitor agent-orchestrator agent-protocol context-engine experiment-loop verify-execution product-spec create-skill commit-fast review-pr analyze-issue feature-architect autoresearch cron-scheduler scheduling-infra dedupe-entities gfv-hooks project-release strategic-decision automation-recommender"
     
     for skill_dir in "$REPO_DIR/skills/"*; do
         if [ -d "$skill_dir" ]; then

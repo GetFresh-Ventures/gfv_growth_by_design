@@ -1,6 +1,7 @@
 ---
 name: doc-builder
 description: "Create, edit, and manipulate Word documents (.docx) — proposals, contracts, memos, reports, and formal business documents. Use when the CEO needs a .docx deliverable, mentions 'Word doc,' 'proposal document,' 'memo,' 'letter,' or any formal document that requires professional formatting with headers, footers, page numbers, and table of contents."
+short_description: "Create Word docs — proposals, memos, reports"
 metadata:
   version: 1.0.0
   category: document-processing

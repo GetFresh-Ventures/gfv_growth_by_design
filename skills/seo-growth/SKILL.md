@@ -1,6 +1,7 @@
 ---
 name: seo-growth
 description: "Audit and optimize SEO — technical SEO, on-page optimization, schema markup, site architecture, and AI search optimization. Use when the CEO mentions 'SEO,' 'not ranking,' 'traffic dropped,' 'Google rankings,' 'structured data,' 'schema,' 'site structure,' 'why aren't we showing up,' or 'AI search optimization.'"
+short_description: "Audit and optimize SEO — technical and content"
 metadata:
   version: 1.0.0
   category: growth-engine
@@ -20,6 +21,14 @@ metadata:
 # SEO Growth
 
 Diagnose SEO issues and implement fixes that move rankings, not just check boxes.
+
+
+## Quick Start
+Just say any of these:
+- "Audit my website's SEO"
+- "What keywords should I target?"
+- "Fix my site's technical SEO issues"
+
 
 ## When to Activate
 
@@ -173,3 +182,11 @@ Before delivering SEO recommendations:
 - `content-strategy` — Content planning and prioritization
 - `competitive-intel` — Competitor analysis
 - `launch-strategy` — Go-to-market planning
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Rankings dropped suddenly | Check Google Search Console for manual actions or crawl errors first |
+| No organic traffic growth | Verify pages are indexed — use `site:yourdomain.com` in Google |
+

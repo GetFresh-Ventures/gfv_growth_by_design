@@ -1,6 +1,7 @@
 ---
 name: pdf-toolkit
 description: "Process PDF files — read, merge, split, fill forms, watermark, encrypt, extract images, and OCR scanned documents. Use when the CEO mentions contracts, NDAs, term sheets, proposals, agreements, or any .pdf file operation. Triggers on 'pdf,' 'contract,' 'NDA,' 'term sheet,' 'agreement,' 'merge pdfs,' or 'sign document.'"
+short_description: "Read, merge, split, and fill PDF files"
 metadata:
   version: 1.0.0
   category: document-processing

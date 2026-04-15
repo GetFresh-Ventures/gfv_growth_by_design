@@ -1,11 +1,20 @@
 ---
-name: create-prd
+name: product-spec
 description: "Convert a rough idea, meeting notes, or shorthand into a structured Product Requirements Document. Use when the user mentions PRD, requirements, spec, or wants to formalize an idea before building."
+short_description: "Turn rough ideas into product requirement docs"
 ---
 
 # Create PRD
 
 Transform unstructured input into a rigorous, actionable Product Requirements Document. CEOs hate fluff — every sentence must earn its place.
+
+
+## Quick Start
+Just say any of these:
+- "Turn this idea into a product spec"
+- "Write a PRD for [feature]"
+- "Convert these meeting notes into requirements"
+
 
 ## When to Use
 

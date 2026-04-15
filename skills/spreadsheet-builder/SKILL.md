@@ -1,6 +1,7 @@
 ---
 name: spreadsheet-builder
 description: "Build, edit, and analyze spreadsheets (.xlsx, .csv) with investment-grade standards. Use when the CEO needs financial models, P&L templates, forecasting, pipeline tracking, board-ready data exports, scenario analysis, or any structured tabular deliverable. Triggers on 'spreadsheet,' 'Excel,' 'financial model,' 'P&L,' 'budget,' 'forecast,' 'xlsx,' or 'csv.'"
+short_description: "Build and analyze Excel spreadsheets"
 metadata:
   version: 1.0.0
   category: document-processing

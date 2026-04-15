@@ -1,6 +1,7 @@
 ---
 name: automation-recommender
 description: "Analyze any codebase or workflow and recommend specific automations — hooks, skills, MCP servers, cron jobs, and agent pipelines. Use when the user asks 'what can I automate?', 'optimize my setup', 'what am I missing?', or 'recommend improvements'."
+short_description: "Find automation opportunities in your workflows"
 metadata:
   version: 2.0.0
   category: technical-builder
@@ -16,6 +17,14 @@ metadata:
 # Automation Recommender
 
 Analyze a codebase, workflow, or business process and produce a prioritized, actionable automation plan. Every recommendation includes exact implementation steps — no hand-waving.
+
+
+## Quick Start
+Just say any of these:
+- "What should I automate in my workflow?"
+- "Analyze my codebase for automation opportunities"
+- "Where am I wasting time that a bot could handle?"
+
 
 ## When to Use
 

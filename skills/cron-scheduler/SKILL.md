@@ -1,6 +1,7 @@
 ---
 name: cron-scheduler
 description: Safely configure recurring local or cloud background tasks with GFV logging loops attached.
+short_description: "Set up recurring background tasks"
 license: MIT
 metadata:
   author: GFV Proactive Intelligence
@@ -11,6 +12,14 @@ metadata:
 # /cron-scheduler
 
 **Usage**: Utilize this skill when the CEO wants to automate a recurring execution loop (e.g., pulling a pipeline report every Friday, syncing memory daily).
+
+
+## Quick Start
+Just say any of these:
+- "Set up a daily report at 8am"
+- "Schedule a weekly database backup"
+- "Create a recurring task that runs every hour"
+
 
 ## ⚠️ The Silent Failure Protocol
 

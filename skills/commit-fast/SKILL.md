@@ -1,11 +1,20 @@
 ---
 name: commit-fast
 description: "Automate the git commit workflow — stage files, generate a semantic commit message from the diff, and execute. Use when the user says 'commit', 'save this', or after completing a task."
+short_description: "Auto-stage and commit with semantic messages"
 ---
 
 # Commit Fast
 
 Analyze the current git state, generate a properly structured commit message, and execute — no copy-paste required.
+
+
+## Quick Start
+Just say any of these:
+- "Commit my changes with a good message"
+- "Stage and commit everything"
+- "Auto-commit with semantic message"
+
 
 ## Execution Sequence
 

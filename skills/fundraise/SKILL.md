@@ -1,6 +1,7 @@
 ---
 name: fundraise
 description: "Create and manage all investor-facing materials — pitch decks, one-pagers, financial models, memos, accelerator applications — with single-source-of-truth consistency enforcement. Also handles investor outreach: cold emails, warm intros, follow-ups, and update communications. Use when the CEO mentions 'fundraising,' 'pitch deck,' 'investor,' 'raise,' 'term sheet,' 'cap table,' 'VC,' 'angel,' or 'accelerator application.'"
+short_description: "Create investor materials and manage raises"
 metadata:
   version: 1.0.0
   category: revenue-enablement
@@ -19,6 +20,14 @@ metadata:
 # Fundraise
 
 Build investor materials that are consistent, credible, and defensible — then execute outreach that gets meetings.
+
+
+## Quick Start
+Just say any of these:
+- "Build my pitch deck"
+- "Prepare me for investor due diligence"
+- "Create a financial model for fundraising"
+
 
 ## When to Activate
 
@@ -198,3 +207,11 @@ Monthly cadence during an active raise:
 - `board-deck-builder` — Visual deck creation
 - `deal-review` — Pipeline and deal evaluation
 - `voice-model` — Consistent founder voice
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Investors not responding | Check your intro strategy — warm intros convert 10x over cold outreach |
+| Pitch deck too long | Target 12-15 slides max. Lead with traction, not vision |
+

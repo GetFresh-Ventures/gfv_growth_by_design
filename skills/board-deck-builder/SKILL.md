@@ -1,12 +1,21 @@
 ---
 name: board-deck-builder
 description: "Assembles comprehensive board and investor update decks by pulling data from live systems. Use when preparing board meetings, investor updates, quarterly business reviews, or fundraising narratives. Covers structure, narrative framework, bad news delivery, and common mistakes."
+short_description: "Build board and investor update decks"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), tuned for GFV portfolio context.
 ---
 
 # Board Deck Builder
 
 Build board decks that tell a story — not just show data. Every section has an owner, a narrative, and a "so what."
+
+
+## Quick Start
+Just say any of these:
+- "Build my quarterly board deck"
+- "Create an investor update for this month"
+- "What metrics should I present to the board?"
+
 
 ## How This Skill Works
 
@@ -122,3 +131,11 @@ Every section follows: **Headline → Data → Narrative → Ask/Next**
 - **cfo-advisor**: Use for financial section depth. NOT for full deck coordination.
 - **executive-mentor**: Use for stress-testing the deck before presenting. NOT for building it.
 - **gfv-report-builder**: Use for generating branded visual slides. NOT for narrative strategy.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| Board asks questions I can't answer | Include an appendix with detailed backup data for each key metric |
+| Deck takes too long to build | Template it — same structure each quarter, just update the numbers |
+

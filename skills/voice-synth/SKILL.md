@@ -1,11 +1,20 @@
 ---
 name: voice-synth
 description: "Prepare audio-optimized content for text-to-speech rendering. Generate recording scripts, pronunciation guides, and pacing-marked text for podcasts, video voiceovers, and audio newsletters."
+short_description: "Prepare content for text-to-speech rendering"
 ---
 
 # Voice Synthesis Content
 
 Produce audio-ready scripts optimized for TTS engines or human narration. This skill handles the *content preparation* — actual voice rendering uses external services.
+
+
+## Quick Start
+Just say any of these:
+- "Prepare this brief for text-to-speech"
+- "Convert my weekly report to audio format"
+- "Optimize this script for spoken delivery"
+
 
 ## When to Use
 

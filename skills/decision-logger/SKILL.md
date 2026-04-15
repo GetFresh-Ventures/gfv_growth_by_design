@@ -1,6 +1,7 @@
 ---
 name: decision-logger
 description: "Two-layer memory architecture for CEO decisions. Manages raw transcripts (Layer 1) and approved decisions (Layer 2). Use when logging decisions, reviewing past decisions, or checking overdue action items. Invoked automatically after multi-role consultations."
+short_description: "Log and recall your key decisions"
 attribution: Adapted from alirezarezvani/claude-skills (MIT License), hardened for GFV portfolio context.
 metadata:
   version: 1.0.0
