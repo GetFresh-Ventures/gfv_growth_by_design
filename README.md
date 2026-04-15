@@ -234,7 +234,7 @@ When you run `bootstrap.sh`, it creates a dual-brain directory system on your ma
 ~ (Home Directory)
   ├── ceo-brain/
   │    ├── voice-model.md (Your linguistic rules)
-  │    ├── team.json (Who reports to you)
+  │    ├── profile.json (Your identity and preferences)
   │    └── meetings/ (Your prep)
   └── gtm-brain/
        ├── pipeline.md (Active revenue deals)
@@ -267,18 +267,20 @@ Skills follow a strict pattern:
 
 ### 4. `tools/` — Background Utilities
 
-| Tool | Purpose |
-|------|---------|
-| `ccflare.py` | Executive dashboard showing real-time Claude token usage and cost burn rate (including cache tokens) |
-| `gfv-dedupe.py` | Headless execution wrapper for ML entity resolution, matching disconnected datasets across hubs |
-| `gfv-dream.sh` | Autonomous memory consolidation — scans recent Claude session logs and compresses insights into `~/gtm-brain` and `~/ceo-brain` |
-| `gfv-ralph.sh` | Batch execution loop — process hundreds of URLs or CRM logs fully unattended |
-| `gfv-cost-estimator.sh` | Estimate LLM token costs before feeding large CRM exports or data files |
-| `lint-agent.sh` | Validates `AGENT.md` formatting to prevent silent IDE tooling failures |
-| `gfv-audit.sh` | Audit tool for operational health checks |
-| `lint-claude-md.sh` | Validates Claude-specific markdown formatting |
-| `gfv-memento.py` | Context pager — allows agents to compress and save 10k+ line documents without blowing up token history |
-| `gfv-generalist.sh` | Headless execution wrapper — spins complex python scripts out into a background `nohup` process so the agent doesn't paralyze the chat |
+These ship with the kit for power users. Most CEOs never need to run them directly — skills call them when needed.
+
+| Tool | Purpose | Tier |
+|------|---------|------|
+| `ccflare.py` | Token cost dashboard — see real-time Claude usage and burn rate | All |
+| `gfv-dedupe.py` | ML entity resolution — matches duplicates across CRM/data sources | Advanced |
+| `gfv-dream.sh` | Memory consolidation — compresses session learnings into durable memory | Advanced |
+| `gfv-ralph.sh` | Batch loop — process hundreds of items unattended | Advanced |
+| `gfv-cost-estimator.sh` | Estimate token costs before feeding large files | Advanced |
+| `gfv-audit.sh` | Operational health check on session logs | Advanced |
+| `gfv-memento.py` | Context pager — compresses 10k+ line docs to prevent token overflow | Advanced |
+| `gfv-generalist.sh` | Background offloader — spins scripts into `nohup` so the chat stays fast | Advanced |
+| `lint-agent.sh` | Validates AGENT.md formatting | Developer |
+| `lint-claude-md.sh` | Validates CLAUDE.md configuration | Developer |
 
 ### 5. `hooks/` — Lifecycle Interceptors
 

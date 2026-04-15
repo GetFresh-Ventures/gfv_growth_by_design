@@ -73,8 +73,8 @@ cd ~\.gfv_growth_by_design
 
 | Level | Best for | What you get |
 |-------|----------|-------------|
-| **Beginner** | New to AI assistants | 15 core skills, cross-session memory, auto-approve, proactive tips, plain-English mode |
-| **Intermediate** ★ | Regular AI users | 45 skills + CRM integration, feedback loops, weekly learning capture |
+| **Beginner** | New to AI assistants | 18 core skills, cross-session memory, auto-approve, proactive tips, plain-English mode |
+| **Intermediate** ★ | Regular AI users | 46 skills + CRM integration, feedback loops, weekly learning capture |
 | **Advanced** | Power users | All 72 skills + Dream Mode, background automation, self-improving skills |
 
 > **Not sure?** Pick **Intermediate**. You can change your level anytime by re-running the installer.
@@ -268,5 +268,5 @@ Once you're comfortable with the basics:
 
 ---
 
-*Version 1.21.1 — April 2026*
+*Version 1.23.1 — April 2026*
 *Proprietary Methodology © GetFresh Ventures. All Rights Reserved.*
