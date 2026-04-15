@@ -140,3 +140,9 @@ Before marking a meeting note as processed:
 - `chief-of-staff` — For heartbeat-driven meeting note detection
 - `meeting-prep` — For preparing BEFORE meetings
 - `deal-review` — For evaluating deal impact from meetings
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to draft follow-up emails for each action item?" → `/email-composer`
+- "Want me to update the pipeline with what we discussed?" → `/pipeline-pulse`
+- "Want me to log the key decisions?" → `/decision-logger`

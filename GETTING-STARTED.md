@@ -67,98 +67,80 @@ cd ~\.gfv_growth_by_design
 .\bootstrap.ps1
 ```
 
-The installer will ask you one question: whether to install the EngineClaw autonomous runtime (for advanced users who want background AI workers). **If you're unsure, choose "N"** — you can always add it later.
+### The installer will ask you two things:
 
-### What the Installer Does
+**1. Your experience level:**
 
-Behind the scenes, the installer:
+| Level | Best for | What you get |
+|-------|----------|-------------|
+| **Beginner** | New to AI assistants | 15 core skills, cross-session memory, auto-approve, proactive tips, plain-English mode |
+| **Intermediate** ★ | Regular AI users | 45 skills + CRM integration, feedback loops, weekly learning capture |
+| **Advanced** | Power users | All 72 skills + Dream Mode, background automation, self-improving skills |
 
-1. **Creates your Dual-Brain system:**
-   - `~/ceo-brain/` — Your personal identity: voice model, meeting prep, weekly notes
-   - `~/gtm-brain/` — Your business state: pipeline data, campaign performance, learnings
+> **Not sure?** Pick **Intermediate**. You can change your level anytime by re-running the installer.
 
-2. **Registers 74 skills** as native `/slash` commands in Claude Code (or reads them automatically in Cursor/Gemini)
+**2. A few quick setup questions** (your name, company, and — for Intermediate/Advanced — which CRM and AI tool you use).
 
-3. **Wires lifecycle hooks** so your AI automatically:
-   - Loads your context at session start (no "remind me who I am" every time)
-   - Saves state at session end (nothing is lost between conversations)
-   - Reviews outbound messages before sending (safety gate)
-
-4. **Installs advanced tooling** (ccflare for cost monitoring, Dippy for frictionless approvals)
-
-> ✅ **When you see "Bootstrap Complete!"** you're ready for Step 3.
+### What the installer sets up:
+- `~/ceo-brain/` — Your personal AI memory (voice model, meeting notes, preferences)
+- `~/gtm-brain/` — Your company intelligence (pipeline data, competitive intel, learnings)
+- Cross-session memory (claude-mem) — so the AI remembers you between sessions
+- Auto-approve safe commands (Dippy) — so you never get stuck on Y/n prompts
+- Token cost dashboard (ccflare) — see what you're spending in real time
 
 ---
 
-## Step 3: The Onboarding Wizard (15 minutes)
+## Step 3: Run the Onboarding Wizard (15 minutes)
 
-This is where the magic happens. Open your AI assistant and paste this:
+Open your AI tool (Claude Code, Cursor, or Gemini) and type:
 
-```text
-1. Read the `AGENT.md` file in the root to internalize the GFV operating boundaries.
-2. Ensure you have access to the `/skills/` directory.
-3. IMMEDIATELY execute the `/onboard` skill to launch the interactive setup wizard.
+```
+/onboard
 ```
 
-The AI will begin by asking you a single question: **What is your AI expertise level?**
+The AI will walk you through a personalized setup based on your level:
 
-You will choose your enablement **Tier**:
+### All levels get:
+- **Voice calibration** — Paste an email or link to your LinkedIn. The AI analyzes your writing style and builds a voice model so everything it writes sounds like you — not a chatbot.
 
-- **Tier 1: AI Novice** - Keeps things simple. Sets up voice cloning and meeting prep. Skips all the complex CRM/ticketing integrations.
-- **Tier 2: AI Practitioner** - Plugs into your business. Wires up your HubSpot, Slack, Linear, and sets up your delegation tracking.
-- **Tier 3: AI Orchestrator** - Takes the wheel. Unlocks background autonomous workers (EngineClaw), multi-agent swarm dispatching, and zero-prompt automation.
+### Intermediate and Advanced also get:
+- **Team map** — Tell the AI who's on your team and what they handle
+- **Pipeline setup** — Enter your top deals so the AI can track and advise on them
 
-Depending on your Tier, the AI will walk you through the corresponding phases:
-
-### Phase 1 & 2: Ecosystem & Delegation Map (Tiers 2 & 3)
-The AI asks which CRMs and ticket tools you use (HubSpot, Salesforce, etc.) and maps your organizational chart so it knows who owns what when delegating action items.
-
-### Phase 3: Voice Calibration (All Tiers)
-Paste a link to your LinkedIn or an email you wrote. The AI analyzes your writing patterns and builds a `voice-model.md` that ensures all future communications sound authentically like you.
-
-### Phase 4: Autonomous Orchestration (Tier 3 Only)
-The AI hooks into the `openclaw-orchestrator` process, giving you explicit warnings and securing authorization to run background python worker nodes for true autonomy.
+### Advanced also gets:
+- **Tool connections** — Wire up HubSpot, Slack, Notion, or other integrations
 
 > 💡 **Tip:** Be honest and specific during onboarding. The more context you give, the more leverage you get from every future interaction.
 
 ---
 
-### Escalate Your Tier Anytime via Chat
-You do not need to choose Tier 3 on your first day. 
-
-If you start at Tier 1, **you can re-run the wizard at any time straight from the chat interface.** Simply type `/onboard` or `/setup` into your Claude Code, Cursor, or Gemini terminal, and the wizard will restart, allowing you to update your tier as your capability grows.
-
----
-
 ## Step 4: Your First Real Task (5 minutes)
 
-Now that you're set up, try one of these high-impact first tasks:
+Now that you're set up, try one of these:
 
-### Option A: Pre-Meeting Intelligence Brief
-> *"I have a meeting with [Name] from [Company] tomorrow. Run meeting-prep."*
+### If you're a Beginner:
 
-The AI will research the person, pull any CRM history, and build you a 1-page dossier with talking points and your strategic angle.
+> *"Draft an email to [Name] about [topic]."*
 
-### Option B: Pipeline Sanity Check
-> *"Run pipeline-pulse. Be brutally honest about what's stale."*
+The AI writes using your voice model — not generic AI speak. Read it. Does it sound like you? If not, paste another email sample and say "update my voice model."
 
-The AI reviews your active deals, flags anything with no activity in 14+ days, and drafts follow-up actions for each.
+### If you're Intermediate:
 
-### Option C: Write an Email in Your Voice
-> *"Draft an email to [Name] at [Company] about [topic]. Use my voice model."*
+> *"What does my pipeline look like?"*
 
-The AI writes using your actual communication style — not generic AI speak.
+The AI reviews your active deals, flags anything stale, and suggests follow-up actions.
 
-### Option D: Prep Your Week
-> *"Run weekly-ceo-brief. What should I focus on this week?"*
+### If you're Advanced:
 
-The AI synthesizes your pipeline, recent meetings, and outstanding commitments into a scannable executive brief.
+> *"Run a morning sweep across all systems."*
+
+The AI checks pipeline state, pending approvals, meeting schedule, and surfaces anything that needs your attention.
 
 ---
 
 ## Understanding Your Skill Library
 
-You now have access to **74 pre-built skills** organized into 8 categories. You don't need to memorize them — just describe what you need and the AI will route to the right skill automatically.
+You have access to **72 pre-built skills** organized into 8 categories. You don't need to memorize them — just describe what you need and the AI will route to the right skill automatically.
 
 ### Most-Used Skills for Executives
 
@@ -171,8 +153,8 @@ You now have access to **74 pre-built skills** organized into 8 categories. You 
 | Weekly synthesis | "What mattered this week?" | `weekly-ceo-brief` |
 | Strategic advice | "Should I [decision]?" | `chief-of-staff` → routes to advisors |
 | Deal evaluation | "Is this deal real?" | `deal-review` |
-| Risk analysis | "What if [scenario]?" | `scenario-war-room` |
-| Outreach campaign | "Build a sequence for [prospect]" | `outreach-sequence` |
+| Contract review | "Check this contract for red flags" | `contract-reader` |
+| Audio briefing | "Give me a briefing I can listen to" | `audio-briefing` |
 
 ### The Full Category Map
 
@@ -185,8 +167,7 @@ You now have access to **74 pre-built skills** organized into 8 categories. You 
 | 📅 Daily Operations | 8 | email-composer, meeting-prep, weekly-ceo-brief |
 | 🚀 Growth Engine | 13 | copy-master, aeo-optimizer, seo-growth, social-scheduler |
 | 🛠 Technical / Builder | 10 | create-prd, analyze-issue, feature-architect |
-| 🤖 Agent Intelligence | 5 | openclaw-orchestrator, consensus-reconciler, agent-spawner |
-| 🔒 Safety & Automation | 3 | hook-automation, security-pii-scanner, skill-builder |
+| 🤖 Agent Intelligence | 5 | agent-orchestrator, agent-protocol |
 
 ---
 
@@ -213,7 +194,7 @@ All API keys and tokens are stored in your system's secure credential manager (m
 The real ROI comes from consistent weekly use. Here's the recommended cadence:
 
 ### Monday Morning (5 min)
-> *"Run weekly-ceo-brief. What are my priorities this week?"*
+> *"Write my weekly CEO brief. What are my priorities this week?"*
 
 ### Before Each Meeting (2 min)
 > *"Prep me for my [time] meeting with [Name]."*
@@ -224,15 +205,28 @@ The real ROI comes from consistent weekly use. Here's the recommended cadence:
 ### Friday Afternoon (5 min)
 > *"Run pipeline-pulse. What moved this week? What's stuck?"*
 
-### Sunday Night (Optional, 2 min)
-> *"Run the dream consolidation to compress this week's learnings."*
+### Sunday Night (Optional, 2 min — Advanced only)
+> *"Run dream mode to consolidate this week's learnings."*
+
+---
+
+## Upgrading Your Level
+
+You can change your experience level anytime:
+
+```bash
+cd ~/.gfv_growth_by_design
+./bootstrap.sh
+```
+
+The installer is idempotent — it only adds what's missing, never overwrites your data. Your voice model, pipeline, and learnings are always preserved.
 
 ---
 
 ## Troubleshooting
 
 ### "The AI doesn't know who I am"
-Run the onboarding wizard again straight from chat: type `/onboard` or `/setup`. Or check that `~/ceo-brain/voice-model.md` exists and has content.
+Run the onboarding wizard again: type `/onboard`. Or check that `~/ceo-brain/voice-model.md` exists and has content.
 
 ### "The AI sounds generic"
 Your voice model needs more samples. Paste 3–5 more emails and say: *"Update my voice model with these samples."*
@@ -243,26 +237,36 @@ You need an SSH key connected to your GitHub account AND access to the GetFresh-
 ### "The installer failed on Windows"
 Make sure you're running PowerShell as Administrator. Use `.\bootstrap.ps1` (not `./bootstrap.sh`).
 
+### "claude-mem failed to install"
+claude-mem requires Node.js and Bun. Install them first:
+```bash
+# Install Node.js (if not already installed)
+brew install node    # Mac
+# Install Bun
+curl -fsSL https://bun.sh/install | bash
+# Retry
+npx claude-mem install
+```
+
 ### "How do I update to the latest version?"
 ```bash
 cd ~/.gfv_growth_by_design
 git pull
 ./bootstrap.sh
 ```
-The installer is idempotent — it only adds what's missing, never overwrites your data.
 
 ---
 
 ## What's Next?
 
-Once you're comfortable with the basics, explore these power moves:
+Once you're comfortable with the basics:
 
 1. **Build Your Voice Model** — Read `guides/voice-model-guide.md` for advanced voice calibration
 2. **Master Executive Prompting** — Read `guides/prompting-for-executives.md` for high-payoff prompt patterns
 3. **CEO Mindset** — Read `guides/ceo-mindset.md` for the mental model shift that unlocks 10x AI leverage
-4. **Extend the Kit** — Create custom skills specific to your business using the `skill-builder` meta-skill
+4. **Extend the Kit** — Create custom skills specific to your business using `/create-skill`
 
 ---
 
-*Version 1.18.1 — April 2026*
+*Version 1.21.1 — April 2026*
 *Proprietary Methodology © GetFresh Ventures. All Rights Reserved.*

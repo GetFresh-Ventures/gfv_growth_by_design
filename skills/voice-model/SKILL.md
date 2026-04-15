@@ -77,3 +77,8 @@ After building your voice model, test it:
 Read my voice model at ~/ceo-brain/voice-model.md and draft a follow-up 
 to Greg about the Q3 projection misses. Do not be overly nice. Use bullet points.
 ```
+
+## After This Skill
+💡 Suggest these next steps:
+- "Let me test it — draft an email to [name]" → `/email-composer`
+- "Want me to review how my voice sounds in a meeting brief?" → `/meeting-prep`

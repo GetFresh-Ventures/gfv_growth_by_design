@@ -119,3 +119,9 @@ Before delivering:
 - `chief-of-staff` — Daily heartbeat (weekly-ceo-brief is the weekly layer)
 - `deal-review` — Deep dive into specific deals flagged in this brief
 - `board-deck-builder` — For turning weekly briefs into board materials
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to prep for Monday's meetings?" → `/meeting-prep`
+- "Want me to check the pipeline for anything I missed?" → `/pipeline-pulse`
+- "Want me to draft a team update email?" → `/email-composer`

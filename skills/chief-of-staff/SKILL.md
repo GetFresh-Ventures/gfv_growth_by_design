@@ -248,3 +248,9 @@ Always resolve conflicts by priority: L4 > L3 > L2 > L1.
 - `experiment-loop` — Systematic improvement methodology
 - `cron-scheduler` — Recurring execution automation
 - `decision-logger` — Decision capture and sync
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to prep for my next meeting?" → `/meeting-prep`
+- "Want me to check the pipeline?" → `/pipeline-pulse`
+- "Want me to draft follow-ups for the flagged items?" → `/email-composer`

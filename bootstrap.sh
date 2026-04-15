@@ -175,7 +175,32 @@ cat > "$CEO_BRAIN_DIR/profile.json" << EOF
 EOF
 echo "  → Profile saved to ~/ceo-brain/profile.json"
 
-# 2. Copy templates if files don't exist
+# Create preferences.json for hooks to read (tier-aware defaults)
+LEVEL_NAMES=("" "beginner" "intermediate" "advanced")
+cat > "$CEO_BRAIN_DIR/preferences.json" << EOF
+{
+  "level": "${LEVEL_NAMES[$USER_TIER]}",
+  "cross_session_memory": true,
+  "auto_approve_safe": true,
+  "cost_dashboard": true,
+  "auto_memory": true,
+  "proactive_tips": $([ "$USER_TIER" -le 2 ] && echo "true" || echo "false"),
+  "inline_insights": true,
+  "plain_english": $([ "$USER_TIER" -eq 1 ] && echo "true" || echo "false"),
+  "draft_review": true,
+  "session_summary": $([ "$USER_TIER" -le 2 ] && echo "true" || echo "false"),
+  "feedback_loops": $([ "$USER_TIER" -ge 2 ] && echo "true" || echo "false"),
+  "weekly_learning_capture": $([ "$USER_TIER" -ge 2 ] && echo "true" || echo "false"),
+  "voice_refinement": $([ "$USER_TIER" -ge 2 ] && echo "true" || echo "false"),
+  "dream_mode": $([ "$USER_TIER" -ge 3 ] && echo "true" || echo "false"),
+  "agent_spawning": $([ "$USER_TIER" -ge 3 ] && echo "true" || echo "false"),
+  "self_improvement": $([ "$USER_TIER" -ge 3 ] && echo "true" || echo "false"),
+  "background_scheduling": $([ "$USER_TIER" -ge 3 ] && echo "true" || echo "false")
+}
+EOF
+echo "  → Preferences saved to ~/ceo-brain/preferences.json"
+
+# 2. Copy ALL templates if files don't exist
 echo "  📄 Setting up templates..."
 if [ ! -f "$CEO_BRAIN_DIR/voice-model.md" ]; then
     cp "$REPO_DIR/templates/voice-model.md" "$CEO_BRAIN_DIR/"
@@ -191,6 +216,16 @@ if [ ! -f "$GTM_BRAIN_DIR/learnings.md" ]; then
     echo "# Ongoing Learnings Log" > "$GTM_BRAIN_DIR/learnings.md"
     echo "This file captures tactical marketing/sales feedback over time." >> "$GTM_BRAIN_DIR/learnings.md"
     echo "  → Created learnings.md in gtm-brain"
+fi
+
+if [ ! -f "$CEO_BRAIN_DIR/weekly/weekly-pulse.md" ]; then
+    cp "$REPO_DIR/templates/weekly-pulse.md" "$CEO_BRAIN_DIR/weekly/"
+    echo "  → Created weekly-pulse.md in ceo-brain/weekly"
+fi
+
+if [ ! -f "$CEO_BRAIN_DIR/meetings/meeting-brief-template.md" ]; then
+    cp "$REPO_DIR/templates/meeting-brief.md" "$CEO_BRAIN_DIR/meetings/meeting-brief-template.md"
+    echo "  → Created meeting-brief template in ceo-brain/meetings"  
 fi
 
 # 3. Agent-Agnostic Context Routing
@@ -268,9 +303,9 @@ if not any(h.get('matcher') == 'Bash' for h in data['hooks']['PreToolUse']):
     echo "  → Hooks symlinked to ~/.claude/hooks"
 
     # Skills — filter by tier
-    BEGINNER_SKILLS="email-composer meeting-prep post-meeting-brief deal-review pipeline-pulse weekly-ceo-brief voice-model doc-builder pdf-toolkit contract-reader onboard chief-of-staff decision-logger context-prime support-triage"
+    BEGINNER_SKILLS="email-composer meeting-prep post-meeting-brief deal-review pipeline-pulse weekly-ceo-brief voice-model doc-builder pdf-toolkit contract-reader onboard chief-of-staff decision-logger audio-briefing support-triage"
     
-    INTERMEDIATE_SKILLS="content-strategy seo-growth social-engine copy-master conversion-optimizer outreach-sequence sales-enablement fundraise ceo-advisor cfo-advisor cmo-advisor coo-advisor cro-advisor competitive-intel board-deck-builder founder-coach executive-mentor financial-analyst scenario-war-room hubspot-architect notion-manager slack-connector audio-briefing news-digest negotiation-advisor doc-coauthoring spreadsheet-builder google-doc-creation change-management launch-strategy"
+    INTERMEDIATE_SKILLS="content-strategy seo-growth social-engine copy-master conversion-optimizer outreach-sequence sales-enablement fundraise ceo-advisor cfo-advisor cmo-advisor coo-advisor cro-advisor competitive-intel board-deck-builder founder-coach executive-mentor financial-analyst scenario-war-room hubspot-architect notion-manager slack-connector audio-briefing news-digest negotiation-advisor doc-coauthoring spreadsheet-builder google-doc-creation change-management launch-strategy context-prime"
     
     ADVANCED_SKILLS="social-scheduler ugc-video voice-synth larry-loop aeo-optimizer sms-outreach domain-intel geopolitical-monitor agent-orchestrator agent-protocol context-engine experiment-loop verify-execution create-prd create-skill commit-fast review-pr analyze-issue feature-architect autoresearch cron-scheduler scheduling-infra dedupe-entities gfv-hooks project-release strategic-decision automation-recommender"
     

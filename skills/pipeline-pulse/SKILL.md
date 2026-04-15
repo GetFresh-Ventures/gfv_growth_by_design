@@ -135,3 +135,9 @@ Before delivering pipeline pulse:
 - `chief-of-staff` — Heartbeat integration
 - `weekly-ceo-brief` — Weekly summary report
 - `experiment-loop` — Testing pipeline optimizations
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to deep-dive on a specific deal?" → `/deal-review [deal name]`
+- "Want me to draft follow-ups for stale deals?" → `/email-composer`
+- "Want me to write this up as a weekly brief?" → `/weekly-ceo-brief`

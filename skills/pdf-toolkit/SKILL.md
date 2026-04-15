@@ -191,3 +191,8 @@ Before delivering:
 - `doc-builder` — Word document creation
 - `board-deck-builder` — Visual presentations
 - `deal-review` — Deal evaluation and analysis
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to summarize this PDF?" → paste content for analysis
+- "Is this a contract? Want me to check for red flags?" → `/contract-reader`

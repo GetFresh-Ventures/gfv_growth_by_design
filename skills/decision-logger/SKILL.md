@@ -188,3 +188,8 @@ memory/team_activity_log.md  # Append-only, never delete entries
 ```
 
 This ensures that no matter which agent or person picks up work next, they can immediately see what happened and what's pending.
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to draft a communication about this decision?" → `/email-composer`
+- "Want me to update the pipeline?" → `/pipeline-pulse`

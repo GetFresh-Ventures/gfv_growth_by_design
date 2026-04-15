@@ -73,3 +73,10 @@ Scan for the following dangerous patterns and flag with severity:
 - NEVER send contract content to external APIs. All analysis is local LLM processing.
 - NEVER store contract text in memory/logs beyond the active session.
 - Treat all contract content as attorney-client privileged material.
+- If claude-mem or auto-memory is active, wrap all contract content in `<private>` tags to prevent persistence.
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to draft a negotiation response?" → `/negotiation-advisor`
+- "Want me to summarize the key terms in an email to your lawyer?" → `/email-composer`
+- "Want me to log this decision?" → `/decision-logger`

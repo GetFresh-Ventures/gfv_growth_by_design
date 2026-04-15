@@ -2,6 +2,7 @@
 """
 GetFresh CEO Enablement Kit for AI — Session Start Hook
 Loads company brain context at the beginning of every Claude Code session.
+Reads preferences.json to customize behavior by user level.
 
 Install: Copy to ~/.claude/hooks/session-start.py
 Trigger: SessionStart event
@@ -14,6 +15,34 @@ from pathlib import Path
 from datetime import datetime
 
 
+def load_preferences():
+    """Load user preferences from ~/ceo-brain/preferences.json"""
+    prefs_file = Path.home() / "ceo-brain" / "preferences.json"
+    if prefs_file.exists():
+        try:
+            return json.loads(prefs_file.read_text())
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {
+        "level": "beginner",
+        "auto_memory": True,
+        "proactive_tips": True,
+        "plain_english": True,
+        "session_summary": True
+    }
+
+
+def load_profile():
+    """Load user profile from ~/ceo-brain/profile.json"""
+    profile_file = Path.home() / "ceo-brain" / "profile.json"
+    if profile_file.exists():
+        try:
+            return json.loads(profile_file.read_text())
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {}
+
+
 def main():
     ceo_brain_dir = Path.home() / "ceo-brain"
     gtm_brain_dir = Path.home() / "gtm-brain"
@@ -22,8 +51,36 @@ def main():
         print("⚠️  No executive brain directory found. Run bootstrap.sh or /onboard first.", file=sys.stderr)
         return
 
+    prefs = load_preferences()
+    profile = load_profile()
+    level = prefs.get("level", "unknown")
+    name = profile.get("name", "")
+
     context_parts = []
-    context_parts.append(f"# Session Context — {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
+    context_parts.append(f"# Session Context — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    if name:
+        context_parts.append(f"**User**: {name} | **Level**: {level.capitalize()}")
+    else:
+        context_parts.append(f"**Level**: {level.capitalize()}")
+    context_parts.append("")
+
+    # Active preferences summary
+    active_features = []
+    if prefs.get("auto_memory"):
+        active_features.append("auto-memory")
+    if prefs.get("proactive_tips"):
+        active_features.append("proactive tips")
+    if prefs.get("session_summary"):
+        active_features.append("session summaries")
+    if prefs.get("feedback_loops"):
+        active_features.append("feedback loops")
+    if prefs.get("dream_mode"):
+        active_features.append("Dream Mode")
+    if prefs.get("inline_insights"):
+        active_features.append("inline insights")
+    if active_features:
+        context_parts.append(f"**Active features**: {', '.join(active_features)}")
+        context_parts.append("")
 
     # Load voice model summary
     voice_model = ceo_brain_dir / "voice-model.md"
@@ -69,13 +126,32 @@ def main():
     if pending_dir.exists():
         drafts = list(pending_dir.glob("*.md")) + list(pending_dir.glob("*.eml"))
         if drafts:
-            context_parts.append("\n" + "="*50)
+            context_parts.append("\n" + "=" * 50)
             context_parts.append("🌅 GETFRESH EXECUTIVE MORNING SYNC 🌅")
             context_parts.append(f"EngineClaw noticed {len(drafts)} stalled deals and drafted rescue emails while you were offline.")
             context_parts.append("Do you want to review and dispatch them?")
-            context_parts.append("="*50 + "\n")
+            context_parts.append("=" * 50 + "\n")
             for draft in drafts:
                 context_parts.append(f"  - 📝 {draft.name}")
+
+    # Check for Dream Mode pending consolidation
+    dream_flag = ceo_brain_dir / ".dream-pending"
+    if dream_flag.exists() and prefs.get("dream_mode"):
+        context_parts.append("\n🌙 Dream Mode: Memory consolidation pending from last session.")
+        context_parts.append("   Run `/dream` to consolidate cross-session learnings.\n")
+
+    # Proactive tips for beginners
+    if prefs.get("proactive_tips"):
+        context_parts.append("\n💡 **Quick start** — try any of these:")
+        if level == "beginner":
+            context_parts.append('  • "Draft an email to [name] about [topic]"')
+            context_parts.append('  • "Prep me for my meeting with [name]"')
+            context_parts.append('  • "Summarize this contract" (paste or attach it)')
+        elif level == "intermediate":
+            context_parts.append('  • "What does my pipeline look like?" → /pipeline-pulse')
+            context_parts.append('  • "Write my weekly CEO brief" → /weekly-ceo-brief')
+            context_parts.append('  • "Build an outreach sequence for [prospect]"')
+        # Advanced users have proactive_tips: false, so this won't fire
 
     # Output context
     output = "\n".join(context_parts)

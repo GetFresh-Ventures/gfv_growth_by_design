@@ -225,3 +225,8 @@ Before delivering:
 - `pdf-toolkit` — PDF processing
 - `spreadsheet-builder` — Excel financial models
 - `board-deck-builder` — Visual presentations
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to email this document to someone?" → `/email-composer`
+- "Want me to create a Google Doc version?" → `/google-doc-creation`

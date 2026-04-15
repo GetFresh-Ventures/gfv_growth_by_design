@@ -113,3 +113,8 @@ Always produce:
 - Feeds from `/news-digest` for the market section
 - Feeds from `/pipeline-pulse` for deal updates
 - Script saved to `~/ceo-brain/briefings/` for history
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want a detailed written version?" → `/weekly-ceo-brief`
+- "Want me to prep for the meetings mentioned?" → `/meeting-prep`

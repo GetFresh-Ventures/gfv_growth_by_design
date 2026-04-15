@@ -117,3 +117,8 @@ For P0/P1 items, create tracking artifacts:
 - Creates issues via Linear MCP tools
 - Logs interactions via HubSpot MCP tools
 - Drafts responses via `/email-composer`
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to draft a response to the urgent items?" → `/email-composer`
+- "Want me to log these as decisions?" → `/decision-logger`

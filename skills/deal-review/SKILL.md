@@ -146,3 +146,9 @@ Before delivering:
 - `outreach-sequence` — For building follow-up sequences for stale deals
 - `experiment-loop` — For testing different re-engagement approaches
 - `chief-of-staff` — For surfacing deal-review findings in daily heartbeat
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to draft a follow-up to move this deal forward?" → `/email-composer`
+- "Want me to build an outreach sequence for this prospect?" → `/outreach-sequence`
+- "Want me to check the full pipeline?" → `/pipeline-pulse`

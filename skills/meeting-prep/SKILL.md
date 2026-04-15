@@ -140,3 +140,8 @@ Before delivering:
 - `deal-review` — For pipeline context before prospect meetings
 - `email-composer` — For any pre-meeting emails needed
 - `chief-of-staff` — Triggers meeting-prep from heartbeat
+
+## After This Skill
+💡 Suggest these next steps:
+- "After the meeting, paste your notes and I'll extract action items" → `/post-meeting-brief`
+- "Want me to draft a follow-up email?" → `/email-composer`

@@ -162,3 +162,9 @@ Before presenting:
 - `outreach-sequence` — For multi-touch sequences (email-composer handles individual emails)
 - `post-meeting-brief` — Generates the follow-up email after meetings
 - `chief-of-staff` — Triggers email drafting from inbox sweeps
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to prep for a meeting with them?" → `/meeting-prep`
+- "Want me to build a full outreach sequence?" → `/outreach-sequence`
+- "Want me to log this outreach?" → `/decision-logger`
