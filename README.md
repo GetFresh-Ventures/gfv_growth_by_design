@@ -110,9 +110,9 @@ Everything in Intermediate, plus cross-session memory consolidation (Dream Mode)
 | Token cost dashboard (ccflare) | ✅ | ✅ | ✅ |
 | Auto-save decisions & meetings | ✅ | ✅ | ✅ |
 | Draft review before sending | ✅ | ✅ | ✅ |
-| Proactive tips after tasks | ✅ | ✅ | ❌ |
-| Plain-English explanations | ✅ | ❌ | ❌ |
-| Session summary recap | ✅ | ✅ | ❌ |
+| Proactive tips after tasks | ✅ | ✅ | ✅ (Optional) |
+| Plain-English explanations | ✅ | ✅ (Optional) | ✅ (Optional) |
+| Session summary recap | ✅ | ✅ | ✅ (Optional) |
 | Feedback loops ("Was this helpful?") | ❌ | ✅ | ✅ |
 | Weekly learning capture | ❌ | ✅ | ✅ |
 | Voice model refinement | ❌ | ✅ | ✅ |
@@ -121,6 +121,12 @@ Everything in Intermediate, plus cross-session memory consolidation (Dream Mode)
 | Self-improving skills | ❌ | ❌ | ✅ |
 
 You can upgrade your level anytime by re-running `./bootstrap.sh`.
+
+#### Optional UX Features
+While Advanced tiers disable certain UX features by default to maintain execution velocity and reduce API token bloat, they can be re-enabled in `preferences.json` at any time:
+- **Proactive tips after tasks:** Automatically suggests the next logical `/slash` command based on your workflow. Great for learning the system, but turned off by default for Advanced users to preserve context window space.
+- **Plain-English explanations:** Forces the AI to translate complex API outputs, JSON payloads, and diffs into conversational summaries. Turned off by default for Advanced users who prefer reading raw data.
+- **Session summary recap:** Writes a 3-bullet snapshot to your weekly log upon closing terminal. Turned off by default for Advanced users since the asynchronous **Dream Mode** handles much deeper intelligence consolidation.
 
 ---
 
