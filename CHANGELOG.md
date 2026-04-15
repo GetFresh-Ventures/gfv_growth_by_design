@@ -2,6 +2,25 @@
 
 All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
 
+## 2026-04-15 11:35 AM PT — v1.29.0 — DevOps Hardening & CI/CD Governance
+
+### Why it matters
+This release transforms the GetFresh CEO Enablement Kit from a localized script toolkit into a scalable, enterprise-grade deployment. By isolating dependencies into self-managed Virtual Environments and standardizing cross-platform OS locking, operational crashes have been virtually eliminated. Additionally, this release implements programmatic governance via GitHub Actions CI and Over-The-Air (OTA) architecture.
+
+### Added
+- **Dependency Isolation (venv)**: `bootstrap.sh` and `bootstrap.ps1` now programmatically generate a localized `venv` environment and resolve dependencies against `requirements.txt`, preventing OS PATH/versioning conflicts.
+- **GitHub Actions CI/CD Pipeline**: `.github/workflows/validate-skills.yml` was integrated to algorithmically enforce the `SKILL-AUTHORING-STANDARD.md` across the entire repository. This enforces that high-risk skills submitted by developers or AI agents strictly maintain human-loop circuit breakers.
+- **OTA Updates Payload**: Added an async GitHub remote tag sweep to the `session-start.py` hook, pushing a proactive upgrade alert to executives who fall behind the main branch.
+
+### Changed
+- **Cross-Platform OS Locks**: Eradicated the UNIX-exclusive `fcntl` import from `task_manager.py`, `session-stop.py`, and `gfv-memento.py`. File concurrency is now managed via `portalocker` securing identical parallel resilience for Windows users.
+- **Python Standardization**: Ported `gfv-audit.sh`, `gfv-cost-estimator.sh`, and `gfv-dream.sh` completely into native Python format, drastically improving cross-OS stability and execution predictability. Deleted legacy bash scripts.
+
+### Stats
+17 files changed, +365/-249 lines.
+
+---
+
 ## 2026-04-15 11:15 AM PT — v1.28.0 — Enterprise Hardening (Circuit Breakers & Concurrency)
 
 ### Why it matters
