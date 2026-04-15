@@ -2,6 +2,28 @@
 
 All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
 
+## 2026-04-14 7:25 PM PT — v1.23.0 — Full Codebase Audit Remediation
+
+### Why it matters
+End-to-end audit of all 113 files in the repo. Found 6 issues across 4 severity levels, fixed all of them.
+
+### Fixed
+- **`bootstrap.ps1`** (220→299 lines): Complete rewrite with tier selection, profile/preferences, all templates, tier skills — [GTM-842]
+- **`AGENT.md`**: Removed Claude-Mem MCP refs that don't ship, fixed team.json → profile.json — [GTM-843]
+- **`references/`**: Removed 331MB of dev data from repo (336MB → ~5MB) — [GTM-844]
+- **`README.md`**: 14 old release sections moved to CHANGELOG — [GTM-845]
+- **`slack-connector`** (41→161): Full Slack App setup + API commands — [GTM-846]
+- **`social-scheduler`** (46→173): Buffer API integration — [GTM-846]
+- **`sms-outreach`** (48→187): Twilio + TCPA 3-gate compliance — [GTM-846]
+- **`ceo-mindset.md`** (31→86): Real examples, voice model checklist, workflow table — [GTM-847]
+- **`prompting-for-executives.md`** (37→100): 10 prompts with explanations + pro-tips — [GTM-847]
+
+### Files Modified
+10 files, +920/-330 lines
+
+---
+
+
 ## 2026-04-14 6:30 PM PT — v1.22.1 — Production Skill Ports
 
 ### Why it matters
