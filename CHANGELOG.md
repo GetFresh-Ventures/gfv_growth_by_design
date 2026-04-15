@@ -2,6 +2,22 @@
 
 All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
 
+## 2026-04-14 6:30 PM PT — v1.22.1 — Production Skill Ports
+
+### Why it matters
+4 advanced skills were stubs with vague instructions. Now they're production-quality with executable commands, concrete examples, and real `task_manager.py` integration.
+
+### Rewritten
+- **`automation-recommender`** (50→175 lines): 3-phase analysis with impact/effort scoring matrix — [GTM-805]
+- **`feature-architect`** (43→223 lines): 7-phase protocol with DAG-parallel codebase exploration — [GTM-806]
+- **`create-skill`** (117→197 lines): Mandatory interview → build → test → register process — [GTM-807]
+- **`agent-orchestrator`** (74→284 lines): All 4 modes (Linear, DAG, Debate, Planner-Runner) with executable commands — [GTM-803]
+
+### Files Modified
+4 skill files rewritten, +756/-177 lines
+
+---
+
 ## 2026-04-14 5:10 PM PT — v1.22.0 — Beginner Experience Hardening
 
 ### Why it matters
