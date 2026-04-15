@@ -2,6 +2,30 @@
 
 All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
 
+## 2026-04-14 5:10 PM PT — v1.22.0 — Beginner Experience Hardening
+
+### Why it matters
+The entire memory pipeline was broken: session-stop wrote to the wrong directory, hooks couldn't read user preferences, and the executive walkthrough was stale. This release fixes all 12 gaps from the beginner/intermediate audit.
+
+### Fixed (Critical)
+- **`hooks/session-stop.py`**: Was writing to `~/brain/` (doesn't exist). Fixed to `~/gtm-brain/` — [GTM-832]
+- **`bootstrap.sh`**: Now creates `preferences.json` with tier-aware defaults so hooks work before onboarding — [GTM-833]
+- **`hooks/session-start.py`**: Reads preferences.json, shows active features, proactive tips for beginners — [GTM-834]
+- **`hooks/session-stop.py`**: Tier-aware auto-save: summaries for beginners, feedback for intermediate, Dream Mode flags for advanced — [GTM-835]
+- **`GETTING-STARTED.md`**: Complete rewrite matching Beginner/Intermediate/Advanced system — [GTM-836]
+
+### Fixed (Moderate)
+- **14 beginner skills**: Added "After This Skill" proactive tip chains — [GTM-837]
+- **`bootstrap.sh`**: Copies all 4 templates (weekly-pulse, meeting-brief) — [GTM-838]
+- **Beginner tier**: Swapped `context-prime` (developer tool) for `audio-briefing` (executive tool) — [GTM-839]
+- **`contract-reader`**: Added `<private>` tag instruction for claude-mem auto-memory — [GTM-840]
+- **Troubleshooting**: Added claude-mem/Bun installation recovery instructions — [GTM-841]
+
+### Files Modified
+18 files changed across hooks/, bootstrap.sh, GETTING-STARTED.md, and 14 beginner skills
+
+---
+
 ## 2026-04-14 3:30 PM PT — v1.21.1 — Foundational Tools for All Tiers
 
 ### Why it matters
