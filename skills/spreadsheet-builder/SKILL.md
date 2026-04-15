@@ -168,3 +168,9 @@ Before delivering any spreadsheet:
 - `financial-analyst` — deep financial analysis and commentary
 - `board-deck-builder` — visual board presentations
 - `investor-materials` — pitch deck and fundraising docs (coming soon)
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to create a Google Doc report summarizing these numbers with `google-doc-creation`?"
+- "Should I build a board deck from this data with `board-deck-builder`?"
+- "Want me to email this spreadsheet to someone with `email-composer`?"

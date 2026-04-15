@@ -103,3 +103,9 @@ Questions nobody wants to answer:
 - **ceo-advisor**: Use for building the plan. Executive Mentor challenges it.
 - **founder-coach**: Use for personal leadership growth. NOT for plan stress-testing.
 - **board-deck-builder**: Use for assembling the deck. NOT for finding holes in it.
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to log this decision and its rationale with `decision-logger`?"
+- "Should I prep the board deck around these findings with `board-deck-builder`?"
+- "Want me to draft a follow-up email communicating this decision with `email-composer`?"

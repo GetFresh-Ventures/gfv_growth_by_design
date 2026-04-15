@@ -293,3 +293,9 @@ If ANY check fails, fix the issue before returning the URL to the user.
 | No styling applied | SA auth missing | Ensure `~/.config/gfv/gfv_service_account.json` exists |
 | "index out of range" error | Doc doesn't start at index 1 | Create a blank doc first, don't reuse existing |
 | Tables have wrong data | Forward index tracking drift | Use SA direct approach with group-by-table batching |
+
+## After This Skill
+💡 Suggest these next steps:
+- "Want me to share this doc with your team via Google Drive?"
+- "Should I create a complementary spreadsheet with `spreadsheet-builder`?"
+- "Want me to draft an email sending this report with `email-composer`?"
