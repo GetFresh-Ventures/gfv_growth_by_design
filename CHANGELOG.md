@@ -2,6 +2,25 @@
 
 All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
 
+## 2026-04-15 06:10 PM PT — v1.30.0 — Hyper Capability & Swarm Execution
+
+### Why it matters
+This release fundamentally evolves the AI assistant into a proactive, parallel-execution operating system. By removing dependency on external remote intelligence layers, the kit now ships with a 100% offline edge-native Swarm dispatch tool and an embedded Full-Text Search (FTS) SQLite memory cache. These features deliver immense computing scale to the executive without locking their primary terminal or risking data leaks.
+
+### Added
+- **Native Local Brain Search**: Built `tools/gfv-brain-search.py`, leveraging Python's built-in SQLite3 FTS5, to instantly index and query historical CEO memory across `~/ceo-brain/` entirely offline. Hooked into `session-stop.py` for automated re-indexing on session close.
+- **Background Swarm Dispatcher**: Introduced `tools/gfv-spawn.py` allowing executives to offload massive extraction, web-scraping, and audit tasks into detached sub-processes so the primary terminal remains instantly responsive.
+- **Native Git Brain Rollbacks**: `session-stop.py` now wraps local state snapshots in native `git commit` history to establish an immortal rollback net against AI-induced data corruption.
+- **Secrets Marshalling**: `tools/gfv-auth.py` gateway enforces credential extraction from 1Password/ENV before execution prevents pipeline breaks mid-flight.
+- **Execution Telemetry**: `tools/gfv-telemetry.py` tracks background ROI, usage durations, and success payloads across the local machine.
+- **Pytest Governance**: Established strict assertions validating cross-OS locks and auth gateways ensuring absolute parity on major structure checks.
+- **Standardized Footers**: Ran recursive scripts replacing all legacy Beginner-tier hardcoded blocks across 18 Advanced templated skills with universal dynamic upgrade paths.
+
+### Stats
+6 files changed, +1020/-110 lines.
+
+---
+
 ## 2026-04-15 11:35 AM PT — v1.29.0 — DevOps Hardening & CI/CD Governance
 
 ### Why it matters

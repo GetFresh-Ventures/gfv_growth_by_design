@@ -1,5 +1,5 @@
 # GetFresh CEO Enablement Kit for AI
-**Version**: v1.29.0  
+**Version**: v1.30.0  
 **Turn any AI coding assistant into your personal Chief of Staff.**
 
 ---
@@ -399,11 +399,11 @@ To add a new workflow:
 
 ## Release History
 
-### What's New in v1.28.0 (Enterprise Hardening)
-- **Human-in-the-Loop Circuit Breakers:** `task_manager.py` dynamically intercepts tasks requiring executive approval. Modified `deal-review` and `hubspot-architect` to test this standard via `requires_human_approval: true` frontmatter tags.
-- **Verification Gates:** Standardized the `create-skill` template to mandate programmatic self-verification before any agent marks a task complete.
-- **IDE Native Integration:** `bootstrap.sh` and `bootstrap.ps1` now automatically generate `.cursorrules` and `.windsurfrules` files to unify the terminal and IDE experience.
-- **Cross-Platform OS Locks:** Replaced unsafe basic text appends with `fcntl` OS-level file locking blocks in `task_manager.py`, `session-stop.py`, and `gfv-memento.py`. Supports massive swarm parallelism without corruption.
-- **Environment Constant Centralization:** Purged all hardcoded string paths (e.g. `~/ceo-brain`) from the hook architecture, replacing them with portable `os.environ` endpoints (`GFV_CEO_BRAIN` and `GFV_GTM_BRAIN`).
+### What's New in v1.30.0 (Hyper Capability & Swarm Execution)
+- **Background Swarm Dispatcher:** The introduction of `tools/gfv-spawn.py` enables the offloading of extremely long tasks (scraping, auditing, mass processing) to a detached local sub-process. This unlocks instantaneous UI feedback in the main terminal while the agents crunch data in parallel.
+- **Native Local Brain Search:** The inclusion of `tools/gfv-brain-search.py` means the kit no longer lags or relies on remote database integrations. Context recall across thousands of files is instantaneous via the local FTS5 SQLite indexer, automatically updated upon workspace exit.
+- **Immutable Git Sandbox:** Every session stop automatically triggers a local `git commit` inside your `~/ceo-brain` array, providing an unlimited safety net and instant rollbacks in case the assistant ever overwrites context or hallucinates data.
+- **Strict Secrets Marshalling:** We created an inescapable auth gateway via `tools/gfv-auth.py` ensuring pipeline operations never mysteriously crash mid-flight due to broken credentials—keys are extracted via 1Password CLI exclusively.
+- **Pytest Pipeline Stability:** We cemented the cross-platform file locking (`portalocker`) and background hooks against strict unittests to assure stable runtime continuity.
 
-For historical release notes (v1.0.0 - v1.27.0), please see [CHANGELOG.md](CHANGELOG.md).
+For historical release notes (v1.0.0 - v1.29.0), please see [CHANGELOG.md](CHANGELOG.md).
