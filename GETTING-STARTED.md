@@ -24,8 +24,8 @@ In the next 30 minutes, you will go from "AI is a blank chatbot" to "AI is my Ch
 
 ### What You Need
 - [ ] A Mac, Linux machine, or Windows PC
-- [ ] One of these AI tools installed: **Claude Code**, **Cursor**, or **Gemini**
 - [ ] Access to the GetFresh Ventures GitHub organization (ask your GFV contact for an invite)
+- [ ] **No pre-installed apps required.** The installation script will automatically download and set up your preferred AI Tool (Cursor or Claude Code) if you don't have it!
 
 ### What You Should Have Ready
 These aren't required, but having them handy will make the onboarding wizard dramatically more useful:
@@ -35,7 +35,7 @@ These aren't required, but having them handy will make the onboarding wizard dra
 
 ---
 
-## Step 1: Clone the Kit (2 minutes)
+## Step 1: Download the Kit (2 minutes)
 
 Open your terminal:
 - **Mac:** Open the "Terminal" app (search Spotlight for "Terminal")
@@ -44,10 +44,10 @@ Open your terminal:
 Paste this command and press Enter:
 
 ```bash
-git clone git@github.com:GetFresh-Ventures/gfv_growth_by_design.git ~/.gfv_growth_by_design
+git clone https://github.com/GetFresh-Ventures/gfv_growth_by_design.git ~/Documents/CEO-Enablement-Kit
 ```
 
-> **What just happened?** You downloaded the entire kit to a hidden folder on your machine. Your data stays local — nothing is uploaded to the cloud.
+> **What just happened?** You downloaded the entire kit to a highly visible folder in your Documents. Your data stays local — nothing is uploaded to the cloud.
 
 ---
 
@@ -57,14 +57,14 @@ Navigate to the kit and run the bootstrap script:
 
 **Mac / Linux:**
 ```bash
-cd ~/.gfv_growth_by_design
+cd ~/Documents/CEO-Enablement-Kit
 ./bootstrap.sh
 ```
 
 **Windows:**
 ```powershell
-cd ~\.gfv_growth_by_design
-.\bootstrap.ps1
+cd ~\\Documents\\CEO-Enablement-Kit
+.\\bootstrap.ps1
 ```
 
 ### The installer will ask you two things:
@@ -92,7 +92,14 @@ cd ~\.gfv_growth_by_design
 
 ## Step 3: Run the Onboarding Wizard (15 minutes)
 
-Open your AI tool (Claude Code, Cursor, or Gemini) and type:
+This part sounds intimidating, but it's just opening a folder and typing a message.
+
+1. Open **Cursor** (the application you downloaded earlier).
+2. From the top menu bar, click **File > Open Folder**.
+3. Navigate to your `Documents` folder and select the `CEO-Enablement-Kit` folder.
+4. Once the folder opens, press **Cmd+I** (Mac) or **Ctrl+I** (Windows) to open the Cursor Composer Chat panel.
+
+In the chat box, type:
 
 ```
 /onboard

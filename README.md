@@ -1,7 +1,12 @@
 # GetFresh CEO Enablement Kit for AI
-**Version**: v1.30.0  
+**Version**: v1.31.0  
 **Turn any AI coding assistant into your personal Chief of Staff.**
 
+---
+### What's New in v1.31.0
+- **Zero-Click Onboarding**: The installation script now natively downloads and configures Cursor or Claude Code so executives don't deal with manual package installations.
+- **Visible Architecture**: Transitioned the install directory from hidden MacOS `.gfv` dotfiles to a highly visible `~/Documents/CEO-Enablement-Kit` path to ensure seamless folder-opening for non-technical users.
+- **HTTPS Git Routing**: Removed `git@github` SSH dependencies to eliminate `Permission Denied` exceptions across enterprise networks.
 ---
 
 ## What is this?
@@ -34,36 +39,41 @@ This toolkit runs entirely in your local terminal to securely protect your data.
 
 ## Quick Start (5 Minutes)
 
-### Step 1: Clone the repo
+### Step 1: Download the Toolkit
 
-Open your terminal (Terminal on Mac, PowerShell on Windows):
+Open your terminal (Terminal on Mac, PowerShell on Windows) and paste this line and hit Enter:
 ```bash
-git clone git@github.com:GetFresh-Ventures/gfv_growth_by_design.git ~/.gfv_growth_by_design
+git clone https://github.com/GetFresh-Ventures/gfv_growth_by_design.git ~/Documents/CEO-Enablement-Kit
 ```
+
+*(This securely downloads the toolkit to your Documents folder).*
 
 ### Step 2: Run the installer
 
 ```bash
-cd ~/.gfv_growth_by_design
+cd ~/Documents/CEO-Enablement-Kit
 ./bootstrap.sh          # Mac/Linux
 # .\bootstrap.ps1       # Windows
 ```
 
-The installer will:
-1. Ask you to pick your experience level (Beginner, Intermediate, or Advanced)
-2. Ask 2-4 quick setup questions based on your level
-3. Create your personal memory directories (`~/ceo-brain/` and `~/gtm-brain/`)
-4. Install the right set of skills for your level
-5. Wire up hooks and agent configuration
+The installer will ask you 2-4 quick setup questions to tailor the skills for your business.
 
-### Step 3: Start your first session
+### Step 3: Launch your AI Agent
 
-Open your AI tool and type:
+This toolkit supports **Cursor**, **Claude Code**, or **Gemini**. The script you just ran automatically installed your selected tool if you didn't already have it!
+
+If you chose Cursor (recommended for non-technical users):
+1. Open the Cursor app.
+2. Click **File > Open Folder** from the top menu.
+3. Select the `CEO-Enablement-Kit` folder located inside your `Documents` folder.
+4. Press `Cmd+I` (Mac) or `Ctrl+I` (Windows) to open the Cursor Composer chat.
+
+Type this to start your first session:
 ```
 /onboard
 ```
 
-The AI will walk you through a 5-minute setup wizard to learn your voice, your team, and your priorities. After that, you're live.
+Your new Chief of Staff will take it from here. It will walk you through a 5-minute setup wizard to learn your voice, your team, and your priorities. After that, you're live.
 
 ---
 

@@ -152,6 +152,32 @@ echo ""
 echo "  Installing for ${USER_NAME} at ${USER_COMPANY}..."
 echo ""
 
+# Auto-Install Agent Tools
+if [[ "$USER_AGENT" == "cursor" ]]; then
+    if [ ! -d "/Applications/Cursor.app" ] && [ ! -d "$HOME/Applications/Cursor.app" ]; then
+        echo "  📦 Downloading and installing Cursor AI (this may take a minute)..."
+        curl -sL "https://downloader.cursor.sh/mac/main/universal" -o "/tmp/Cursor-installer.zip"
+        unzip -q "/tmp/Cursor-installer.zip" -d "/Applications" 2>/dev/null || unzip -q "/tmp/Cursor-installer.zip" -d "$HOME/Applications"
+        rm "/tmp/Cursor-installer.zip"
+        echo "  → Cursor installed successfully"
+    fi
+elif [[ "$USER_AGENT" == "claude" ]]; then
+    if ! command -v claude &> /dev/null; then
+        echo "  📦 Installing Claude Code (and Node.js if missing)..."
+        if ! command -v npm &> /dev/null; then
+            export NVM_DIR="$HOME/.nvm"
+            if [ ! -s "$NVM_DIR/nvm.sh" ]; then
+                curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash > /dev/null 2>&1
+            fi
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            nvm install 20 > /dev/null 2>&1
+        fi
+        npm install -g @anthropic-ai/claude-code > /dev/null 2>&1
+        echo "  → Claude Code installed successfully"
+    fi
+fi
+echo ""
+
 # Target directories
 CEO_BRAIN_DIR="$HOME/ceo-brain"
 GTM_BRAIN_DIR="$HOME/gtm-brain"
@@ -432,14 +458,18 @@ echo "  Skills: ${INSTALLED_COUNT:-72} installed"
 echo "  Memory: ~/ceo-brain/ and ~/gtm-brain/ created"
 echo ""
 echo "  ┌──────────────────────────────────────────────────────────────┐"
-echo "  │  WHAT TO DO NEXT                                            │"
+echo "  │  WHAT TO DO NEXT                                             │"
 echo "  │                                                              │"
-echo "  │  1. Open your AI tool (Claude Code, Cursor, or Gemini)      │"
-echo "  │  2. Type: /onboard                                          │"
-echo "  │     (This starts a 5-minute setup wizard that teaches the   │"
-echo "  │      AI your voice, your team, and your priorities)         │"
+echo "  │  1. Open Cursor.                                             │"
+echo "  │  2. Click 'File' > 'Open Folder' (from the top menu).        │"
+echo "  │  3. Select 'CEO-Enablement-Kit' in your Documents.           │"
+echo "  │  4. Press Cmd+I (Mac) or Ctrl+I (Windows) to open Chat.      │"
+echo "  │  5. Type: /onboard                                           │"
 echo "  │                                                              │"
-echo "  │  After onboarding, try these:                               │"
+echo "  │     (This starts a 5-minute setup wizard that teaches the    │"
+echo "  │      AI your voice, your team, and your priorities)          │"
+echo "  │                                                              │"
+echo "  │  After onboarding, try these:                                │"
 echo "  │"
 if [[ "$USER_TIER" -eq 1 ]]; then
 echo "  │    • \"Draft an email to [name] about [topic]\"               │"

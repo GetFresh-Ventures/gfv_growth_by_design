@@ -2,6 +2,19 @@
 
 All notable changes to the GetFresh CEO Enablement Kit for AI will be documented in this file.
 
+## 2026-04-15 10:14 PM PT — v1.31.0 — Zero-Configuration Onboarding & Auto-Installers
+
+### Why it matters
+The previous onboarding funnels assumed an engineering baseline—requiring SSH keys, Node.js installations, and command-line familiarity. This alienated our core demographic of non-technical executives. In v1.31.0, we have overhauled the pipeline to deliver a literal "Zero-Click" onboarding experience. The bootstrap script itself now acts as a silent package-manager, automatically downloading and compiling Cursor or Claude Code, resolving dependencies (like NVM/Node 20), and dynamically creating visible project structures so an executive goes from a fresh laptop to a live AI Chief of Staff in under 60 seconds.
+
+### Added
+- **AI Agent Auto-Installers:** Injected native `curl`/`unzip` hooks and `nvm`/`node.js` dependency resolution chains into `bootstrap.sh`. The kit now seamlessly downloads MacOS Cursor Universal binaries or globally installs `@anthropic-ai/claude-code` completely under the hood, depending on the executive's preference.
+
+### Changed
+- **Visual Clone Pathing:** Relocated the foundational clone target from the hidden `~/.gfv_growth_by_design` directory to a highly visible `~/Documents/CEO-Enablement-Kit` path.
+- **HTTPS Git Routing:** Eliminated the SSH `git@github.com` clone requisite that previously returned `Permission Denied` exceptions for business users, pivoting to unrestricted HTTPS routing.
+- **Documentation Restructure:** Overhauled `GETTING-STARTED.md` and `README.md` to omit CLI engineering instructions and instead utilize explicit, UI-driven navigation (e.g. `File > Open Folder`) to natively activate dotfile workspaces inside Cursor.
+
 ## 2026-04-15 06:10 PM PT — v1.30.0 — Hyper Capability & Swarm Execution
 
 ### Why it matters
