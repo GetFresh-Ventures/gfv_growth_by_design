@@ -26,6 +26,8 @@ def load_preferences():
     if prefs_file.exists():
         try:
             return json.loads(prefs_file.read_text(encoding="utf-8"))
+        except Exception:
+            pass
     # Defaults if no preferences file exists
     return {
         "level": "beginner",

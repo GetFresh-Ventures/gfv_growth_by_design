@@ -128,7 +128,7 @@ Infrastructure skills for the technical operator.
 
 | Skill | Description | Key Pattern |
 |-------|-------------|-------------|
-| [`onboard`](skills/onboard/) | Interactive setup wizard for the CEO Kit | First-run config |
+| [`onboard`](skills/onboard/) | Interactive setup wizard for the GTM Kit | First-run config |
 | [`context-prime`](skills/context-prime/) | Repository scanning for baseline context | Map before moving |
 | [`product-spec`](skills/product-spec/) | Rough idea → structured 6-part PRD | Idea to spec |
 | [`analyze-issue`](skills/analyze-issue/) | GitHub/Linear issue → implementation plan | Issue to plan |
