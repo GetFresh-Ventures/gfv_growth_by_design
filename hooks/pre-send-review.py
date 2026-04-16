@@ -3,7 +3,7 @@
 GetFresh GTM Enablement Kit for AI — Pre-Send Review Hook
 Blocks any outbound email/message from being sent without explicit approval.
 
-Install: Copy to ~/.claude/hooks/pre-send-review.py
+Install: Copy to ~/ceo-brain/.core/hooks/pre-send-review.py
 Trigger: PreToolUse event (on email/messaging tools)
 
 This hook checks for send/email/message tool calls and ensures

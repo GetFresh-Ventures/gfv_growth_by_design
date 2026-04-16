@@ -4,7 +4,7 @@ GetFresh GTM Enablement Kit for AI — Session Start Hook
 Loads company brain context at the beginning of every Claude Code session.
 Reads preferences.json to customize behavior by user level.
 
-Install: Copy to ~/.claude/hooks/session-start.py
+Install: Copy to ~/ceo-brain/.core/hooks/session-start.py
 Trigger: SessionStart event
 """
 

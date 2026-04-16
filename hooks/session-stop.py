@@ -4,7 +4,7 @@ GetFresh GTM Enablement Kit for AI — Session Stop Hook
 Saves session learnings and context to the brain directory.
 Reads preferences.json to determine auto-save behavior by tier.
 
-Install: Copy to ~/.claude/hooks/session-stop.py
+Install: Copy to ~/ceo-brain/.core/hooks/session-stop.py
 Trigger: Stop event
 """
 

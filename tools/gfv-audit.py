@@ -7,7 +7,7 @@ from pathlib import Path
 def get_claude_logs_dir():
     repo_dir = str(Path(__file__).parent.parent.absolute())
     escaped_cwd = repo_dir.replace("/", "-")
-    return Path.home() / ".claude" / "projects" / escaped_cwd
+    return Path(os.environ.get("GFV_CEO_BRAIN", Path.home() / "ceo-brain")) / ".core" / "projects" / escaped_cwd
 
 def main():
     logs_dir = get_claude_logs_dir()

@@ -11,7 +11,7 @@ import argparse
 from pathlib import Path
 from datetime import datetime
 
-TELEMETRY_DB = Path.home() / ".claude" / "gfv-telemetry.db"
+TELEMETRY_DB = Path(os.environ.get("GFV_CEO_BRAIN", Path.home() / "ceo-brain")) / ".core" / "gfv-telemetry.db"
 
 def init_db():
     TELEMETRY_DB.parent.mkdir(parents=True, exist_ok=True)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # ccflare-lite.py
 # A local CLI dashboard to track Claude token usage and cost burn rate.
-# Reads the local ~/.claude/projects/ directory to aggregate jsonl session logs.
+# Reads the local ~/ceo-brain/.core/projects/ directory to aggregate jsonl session logs.
 import os
 import json
 import glob
@@ -17,11 +17,11 @@ COST_PER_1M_CACHE_READ = 0.30
 
 def parse_logs():
     home = os.path.expanduser("~")
-    # In some setups, project logs are stored in ~/.claude/projects/*/*.jsonl
-    log_files = glob.glob(f"{home}/.claude/projects/*/*.jsonl")
+    # In some setups, project logs are stored in ~/ceo-brain/.core/projects/*/*.jsonl
+    log_files = glob.glob(f"{home}/.core/projects/*/*.jsonl")
     
     if not log_files:
-        # Fallback to local .claude if running globally
+        # Fallback to local .core if running globally
         local_dir = os.path.join(os.getcwd(), '.system_generated/logs')
         log_files = glob.glob(f"{local_dir}/*.jsonl")
 

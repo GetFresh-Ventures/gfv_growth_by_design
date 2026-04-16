@@ -196,7 +196,7 @@ Strategic summary...
 **Git:** [commit_hash](https://github.com/ORG/REPO/commit/FULL_HASH)
 ```
 
-2. Use the `mcp_linear-mcp-server_save_status_update` tool to publish the payload as a Project Update. Set health to `onTrack`.
+2. Use the `the linear-api-access.py GraphQL script` tool to publish the payload as a Project Update. Set health to `onTrack`.
 
 **GATE: Linear update must be created successfully.**
 
@@ -244,7 +244,7 @@ v2.0.0: Multi-agent orchestration rebuild
 | System | What It Provides | How to Access |
 |--------|-----------------|---------------|
 | Client CRM | Real-time pipeline state | `hubspot-api` / `salesforce-api` |
-| Local Memory | Client-specific facts | `gfv-brain-search.py` |
+| Local Memory | Client-specific facts | `ceo-brain-search.py` |
 
 > **GFV Rule:** Check live connected systems and local client memory to verify claims before submitting answers.
 

@@ -15,7 +15,7 @@ from pathlib import Path
 
 # Paths
 CEO_BRAIN_DIR = Path(os.environ.get("GFV_CEO_BRAIN", Path.home() / "ceo-brain"))
-BRAIN_DB = Path.home() / ".claude" / "gfv-native-brain.db"
+BRAIN_DB = Path(os.environ.get("GFV_CEO_BRAIN", Path.home() / "ceo-brain")) / ".core" / "gfv-native-brain.db"
 
 def init_db():
     """Initializes the FTS5 virtual tables."""

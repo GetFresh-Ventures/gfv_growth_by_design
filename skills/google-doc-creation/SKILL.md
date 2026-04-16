@@ -25,14 +25,14 @@ Use this skill **any time** a Google Doc needs to be created, including:
 
 ## The Script
 
-**Location:** `~/Documents/Code/gfv-brain/scripts/create_google_doc.py`
+**Location:** `~/ceo-brain/scripts/create_google_doc.py`
 
 ### Quick Usage
 
 ```python
 # From Python
 import sys
-sys.path.insert(0, os.path.expanduser("~/Documents/Code/gfv-brain/scripts"))
+sys.path.insert(0, os.path.expanduser("~/ceo-brain/scripts"))
 from create_google_doc import create_formatted_doc
 
 url = create_formatted_doc(
@@ -44,7 +44,7 @@ url = create_formatted_doc(
 
 ```bash
 # From the terminal
-python3 ~/Documents/Code/gfv-brain/scripts/create_google_doc.py \
+python3 ~/ceo-brain/scripts/create_google_doc.py \
     --input content.md \
     --title "My Document" \
     --folder FOLDER_ID
@@ -189,7 +189,7 @@ Write content as standard markdown. The parser supports:
 
 ```python
 import os, sys
-sys.path.insert(0, os.path.expanduser("~/Documents/Code/gfv-brain/scripts"))
+sys.path.insert(0, os.path.expanduser("~/ceo-brain/scripts"))
 
 # 1. Write the markdown content
 md_content = """
@@ -307,7 +307,7 @@ If ANY check fails, fix the issue before returning the URL to the user.
 | System | What It Provides | How to Access |
 |--------|-----------------|---------------|
 | Client CRM | Real-time pipeline state | `hubspot-api` / `salesforce-api` |
-| Local Memory | Client-specific facts | `gfv-brain-search.py` |
+| Local Memory | Client-specific facts | `ceo-brain-search.py` |
 
 > **GFV Rule:** Check live connected systems and local client memory to verify claims before submitting answers.
 

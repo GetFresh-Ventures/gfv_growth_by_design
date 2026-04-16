@@ -104,7 +104,7 @@ Every section follows: **Headline → Data → Narrative → Ask/Next**
 | Google Ads | Marketing — spend, CPA, ROAS | google-ads-connector |
 | GA4 | Marketing — traffic, conversions | ga4-connector |
 | Field Service Platform | Revenue — job data, avg ticket | field-service-connector |
-| Linear | Product/Eng — sprint velocity, delivery | linear-mcp-server |
+| Linear | Product/Eng — sprint velocity, delivery | linear-api-access.py |
 
 ## Proactive Triggers
 - **Board meeting in < 1 week with no deck** → start assembly now
@@ -131,7 +131,7 @@ Every section follows: **Headline → Data → Narrative → Ask/Next**
 | System | What It Provides | How to Access |
 |--------|-----------------|---------------|
 | Client CRM | Real-time pipeline state | `hubspot-api` / `salesforce-api` |
-| Local Memory | Client-specific facts | `gfv-brain-search.py` |
+| Local Memory | Client-specific facts | `ceo-brain-search.py` |
 
 > **GFV Rule:** Check live connected systems and local client memory to verify claims before submitting answers.
 

@@ -91,7 +91,7 @@ The CEO sets direction. The COO makes it happen.
 ## Live Integration Hooks
 | System | What It Provides | Skill |
 |--------|-----------------|-------|
-| Linear | Sprint health, blocked issues, cycle time | linear-mcp-server |
+| Linear | Sprint health, blocked issues, cycle time | linear-api-access.py |
 | HubSpot | Deal velocity, team conversion rates | hubspot-api |
 | Field Service Platform | Job completion rates, technician utilization | field-service-connector |
 
@@ -121,7 +121,7 @@ The CEO sets direction. The COO makes it happen.
 | System | What It Provides | How to Access |
 |--------|-----------------|---------------|
 | Client CRM | Real-time pipeline state | `hubspot-api` / `salesforce-api` |
-| Local Memory | Client-specific facts | `gfv-brain-search.py` |
+| Local Memory | Client-specific facts | `ceo-brain-search.py` |
 
 > **GFV Rule:** Check live connected systems and local client memory to verify claims before submitting answers.
 

@@ -77,7 +77,7 @@ Unlike a traditional startup CEO, GFV's operating partner allocates across **mul
 | **Pipeline** | Active deals in HubSpot | Deal count, weighted value, stage distribution | hubspot-api |
 | **Client Health** | Portfolio Co A ROAS | Google Ads spend vs Field Service Platform revenue | google-ads-connector + field-service-connector |
 | **Client Health** | Portfolio Co B organic traffic trend | GSC impressions + GA4 sessions | gsc-connector + ga4-connector |
-| **Operations** | Linear issues blocked > 3 days | Blocked tickets across all projects | linear-mcp-server |
+| **Operations** | Linear issues blocked > 3 days | Blocked tickets across all projects | linear-api-access.py |
 | **Cash** | GFV AR aging > 30 days | Outstanding invoices | quickbooks-api |
 | **Contracts** | Pending proposals | PandaDoc status | pandadoc-api |
 | **Personal** | % time on strategic vs operational | Calendar audit | google-calendar-api |
@@ -97,7 +97,7 @@ Unlike a traditional startup CEO, GFV's operating partner allocates across **mul
 | System | What It Provides | Access Skill |
 |--------|-----------------|-------------|
 | HubSpot | Deal pipeline, contacts, engagement timeline | hubspot-api |
-| Linear | Project boards across all clients | linear-mcp-server |
+| Linear | Project boards across all clients | linear-api-access.py |
 | QuickBooks | P&L, invoices, expenses, AR/AP | quickbooks-api |
 | PandaDoc | Proposals, contracts, e-signatures | pandadoc-api |
 | Field Service Platform | Portfolio Co A job revenue, lead attribution | field-service-connector |
@@ -138,7 +138,7 @@ Unlike a traditional startup CEO, GFV's operating partner allocates across **mul
 | System | What It Provides | How to Access |
 |--------|-----------------|---------------|
 | Client CRM | Real-time pipeline state | `hubspot-api` / `salesforce-api` |
-| Local Memory | Client-specific facts | `gfv-brain-search.py` |
+| Local Memory | Client-specific facts | `ceo-brain-search.py` |
 
 > **GFV Rule:** Check live connected systems and local client memory to verify claims before submitting answers.
 

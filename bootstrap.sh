@@ -214,6 +214,7 @@ fi
 
 # 1. Create brain structure
 echo "  📁 Creating ~/ceo-brain and ~/gtm-brain..."
+mkdir -p "$CEO_BRAIN_DIR/.core"
 mkdir -p "$CEO_BRAIN_DIR/meetings"
 mkdir -p "$CEO_BRAIN_DIR/mementos"
 mkdir -p "$CEO_BRAIN_DIR/weekly"
