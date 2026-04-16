@@ -28,7 +28,7 @@ This kit enables the proprietary **Growth by Design (GxD)** architecture directl
 
 **The Enablement**: Zero-configuration UI orchestration. You can command multi-agent swarms to execute deep data reconciliation, content generation, and pipeline audits via Cursor or Claude without writing a single line of code.
 
-**The Proprietary Model**: Built on the Proactive Intelligence Layer (PIL). Leveraging Local SQLite FTS5 Memory Caching, edge-compute Swarm Dispatchers, and strict 1Password Secrets Marshalling to execute cross-platform integrations (Linear, HubSpot, CAAI, Slack) while guaranteeing zero data leakage.
+**The Proprietary Model**: Built on a decoupled, edge-native architecture. Leveraging Local SQLite FTS5 Memory Caching, edge-compute Swarm Dispatchers, and strict 1Password Secrets Marshalling to execute cross-platform integrations (Linear, HubSpot, CAAI, Slack) while guaranteeing zero data leakage.
 
 ---
 

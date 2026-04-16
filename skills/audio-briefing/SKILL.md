@@ -126,10 +126,10 @@ Always produce:
 
 | System | What It Provides | How to Access |
 |--------|-----------------|---------------|
-| PIL | Cross-session intelligence | `pil-memory-bus` / `gfv-brain-search.py` |
-| HubSpot / CRM | Real-time pipeline state | `hubspot-api` |
+| Client CRM | Real-time pipeline state | `hubspot-api` / `salesforce-api` |
+| Local Memory | Client-specific facts | `gfv-brain-search.py` |
 
-> **GFV Rule:** Check PIL and live systems to verify claims before submitting answers.
+> **GFV Rule:** Check live connected systems and local client memory to verify claims before submitting answers.
 
 ## Proactive Triggers
 
@@ -152,7 +152,7 @@ Surface these issues WITHOUT being asked when you notice them in context:
 
 All factual findings and systemic claims must utilize the following confidence index:
 - 🟢 **Verified** — Confirmed natively via live system data pull or explicit context.
-- 🟡 **Medium** — Deduced from PIL/memory or recent but not validated real-time data.
+- 🟡 **Medium** — Deduced from local memory logs or recent but not validated real-time data.
 - 🔴 **Assumed** — No source available, utilizing best-judgment baseline.
 
 ## <verification_gate>
