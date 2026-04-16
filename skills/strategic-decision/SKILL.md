@@ -1,7 +1,7 @@
 ---
 name: strategic-decision
-description: >
 short_description: "Framework for high-stakes strategic choices"
+description: >
   Multi-phase strategic decision framework for CEO founders. Orchestrates research, feasibility,
   planning, and implementation for any business initiative — product launches, market entry,
   hiring, fundraising, partnerships, or pivots. Triggers on "should we", "evaluate", "feasibility",

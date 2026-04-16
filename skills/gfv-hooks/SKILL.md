@@ -1,7 +1,7 @@
 ---
 name: gfv-hooks
-description: >
 short_description: "Configure lifecycle hooks for your AI agent"
+description: >
   Event-driven lifecycle automation for AI-native companies. Provides a complete hooks
   infrastructure with session persistence, decision audit trails, safety gates, and
   notification systems. Use when onboarding a new portfolio company, setting up agent
