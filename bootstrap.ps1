@@ -122,6 +122,7 @@ if (!(Test-Path $profilePath)) {
         $userCompany = "My Company"
         $userRole = "CEO"
         $userIndustry = "Technology"
+        $userIdeExpertise = "2"
     } else {
         Write-Host ""
         Write-Host "📋 Quick Profile Setup (used to personalize your AI):" -ForegroundColor Cyan
@@ -129,6 +130,14 @@ if (!(Test-Path $profilePath)) {
         $userCompany = Read-Host "  Your company name"
         $userRole = Read-Host "  Your role (e.g., CEO, Founder)"
         $userIndustry = Read-Host "  Your industry"
+        
+        Write-Host ""
+        Write-Host "  What is your comfort level with coding interfaces (IDEs) like Cursor?"
+        Write-Host "  [1] Beginner (I need tutorials)"
+        Write-Host "  [2] Intermediate (I know the basics)"
+        Write-Host "  [3] Advanced (Skip the tutorials)"
+        $userIdeExpertise = Read-Host "  Select level [1, 2, or 3]"
+        if ([string]::IsNullOrWhiteSpace($userIdeExpertise) -or $userIdeExpertise -notmatch "^[123]$") { $userIdeExpertise = "1" }
     }
 
     $profile = @{
@@ -137,6 +146,7 @@ if (!(Test-Path $profilePath)) {
         role = $userRole
         industry = $userIndustry
         tier = $tierName
+        ide_expertise = [int]$userIdeExpertise
         created = (Get-Date -Format "yyyy-MM-dd")
     } | ConvertTo-Json -Depth 3
 
@@ -202,6 +212,7 @@ CRITICAL:
 1. Access the shared executive brain at ~\ceo-brain\profile.json and ~\ceo-brain\voice-model.md for context before generating external communications.
 2. For specialized tasks, reference the .agents\skills\ directory.
 3. Never bypass explicit 'requires_human_approval' flags.
+4. On the first interaction of a new session, run `.\hooks\session-start.py` to capture metrics and orient yourself.
 "@
 
 Set-Content -Path (Join-Path $REPO_DIR ".cursorrules") -Value $ruleContent -Encoding UTF8

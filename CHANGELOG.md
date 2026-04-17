@@ -2,6 +2,23 @@
 
 All notable changes to the GetFresh GTM Enablement Kit for AI will be documented in this file.
 
+## 2026-04-16 10:35 PM PT — v1.32.1 — UX Hardening & Agnostic Compliance
+
+### Why it matters
+This patch permanently resolves severe UX friction points and hardcoded agnostic breaks introduced during recent architecture decoupling efforts. It ensures Windows boot sequences are on full feature-parity with macOS, eliminates hallucinated installer file paths for non-guided cloning, and structurally secures the Sherpa Educator feature from getting accidentally overwritten by other skills.
+
+### Changed
+- **`bootstrap.sh`** — Eliminated a ghost directory pathing bug where the final step told users to open the non-existent `GTM-Enablement-Kit` folder instead of dynamically referencing the actual cloned repository's name.
+- **`bootstrap.ps1`** — Brought Windows fully inline with macOS by injecting the `ide_expertise` selector prompt into the boot sequence, guaranteeing the Dual-Axis Sherpa UX successfully binds for Windows CEOs.
+- **`AGENT.md` / Bootstraps** — Scratched proprietary `claude-mem` library references from the core rule set in favor of decoupled generic local memory requirements, and updated `.cursorrules` generation to natively instruct the hook boot sequence, eliminating boot-time errors in non-Anthropic IDEs.
+- **`skills/onboard/SKILL.md`** — Sandboxed the JSON read/write flow so that `/onboard` parses and merges into `profile.json` natively instead of overwriting the document and destroying execution settings (like `ide_expertise`).
+
+### Files Modified
+- CHANGELOG.md
+- bootstrap.sh, bootstrap.ps1
+- AGENT.md
+- skills/onboard/SKILL.md
+
 ## 2026-04-16 4:52 PM PT — v1.32.0 — Agnostic Architecture Decoupling & Educator Persona
 
 ### Why it matters

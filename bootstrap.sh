@@ -315,6 +315,7 @@ CRITICAL:
 2. For specialized tasks, reference the skills/ directory.
 3. Never bypass explicit 'requires_human_approval' flags.
 4. Always execute python scripts using the local virtual environment bounding the kit: `./venv/bin/python`
+5. On the first interaction of a new session, run `./hooks/session-start.py` to capture metrics and orient yourself.
 EOF
 echo "  → Generated native .cursorrules integration"
 
@@ -327,6 +328,7 @@ CRITICAL:
 2. For specialized tasks, reference the skills/ directory.
 3. Never bypass explicit 'requires_human_approval' flags.
 4. Always execute python scripts using the local virtual environment bounding the kit: `./venv/bin/python`
+5. On the first interaction of a new session, run `./hooks/session-start.py` to capture metrics and orient yourself.
 EOF
 echo "  → Generated native .windsurfrules integration"
 
@@ -477,7 +479,7 @@ echo "  │  WHAT TO DO NEXT                                             │"
 echo "  │                                                              │"
 echo "  │  1. Open Cursor.                                             │"
 echo "  │  2. Click 'File' > 'Open Folder' (from the top menu).        │"
-echo "  │  3. Select 'GTM-Enablement-Kit' in your Documents.           │"
+echo "  │  3. Select '$(basename "$REPO_DIR")' (this folder)             │"
 echo "  │  4. Press Cmd+I (Mac) or Ctrl+I (Windows) to open Chat.      │"
 echo "  │  5. Type: /onboard                                           │"
 echo "  │                                                              │"

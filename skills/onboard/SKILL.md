@@ -143,15 +143,16 @@ Every level gets voice calibration — it's the #1 value driver.
 
 *After receiving input:*
 1. Parse names and domains
-2. Write to `~/ceo-brain/profile.json` (merge with existing profile):
+2. Write to `~/ceo-brain/profile.json` (**CRITICAL: You must read the existing file first and merge these keys into the existing JSON object. Do NOT overwrite the entire file or you will delete `ide_expertise` and other critical flags.**)
 
 ```json
 {
+  "... existing keys preserved ...",
   "team": [
     {"name": "Sarah", "role": "Marketing Lead", "domain": "marketing"},
     {"name": "John", "role": "Operations Lead", "domain": "operations"}
   ],
-  "last_updated": "2026-04-14"
+  "last_updated": "[Current Date]"
 }
 ```
 
