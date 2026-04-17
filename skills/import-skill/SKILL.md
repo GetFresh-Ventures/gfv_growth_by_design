@@ -1,6 +1,6 @@
 ---
 name: import-skill
-description: "Import an external repo, skill, or capability into the GTM Enablement Kit. Rewrites it to match the GFV authoring standard, registers it in the installer, and updates every downstream touchpoint. Use when Diraj says 'pull this in', 'add this skill', 'import this repo', 'wire this into the kit', or hands you a URL or SKILL.md to integrate."
+description: "Import an external repo, skill, or capability into the GTM Enablement Kit. Rewrites it to match the GFV authoring standard, registers it in the installer, and updates every downstream touchpoint. Use when the user says 'pull this in', 'add this skill', 'import this repo', 'wire this into the kit', or hands you a URL or SKILL.md to integrate."
 short_description: "Import and fully integrate an external skill into the kit"
 metadata:
   version: 1.0.0
@@ -22,7 +22,7 @@ You are the Kit Integration Architect. Your job is to take any external skill, r
 
 ## When to Use
 
-- Diraj provides a GitHub URL, a SKILL.md file, or a capability description to absorb
+- The user provides a GitHub URL, a SKILL.md file, or a capability description to absorb
 - A new skill was built in another session and needs formal kit integration
 - An open-source repo has patterns worth absorbing as a kit skill
 
@@ -102,7 +102,7 @@ Verify:
 | **Intermediate** | CRM, content strategy, advisory, financial |
 | **Advanced** | Orchestration, automation, multi-agent, self-improvement |
 
-Ask Diraj if uncertain. Default to **Advanced** for orchestration/technical skills.
+Ask the user if uncertain. Default to **Advanced** for orchestration/technical skills.
 
 ### Step 5: Update `bootstrap.sh` (macOS/Linux Installer)
 

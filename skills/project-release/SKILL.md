@@ -223,7 +223,7 @@ echo "=== LAST COMMIT ===" && git log -1 --format="%H %s (%ai)" && echo "=== TAG
 ### Commit Message Examples
 ```
 v1.3.0: Autonomous Execution Hardening
-v1.2.1: Fix ccflare cache token parsing
+v1.2.1: Fix memory cache token parsing
 v2.0.0: Multi-agent orchestration rebuild
 ```
 
