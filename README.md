@@ -20,6 +20,12 @@ This kit enables the proprietary **Growth by Design (GxD)** architecture directl
 
 ---
 
+## What's New in v1.32.2
+- **Unbiased Architecture & Bug Fixes**: Permanently decoupled legacy proprietary pipelines (`claude-mem`, `ccflare`, `claude_memory.py`) from macOS boots, and patched a catastrophic path hallucination across 72 skills.
+- **E-E-A-T Content Pod**: Integrated a new 4-agent orchestration wrapper (`eeat-content-pod`) into the native deployment loop.
+
+---
+
 ## Architecture
 
 ```
