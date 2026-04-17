@@ -27,7 +27,7 @@ You are an expert in [domain]. Your goal is [specific outcome for the CEO/operat
 ## Before Starting
 
 **Check for context first:**
-If `company-context.md` or relevant PIL data exists, read it before asking questions.
+If `company-context.md` or relevant local memory data exists, read it before asking questions.
 Use that context and only ask for information not already covered.
 
 Gather this context (ask if not provided):
@@ -93,7 +93,7 @@ All output follows structured communication standards:
 - **Bottom line first** — answer before explanation
 - **What + Why + How** — every finding has all three
 - **Actions have owners and deadlines** — no "we should consider"
-- **Confidence tagging** — 🟢 verified (from live data) / 🟡 medium (from memory/PIL) / 🔴 assumed (no source)
+- **Confidence tagging** — 🟢 verified (from live data) / 🟡 medium (from local memory) / 🔴 assumed (no source)
 
 ## Related Skills
 
@@ -134,7 +134,7 @@ Every skill checks for existing context before asking questions. Only ask for wh
 | Domain | Context File | Created By |
 |--------|-------------|-----------|
 | Company | `company-context.md` | onboard skill |
-| Pipeline | Supabase PIL | supabase-access skill |
+| Pipeline | Local CEO Brain | gfv-brain-search.py |
 | Meetings | Fathom transcripts | fathom-api skill |
 | Financials | QuickBooks data | quickbooks-api skill |
 
@@ -198,7 +198,7 @@ Map common requests to specific, concrete deliverables.
 ### Pattern 8: Confidence Tagging
 Every finding tagged:
 - 🟢 **Verified** — from live system data (HubSpot, Field Service Platform, GA4, etc.)
-- 🟡 **Medium** — from PIL/memory or recent but not real-time data
+- 🟡 **Medium** — from local memory or recent but not real-time data
 - 🔴 **Assumed** — no source, best judgment
 
 ### Pattern 9: Live Integration Hooks
@@ -391,7 +391,7 @@ For orchestrator agents deploying subagents (or executing research tools), you M
 To prevent hallucinating APIs that "should" exist, agents must execute a "Phase 0" loop before planning complex multi-step implementations. Deploy a discovery pass to read docs and identify actual available methods and anti-patterns. Implementation tasks must be framed as "COPY from these documented patterns" rather than "Invent this feature".
 
 ### Pattern 25: Progressive Disclosure Memory Loop (10x Context Efficiency)
-When searching massive databases, vector stores, or the PIL, agents MUST NOT execute sweeping blanket pulls. You must use a 3-Layer workflow: **Index (Search for IDs/Headers) -> Timeline (Chronological Context) -> Fetch (Pull only 1-2 exact IDs for full detail)**. This limits token destruction and enhances synthesis focus.
+When searching massive databases, vector stores, or the local CEO Brain, agents MUST NOT execute sweeping blanket pulls. You must use a 3-Layer workflow: **Index (Search for IDs/Headers) -> Timeline (Chronological Context) -> Fetch (Pull only 1-2 exact IDs for full detail)**. This limits token destruction and enhances synthesis focus.
 
 ### Pattern 26: Post-Execution Verification Isolation
 An agent writing code must not be the agent verifying its own code. After an implementation step, the orchestrator must execute verification in isolated logic bounds via subagents: a "Verification pass" (run tests/scripts), an "Anti-Pattern pass" (grep for forbidden code), and a "Code Quality pass". Only commit upon successful isolated verification.
@@ -443,5 +443,5 @@ Before a skill is considered done:
 ---
 
 *Attribution: Patterns adapted from alirezarezvani/claude-skills (MIT License).*
-*GFV extensions: Live integration hooks, PIL context, confidence tagging.*
+*GFV extensions: Live integration hooks, local memory context, confidence tagging.*
 *Version: 1.0.0 | Created: 2026-04-11*

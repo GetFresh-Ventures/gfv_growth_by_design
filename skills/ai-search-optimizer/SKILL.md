@@ -4,7 +4,7 @@ description: Answer Engine Optimization — get AI assistants like ChatGPT, Perp
 short_description: "Optimize your content for AI search engines"
 license: MIT
 metadata:
-  author: GFV Proactive Intelligence
+  author: GFV Growth by Design
   version: 1.0.0
   category: Growth Engine
 ---

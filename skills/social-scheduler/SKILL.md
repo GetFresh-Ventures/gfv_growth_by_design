@@ -4,7 +4,7 @@ description: Cross-post and schedule content to social channels from a single co
 short_description: "Schedule and cross-post to social channels"
 license: MIT
 metadata:
-  author: GFV Proactive Intelligence
+  author: GFV Growth by Design
   version: 2.0.0
   category: Growth Engine
 ---

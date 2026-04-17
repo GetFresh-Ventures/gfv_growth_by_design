@@ -4,7 +4,7 @@ description: Paste any legal contract and get a plain-English summary with red-f
 short_description: "Summarize contracts in plain English"
 license: MIT
 metadata:
-  author: GFV Proactive Intelligence
+  author: GFV Growth by Design
   version: 1.0.0
   category: Day-to-Day Operations
 ---

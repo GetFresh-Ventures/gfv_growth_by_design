@@ -4,7 +4,7 @@ description: Read, post, and manage Slack team communications. Channel monitorin
 short_description: "Read, post, and manage Slack messages"
 license: MIT
 metadata:
-  author: GFV Proactive Intelligence
+  author: GFV Growth by Design
   version: 2.0.0
   category: Day-to-Day Operations
 ---

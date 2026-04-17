@@ -4,7 +4,7 @@ description: Global intelligence pipeline with country instability scoring, geop
 short_description: "Global intelligence and risk monitoring"
 license: MIT
 metadata:
-  author: GFV Proactive Intelligence
+  author: GFV Growth by Design
   version: 1.0.0
   category: Infrastructure
 ---

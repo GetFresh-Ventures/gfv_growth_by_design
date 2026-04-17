@@ -4,7 +4,7 @@ description: Compliant SMS/WhatsApp outreach with opt-in verification, Twilio in
 short_description: "Compliant SMS/WhatsApp outreach campaigns"
 license: MIT
 metadata:
-  author: GFV Proactive Intelligence
+  author: GFV Growth by Design
   version: 2.0.0
   category: Growth Engine
 ---

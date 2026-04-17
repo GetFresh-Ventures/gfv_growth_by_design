@@ -9,7 +9,7 @@ Proactively audit the CRM pipeline for stalled deals and draft rescue communicat
 ## Execution Instructions
 
 ### Phase 1: Pipeline Audit
-1. Execute the `skills/pipeline-pulse` protocol to retrieve the latest state of the pipeline from the Proactive Intelligence Layer (PIL).
+1. Execute the `skills/pipeline-pulse` protocol to retrieve the latest state of the pipeline from the local CEO Brain.
 2. Cross-reference HubSpot data with `~/gtm-brain/pipeline.md` to identify deals stagnant for >5 days.
 3. Query `gfv_memory.db` for meeting transcripts or last-contact details related to these stagnant entities.
 

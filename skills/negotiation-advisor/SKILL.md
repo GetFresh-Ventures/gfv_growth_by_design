@@ -4,7 +4,7 @@ description: Battle-tested negotiation frameworks for deal closers. Preparation,
 short_description: "Battle-tested negotiation frameworks"
 license: MIT
 metadata:
-  author: GFV Proactive Intelligence
+  author: GFV Growth by Design
   version: 1.0.0
   category: C-Suite Advisory
 ---

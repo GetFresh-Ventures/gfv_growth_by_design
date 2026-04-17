@@ -4,7 +4,7 @@ description: An autonomous content validation system. Focuses on distribution, i
 short_description: "Autonomous content validation system"
 license: MIT
 metadata:
-  author: GFV Proactive Intelligence
+  author: GFV Growth by Design
   version: 1.0.0
   category: marketing-automation
 ---

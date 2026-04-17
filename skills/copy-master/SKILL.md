@@ -4,7 +4,7 @@ description: World-class copywriting intelligence engine overriding generic LLM 
 short_description: "Write world-class marketing copy"
 license: MIT
 metadata:
-  author: GFV Proactive Intelligence
+  author: GFV Growth by Design
   version: 1.0.0
   category: Growth Engine
 ---

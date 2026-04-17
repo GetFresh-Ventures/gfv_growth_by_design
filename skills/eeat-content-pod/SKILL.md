@@ -37,8 +37,8 @@ When invoked, the OpenClaw Orchestrator must immediately adopt the **Code 7/9 (C
 ### 2. The Client Context Miner (Agent 2)
 **Goal:** Gather the "Experience, Expertise, Authoritativeness" (E-E-A) proof points specific to the client.
 **Instructions:**
-- **Dynamic Context Search:** If PIL is connected, query Supabase for transcripts and actual quotes from the company leaders.
-- **Client Fallback:** If PIL is not available, use `search_web` over the client's own domain (`site:clientdomain.com`) or prompt the user for relevant Fathom transcripts / internal pricing docs.
+- **Dynamic Context Search:** If local CEO Brain memory is available, query it for transcripts and actual quotes from the company leaders.
+- **Client Fallback:** If local memory is not available, use `search_web` over the client's own domain (`site:clientdomain.com`) or prompt the user for relevant Fathom transcripts / internal pricing docs.
 - **Output:** A strict "Truth File" containing pure facts: local pricing, names of technicians, specific zip-code challenges, and exact quotes. No fluff.
 
 ### 3. The Compliance Writer (Agent 3)

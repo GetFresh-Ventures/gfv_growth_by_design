@@ -4,7 +4,7 @@ description: Safely configure recurring local or cloud background tasks with GFV
 short_description: "Set up recurring background tasks"
 license: MIT
 metadata:
-  author: GFV Proactive Intelligence
+  author: GFV Growth by Design
   version: 1.0.0
   category: Infrastructure
 ---

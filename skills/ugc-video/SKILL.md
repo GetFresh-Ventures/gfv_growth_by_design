@@ -4,7 +4,7 @@ description: Script-to-video production pipeline. AI talking heads, B-roll, voic
 short_description: "Script-to-video production pipeline"
 license: MIT
 metadata:
-  author: GFV Proactive Intelligence
+  author: GFV Growth by Design
   version: 1.0.0
   category: Growth Engine
 ---
