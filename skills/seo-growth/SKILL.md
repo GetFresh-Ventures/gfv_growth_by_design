@@ -46,15 +46,30 @@ Just say any of these:
 
 Diagnose infrastructure issues that prevent indexing:
 
+#### P0 — Critical (Fix Immediately)
 | Check | How | Fix |
 |-------|-----|-----|
 | **Crawlability** | Check robots.txt, XML sitemap | Ensure all important pages are crawlable |
 | **Indexation** | `site:domain.com` in Google | Submit missing pages via GSC |
-| **Page Speed** | Core Web Vitals (LCP, CLS, INP) | Optimize images, defer JS, fix layout shifts |
-| **Mobile** | Mobile-friendly test | Responsive design, tap targets, font sizes |
 | **HTTPS** | Check SSL cert | Force HTTPS redirect |
+| **Mobile** | Mobile-friendly test | Responsive design, tap targets, font sizes |
+| **No critical noindex** | Check meta robots | Remove accidental noindex on key pages |
+
+#### P1 — Important (Fix This Sprint)
+| Check | How | Fix |
+|-------|-----|-----|
+| **AI bot access** | robots.txt allows GPTBot, PerplexityBot, ClaudeBot | Add explicit Allow rules → feeds Copilot, ChatGPT, Perplexity |
+| **Bing indexed** | Bing Webmaster Tools | Required for Microsoft Copilot citations |
+| **Page Speed** | Core Web Vitals (LCP <2.5s, CLS <0.1, INP <200ms) | Optimize images, defer JS, fix layout shifts |
 | **Canonical tags** | Check for duplicates | Add canonical to preferred version |
 | **404 errors** | GSC Coverage report | 301 redirect or restore content |
+
+#### P2 — Recommended
+| Check | How | Fix |
+|-------|-----|-----|
+| **IndexNow** | Submit to Bing via IndexNow protocol | Faster Bing/Copilot indexing |
+| **Images** | WebP format, lazy loading, alt text | Compress and optimize all images |
+| **Compression** | GZIP/Brotli | Enable server-side compression |
 
 ### 2. On-Page SEO
 

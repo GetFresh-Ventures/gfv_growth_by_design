@@ -169,6 +169,123 @@ Track whether AI engines actually cite your content over time:
 | Competitor overtook | Lost top-3 to new content | Differentiate with original data/experience |
 | AI citation lost | Was cited, now isn't | Re-optimize for citation-ready prose |
 
+---
+
+## GEO: The 9 Optimization Methods (Princeton Study)
+
+Princeton/KDD 2024 research (arXiv:2311.09735) tested 9 content optimization methods across 10,000+ queries. Results measured on Perplexity.ai:
+
+| Method | Visibility Boost | Best For |
+|--------|-----------------|----------|
+| **1. Cite Sources** | +40% | All content — add authoritative references |
+| **2. Statistics Addition** | +37% | Business, finance, health — include specific numbers |
+| **3. Authoritative Tone** | +25-30% | Professional, legal — confident, expert voice |
+| **4. Quotation Addition** | +22% | Academic — add expert quotes with attribution |
+| **5. Easy-to-Understand** | +20% | Consumer, health — simplify complex concepts |
+| **6. Technical Terms** | +18% | Technology, science — domain-specific vocabulary |
+| **7. Unique Words** | +15% | All — increase vocabulary diversity |
+| **8. Fluency Optimization** | +15-30% | All — improve readability and logical flow |
+| **9. Keyword Stuffing** | **-10%** ⚠️ | AVOID — actively decreases AI visibility |
+
+### Best Combinations (Princeton)
+| Combination | Effectiveness |
+|-------------|--------------|
+| **Fluency + Statistics** | Highest overall boost |
+| **Citations + Authoritative Tone** | Best for professional/B2B |
+| **Easy Language + Statistics** | Best for consumer content |
+| **Technical Terms + Citations** | Best for academic/scientific |
+
+### Domain-Specific Recommendations
+| Domain | Best Methods | Avoid |
+|--------|-------------|-------|
+| Technology | Technical Terms, Citations, Statistics | Oversimplification |
+| Business/Finance | Statistics, Authoritative Tone, Citations | Vague claims |
+| Healthcare | Easy Language, Statistics, Citations | Jargon overload |
+| Legal | Citations, Quotations, Authoritative Tone | Informal language |
+| E-commerce | Statistics, Social Proof, Clear Benefits | Feature dumps |
+
+---
+
+## AI Platform Ranking Factors
+
+### ChatGPT Ranking Weights (SE Ranking Study — 129K domains)
+| Factor | Weight | Details |
+|--------|--------|---------|
+| **Authority & Credibility** | 40% | Branded domains preferred over third-party |
+| **Content Quality & Utility** | 35% | Clear structure, comprehensive answers |
+| **Platform Trust** | 25% | Wikipedia, Reddit, Forbes prioritized |
+
+Key insights:
+- **Referring domains** = strongest predictor (>350K domains → 8.4 avg citations)
+- **30-day-old content** gets 3.2x more citations than older content
+- **Content-Answer Fit** = 55% of citation weight — match ChatGPT's response style
+
+### Perplexity AI (3-Layer RAG Reranking)
+| Signal | Impact |
+|--------|--------|
+| **FAQ Schema (JSON-LD)** | Pages with FAQ blocks cited more often |
+| **PDF Documents** | Publicly hosted PDFs get priority |
+| **Content Velocity** | Publishing speed matters more than keyword density |
+| **Semantic Payloads** | Clear, atomic paragraphs preferred |
+| **YouTube Sync** | Matching YouTube titles boost queries |
+
+### Google AI Overview
+| Factor | Impact |
+|--------|--------|
+| **Authoritative Citations** | +132% visibility with trusted references |
+| **Authoritative Tone** | +89% visibility improvement |
+| **Knowledge Graph** | Being in Google's KG = automatic boost |
+| **Topical Authority** | Content clusters + internal linking |
+
+### Microsoft Copilot / Bing AI
+- Must be indexed by **Bing** (not just Google)
+- LinkedIn + GitHub mentions provide a boost
+- Allow BingBot + msnbot in robots.txt
+- Use **IndexNow** for faster Bing indexing
+
+---
+
+## Query Fanout Competitive Analysis
+
+6-step workflow to discover what AI engines are saying about your topic and optimize against it (adapted from Brightdata/geo-ai-agent):
+
+1. **Extract title** — Get the H1/title of your target page
+2. **Query fanout** — Search Google for that title, collect all related queries
+3. **Extract main query** — Distill the fanout into the single best Google-style keyphrase
+4. **Retrieve AI Overview** — Use the keyphrase to pull Google's AI Overview
+5. **Summarize fanout** — Create a structured summary of what the fanout covers
+6. **Compare & optimize** — Diff your content against the AI Overview:
+   - Which sub-topics appear in the AI Overview but NOT in your content? → Add them
+   - Which of your sections are NOT represented in the AI Overview? → These are differentiators
+   - What patterns (recurring themes, data points, sources) does the AI Overview favor? → Match them
+
+**Output:** A comparison table with columns: Aspect | Your Content | AI Overview | Gaps | Action Items
+
+---
+
+## Audit Rule Coverage Reference
+
+Comprehensive SEO audit should cover 230+ rules across 21 categories (reference: squirrelscan):
+
+| Category | Rules | Focus |
+|----------|-------|-------|
+| Accessibility | 56 | ARIA, landmarks, focus management |
+| Performance | 24 | Core Web Vitals, caching, JS |
+| Crawlability | 15 | robots.txt, sitemaps, indexability |
+| Security | 15 | HTTPS, CSP, leaked secrets (96 patterns) |
+| Links | 15 | Broken links, redirects, anchor text |
+| Images | 15 | Alt text, formats, lazy loading |
+| Content | 15 | Readability, freshness, word count |
+| E-E-A-T | 14 | Authority, trust, expertise signals |
+| Core | 13 | Meta tags, canonical, doctype |
+| Structured Data | 11 | JSON-LD validation |
+| URL Structure | 8 | Length, format, parameters |
+| Mobile | 6 | Viewport, tap targets, responsive |
+| Social Media | 4 | Open Graph, Twitter Cards |
+| Video | 3 | Schema, captions, thumbnails |
+| Local SEO | 3 | NAP, geo tags, service areas |
+| AI Detection | 2 | AI content signals |
+
 ## Security Constraints
 - Never fabricate reviews, fake citations, or create astroturfed content.
 - All third-party signal building must be authentic and transparent.
