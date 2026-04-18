@@ -195,7 +195,20 @@ Strategic summary...
 
 2. Use the `the linear-api-access.py GraphQL script` tool to publish the payload as a Project Update. Set health to `onTrack`.
 
-**GATE: Linear update must be created successfully.**
+3. **Update the project description body** (the `content` field) to reflect the current version number and kit stats. Use the `projectUpdate` mutation with the `content` input field:
+```python
+mutation = """
+mutation ProjectUpdate($id: String!, $content: String!) {
+  projectUpdate(id: $id, input: { content: $content }) {
+    success
+    project { id name }
+  }
+}
+"""
+```
+Ensure the content body includes: GFV branding, getfreshventures.com URL, architecture summary, current version number, skill count, and tier distribution. Remove any stale references to previous versions or deprecated systems.
+
+**GATE: Both the project update AND the project content update must succeed.**
 
 ---
 
