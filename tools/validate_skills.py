@@ -47,8 +47,8 @@ def validate_skills():
         # But we will leave it to the user to place the requires_human_approval flag for now.
 
         if "<verification_gate>" not in content:
-            print(f"⚠️ {skill_name}: Missing <verification_gate> block.")
-            # Note: We'll make this an error once all skills are fully updated. Just a warning for now so CI doesn't crash on legacy skills.
+            print(f"❌ {skill_name}: Missing <verification_gate> block.")
+            errors += 1
     
     print(f"\n✅ Checked {checked} skills.")
     if errors > 0:
