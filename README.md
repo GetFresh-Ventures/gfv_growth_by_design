@@ -326,7 +326,7 @@ Audio synthesis and executive briefing generation.
 git clone https://github.com/GetFresh-Ventures/gxd-ceo-ai-kit.git ~/Documents/gxd-ceo-ai-kit
 cd ~/Documents/gxd-ceo-ai-kit
 ./bootstrap.sh          # Mac/Linux
-# .ootstrap.ps1       # Windows
+# .\bootstrap.ps1       # Windows
 ```
 
 Then open `~/Documents/gxd-ceo-ai-kit` inside **Cursor** and type `/onboard` in the Composer chat.
