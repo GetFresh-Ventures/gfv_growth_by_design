@@ -24,13 +24,10 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 **Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages (email, Slack, WhatsApp) without the Executive's explicit "send it" approval.
 
 **Active Clients**:
-- **Golden Rule PHC** — HVAC/plumbing/roofing: goldenrulephc.com, rivercityac.com, cornerstoneroofingexteriors.com
-- **Aprio Board Portal** — SaaS governance: aprioboardportal.com
 - **GetFresh Ventures** — Venture studio: getfreshventures.com
 
 ---
 
-**Content Pipeline**: WordPress REST API for Golden Rule (goldenrulephc.com) and Aprio (aprioboardportal.com). Use `wordpress-page-creation` or `aprio-site-deployment` skills for publishing.
 
 name: copywriting
 description: When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says "write copy for," "improve this copy," "rewrite this page," "marketing copy," "headline help," "CTA copy," "value proposition," "tagline," "subheadline," "hero section copy," "above the fold," "this copy is weak," "make this more compelling," or "help me describe my product." Use this whenever someone is working on website text that needs to persuade or convert. For email copy, see email-sequence. For popup copy, see popup-cro. For editing existing copy, see copy-editing.

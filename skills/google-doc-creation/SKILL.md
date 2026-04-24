@@ -164,7 +164,6 @@ url = create_formatted_doc(
     cover_page={
         "title": "SEO Growth Strategy",
         "subtitle": "Aprio Board Portal",
-        "domain": "aprioboardportal.com",
         "prepared_by": "GetFresh Ventures",
         "date": "April 2026",
         "confidential": True,
@@ -213,7 +212,6 @@ sys.path.insert(0, os.path.expanduser("~/Documents/Code/gfv-brain/scripts"))
 md_content = """
 # Aprio Board Portal — SEO Growth Strategy
 
-Domain: aprioboardportal.com · Date: April 10, 2026
 
 ---
 

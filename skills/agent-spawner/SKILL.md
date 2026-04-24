@@ -41,7 +41,6 @@ Output: Intelligence brief with confidence scores
 **Specialization**: Data processing, metrics calculation, trend analysis
 **Trigger**: "analyze", "compare", "what's the trend", "performance review"
 ```
-Skills: golden-rule-ga4, golden-rule-google-ads, golden-rule-gsc
 Output: Data tables, charts, trend analysis
 ```
 

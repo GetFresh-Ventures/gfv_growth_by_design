@@ -78,7 +78,6 @@ Returns a paginated list of meetings the API key owner has access to (own record
   "created_at": "2026-04-09T18:09:37Z",
   "url": "https://fathom.video/share/...",
   "calendar_invitees": [
-    {"name": "Mark Paup", "email": "mpaup@goldenrulephc.com"}
   ],
   "transcript": "Speaker 1: ...\nSpeaker 2: ...",
   "summary": "...",
@@ -200,7 +199,6 @@ def get_golden_rule_meetings(days_back=30):
     cursor = None
     
     gr_keywords = ["golden rule", "greg romans", "mark paup", "derrick", "golden rule"]
-    gr_emails = ["mpaup@goldenrulephc.com", "gregr@goldenrulephc.com"]
     
     while True:
         batch = client.list_meetings(

@@ -24,13 +24,10 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 **Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages (email, Slack, WhatsApp) without the Executive's explicit "send it" approval.
 
 **Active Clients**:
-- **Golden Rule PHC** — HVAC/plumbing/roofing: goldenrulephc.com, rivercityac.com, cornerstoneroofingexteriors.com
-- **Aprio Board Portal** — SaaS governance: aprioboardportal.com
 - **GetFresh Ventures** — Venture studio: getfreshventures.com
 
 ---
 
-**Analytics Stack**: GA4 (3 properties via MCP), ServiceTitan (MCP), HubSpot (PAT API). Use `golden-rule-ga4`, `servicetitan-api`, `hubspot-api` skills.
 
 name: analytics-tracking
 description: When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics," "conversion tracking," "event tracking," "UTM parameters," "tag manager," "GTM," "analytics implementation," "tracking plan," "how do I measure this," "track conversions," "attribution," "Mixpanel," "Segment," "are my events firing," or "analytics isn't working." Use this whenever someone asks how to know if something is working or wants to measure marketing results. For A/B test measurement, see ab-test-setup.

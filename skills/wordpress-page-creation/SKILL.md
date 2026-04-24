@@ -1,13 +1,11 @@
 ---
 name: wordpress-page-creation
-description: End-to-end methodology for creating high-conversion WordPress landing pages on goldenrulephc.com. Covers content strategy, SEO/SEM schema, design patterns, PageSpeed/Core Web Vitals, Google content standards (E-E-A-T), deployment via REST API, and post-launch validation. Research current best practices at runtime before generating content.
 ---
 
 # WordPress Page Creation Skill — Golden Rule
 
 ## Purpose
 
-A codified, repeatable process for creating **fully production-ready** WordPress pages on `goldenrulephc.com`. Every page published through this skill meets or exceeds:
 
 - Google's E-E-A-T and Helpful Content standards
 - Core Web Vitals thresholds (LCP, CLS, INP)
@@ -174,7 +172,6 @@ Every page MUST use semantic HTML5 elements (`<header>`, `<main>`, `<section>`, 
 | **Meta Description** | Action-oriented, include phone, ≤ 155 chars | `24/7 water heater repair in Salt Lake City. Same-day service, upfront pricing. Call (801) 901-8553 for fast help.` |
 | **H1** | One per page, includes primary keyword | `Water Heater Repair & Replacement in Salt Lake City` |
 | **H2s** | Service-specific, include secondary keywords | `Expert Water Heater Repair`, `When to Replace Your Water Heater` |
-| **Canonical URL** | Self-referencing canonical | `<link rel="canonical" href="https://goldenrulephc.com/[slug]/">` |
 | **Alt Text** | Every image, descriptive + keyword | `Golden Rule technician repairing water heater in Salt Lake City home` |
 | **Internal Links** | 2-3 links to related service/location pages | Link to HVAC, plumbing, general services pages |
 | **Word Count** | Minimum 800 words for PPC, 1500+ for organic | Ensures content depth for E-E-A-T |
@@ -190,8 +187,6 @@ Every page MUST use semantic HTML5 elements (`<header>`, `<main>`, `<section>`, 
   "@context": "https://schema.org",
   "@type": "Plumber",
   "name": "Golden Rule Plumbing, Heating, Cooling & Electrical",
-  "image": "https://goldenrulephc.com/wp-content/uploads/Golden-Rule-Logo-1.png",
-  "url": "https://goldenrulephc.com/",
   "telephone": "+1-801-901-8553",
   "address": {
     "@type": "PostalAddress",
@@ -235,7 +230,6 @@ Every page MUST use semantic HTML5 elements (`<header>`, `<main>`, `<section>`, 
 }
 ```
 
-> ⚠️ **ALWAYS verify current review count and rating** — search `goldenrulephc.com Google reviews` before hardcoding.
 
 #### FAQPage Schema
 
@@ -338,7 +332,6 @@ The landing page headline (H1) must **directly echo** the ad headline. Google me
 
 ```
 # PPC landing pages
-https://goldenrulephc.com/[slug]/?loc=UT
 
 # The ?loc=UT parameter triggers GeoIP phone number swap
 # Without it, the Iowa (515) number may display
@@ -617,7 +610,6 @@ The site has existing GCLID capture JS (stores in `_gclid` cookie, 90-day expiry
 
 import subprocess, json, base64, sys
 
-WP_SITE = "https://goldenrulephc.com"
 WP_USER = "marketing"
 
 def get_wp_password():

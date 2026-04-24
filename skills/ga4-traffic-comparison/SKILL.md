@@ -26,8 +26,6 @@ Compare traffic across arbitrary date periods for any GA4 property with normaliz
 
 | Client | Property ID | Website |
 |--------|-------------|---------|
-| Aprio Board Portal | `373880369` | aprioboardportal.com |
-| Golden Rule PHC | `319584840` | goldenrulephc.com |
 
 ---
 
@@ -125,7 +123,6 @@ The script prints:
 
 ```
 ==========================================================================
-  Aprio Board Portal (aprioboardportal.com) — GA4 Traffic Comparison
   Generated: April 19, 2026 at 11:00 AM
 ==========================================================================
 

@@ -16,11 +16,8 @@ description: >
 
 ### GFV Infrastructure Integration
 
-**SEO Tools Available**: SEMrush MCP, Google Search Console MCP, GA4 MCP, Lighthouse (via Chrome DevTools MCP). Use `golden-rule-semrush`, `golden-rule-gsc`, `golden-rule-ga4` skills for client-specific queries.
 
 **Active Client Sites for AEO**:
-- goldenrulephc.com (home services — local AEO critical)
-- aprioboardportal.com (SaaS — thought leadership AEO)
 - getfreshventures.com (venture studio — brand AEO)
 
 ---
@@ -100,10 +97,8 @@ Priority schema types for AEO:
 npm install -g aeo-tool  # or use npx
 
 # Audit a page
-npx aeo-tool audit https://goldenrulephc.com/ac-repair-salt-lake-city
 
 # Check AI citation readiness
-npx aeo-tool check-citation https://aprioboardportal.com/board-meeting-software
 ```
 
 ## Related Skills

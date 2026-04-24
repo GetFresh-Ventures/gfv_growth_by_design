@@ -25,13 +25,10 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 **Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages (email, Slack, WhatsApp) without the Executive's explicit "send it" approval.
 
 **Active Clients**:
-- **Golden Rule PHC** — HVAC/plumbing/roofing: goldenrulephc.com, rivercityac.com, cornerstoneroofingexteriors.com
-- **Aprio Board Portal** — SaaS governance: aprioboardportal.com
 - **GetFresh Ventures** — Venture studio: getfreshventures.com
 
 ---
 
-**Ads Infrastructure**: Google Ads MCP (3 accounts: DSM-PPC, LSA-Utah, LSA-DSM). Use `golden-rule-google-ads` and `golden-rule-google-ads-ops` skills for campaign management.
 
 
 # Paid Ads

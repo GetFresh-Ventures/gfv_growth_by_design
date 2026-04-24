@@ -71,8 +71,6 @@ Classification Matrix:
 │ Task Type        │ Target Agent │ Skill Chain          │
 ├─────────────────┼──────────────┼─────────────────────┤
 │ Pipeline query   │ HubSpot      │ hubspot-api → PIL   │
-│ Ad performance   │ Ads          │ golden-rule-google-ads │
-│ SEO audit        │ Content      │ golden-rule-semrush  │
 │ Client intel     │ PIL          │ pil-context-synthesis│
 │ Meeting prep     │ Multi-agent  │ meeting-prep chain   │
 │ Report gen       │ Reporter     │ gfv-report-builder   │

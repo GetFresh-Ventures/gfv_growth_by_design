@@ -85,7 +85,6 @@ def mouse_click(x, y):
 cdp("Page.enable")
 
 # Navigate — resource_id must be URL-encoded
-resource_id = "https%3A%2F%2Faprioboardportal.com%2F"  # CHANGE THIS per property
 cdp("Page.navigate", {"url": f"https://search.google.com/search-console?resource_id={resource_id}"})
 time.sleep(7)
 ```

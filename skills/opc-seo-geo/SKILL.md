@@ -23,13 +23,10 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 **Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages (email, Slack, WhatsApp) without the Executive's explicit "send it" approval.
 
 **Active Clients**:
-- **Golden Rule PHC** — HVAC/plumbing/roofing: goldenrulephc.com, rivercityac.com, cornerstoneroofingexteriors.com
-- **Aprio Board Portal** — SaaS governance: aprioboardportal.com
 - **GetFresh Ventures** — Venture studio: getfreshventures.com
 
 ---
 
-**SEO Tools Available**: SEMrush MCP, Google Search Console MCP, GA4 MCP, Lighthouse (via Chrome DevTools MCP). Use `golden-rule-semrush`, `golden-rule-gsc`, `golden-rule-ga4` skills for client-specific queries.
 
 
 # SEO/GEO Optimization Skill

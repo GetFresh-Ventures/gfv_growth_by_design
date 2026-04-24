@@ -80,8 +80,6 @@ event = {
         'timeZone': 'America/Denver',
     },
     'attendees': [
-        {'email': 'greg@goldenrulephc.com'},
-        {'email': 'derrick@goldenrulephc.com'},
     ],
     'conferenceData': {
         'createRequest': {'requestId': 'unique-id-here'}

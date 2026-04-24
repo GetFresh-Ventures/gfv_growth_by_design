@@ -23,22 +23,17 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 **Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages (email, Slack, WhatsApp) without the Executive's explicit "send it" approval.
 
 **Active Clients**:
-- **Golden Rule PHC** — HVAC/plumbing/roofing: goldenrulephc.com, rivercityac.com, cornerstoneroofingexteriors.com
-- **Aprio Board Portal** — SaaS governance: aprioboardportal.com
 - **GetFresh Ventures** — Venture studio: getfreshventures.com
 
 ---
 
-**SEO Tools Available**: SEMrush MCP, Google Search Console MCP, GA4 MCP, Lighthouse (via Chrome DevTools MCP). Use `golden-rule-semrush`, `golden-rule-gsc`, `golden-rule-ga4` skills for client-specific queries.
 
-**Ads Infrastructure**: Google Ads MCP (3 accounts: DSM-PPC, LSA-Utah, LSA-DSM). Use `golden-rule-google-ads` and `golden-rule-google-ads-ops` skills for campaign management.
 
 
 # PPC Keyword Strategy — Home Services
 
 **Use this skill when:** Building or restructuring Search campaigns for a home services company (HVAC, Plumbing, Water Heater, Electrical, Roofing, etc.). This methodology was developed and validated on the Golden Rule Utah market restructure (April 2026) and can be applied to any metro area.
 
-**Prerequisites:** [Golden Rule Google Ads Skill](../golden-rule-google-ads/SKILL.md) for MCP query syntax.
 
 ---
 

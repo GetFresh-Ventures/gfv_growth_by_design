@@ -24,8 +24,6 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 **Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages (email, Slack, WhatsApp) without the Executive's explicit "send it" approval.
 
 **Active Clients**:
-- **Golden Rule PHC** — HVAC/plumbing/roofing: goldenrulephc.com, rivercityac.com, cornerstoneroofingexteriors.com
-- **Aprio Board Portal** — SaaS governance: aprioboardportal.com
 - **GetFresh Ventures** — Venture studio: getfreshventures.com
 
 ---
@@ -139,10 +137,8 @@ Add to your MCP config:
 
 ## GFV Properties to Configure
 - `https://www.getfreshventures.com` (GSC)
-- `https://goldenrulephc.com` (GSC)
 - `https://rivercityac.com` (GSC)
 - `https://cornerstoneroofingexteriors.com` (GSC)
-- `https://aprioboardportal.com` (GSC)
 
 ## Setup Checklist
 - [ ] Clone repo and `npm install`

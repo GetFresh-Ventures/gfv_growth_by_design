@@ -11,7 +11,6 @@ description: Access ServiceTitan data for Golden Rule PHC via MCP connector. Cov
 
 ServiceTitan data is accessed through the **Golden Rule MCP connector**, not direct API calls.
 
-- **MCP Skill**: See `golden-rule-mcp/SKILL.md` for connection details
 - **Endpoint**: `https://gr-connectors-web.vercel.app/api/mcp`
 - **Auth**: Bearer token via `op read "op://Machine One/GR MCP Bearer Token/credential"`
 

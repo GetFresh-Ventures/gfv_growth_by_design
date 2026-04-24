@@ -80,7 +80,6 @@ POST /crm/v3/objects/contacts/search
     "filters": [{
       "propertyName": "email",
       "operator": "EQ",
-      "value": "greg@goldenrulephc.com"
     }]
   }],
   "properties": ["email", "firstname", "lastname", "phone", "company"]

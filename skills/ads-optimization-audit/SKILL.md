@@ -23,15 +23,11 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 **Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages (email, Slack, WhatsApp) without the Executive's explicit "send it" approval.
 
 **Active Clients**:
-- **Golden Rule PHC** — HVAC/plumbing/roofing: goldenrulephc.com, rivercityac.com, cornerstoneroofingexteriors.com
-- **Aprio Board Portal** — SaaS governance: aprioboardportal.com
 - **GetFresh Ventures** — Venture studio: getfreshventures.com
 
 ---
 
-**SEO Tools Available**: SEMrush MCP, Google Search Console MCP, GA4 MCP, Lighthouse (via Chrome DevTools MCP). Use `golden-rule-semrush`, `golden-rule-gsc`, `golden-rule-ga4` skills for client-specific queries.
 
-**Ads Infrastructure**: Google Ads MCP (3 accounts: DSM-PPC, LSA-Utah, LSA-DSM). Use `golden-rule-google-ads` and `golden-rule-google-ads-ops` skills for campaign management.
 
 
 # Ads Optimization Audit — Full Cycle Skill
@@ -41,8 +37,6 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 **This skill was battle-tested on:** Golden Rule Utah market (April 2026) — HVAC, Plumbing, Water Heater, Electrical campaigns.
 
 **Prerequisites:**
-- [Golden Rule Google Ads Skill](../golden-rule-google-ads/SKILL.md) — MCP query syntax
-- [Golden Rule SEMrush Skill](../golden-rule-semrush/SKILL.md) — all 36 tools + playbooks
 - [PPC Keyword Strategy](../ppc-keyword-strategy/SKILL.md) — intent hierarchy & keyword design
 
 ---
@@ -55,7 +49,6 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 gr_google_ads_campaigns(account="DSM-PPC")  # or target account
 
 # Via SEMrush — see what SEMrush thinks our paid profile looks like
-gr_semrush_domain_overview(domain="goldenrulephc.com", database="us")
 ```
 
 ### 1.2 Campaign-Level Audit Checklist
@@ -87,10 +80,8 @@ Quality Score < 6 → relevance problem
 
 ```python
 # Step 1: Organic competitors
-gr_semrush_domain_organic_competitors(domain="goldenrulephc.com", database="us")
 
 # Step 2: Paid competitors
-gr_semrush_domain_paid_competitors(domain="goldenrulephc.com", database="us")
 ```
 
 Pick top 2-3 competitors by overlapping keyword count.
@@ -99,7 +90,6 @@ Pick top 2-3 competitors by overlapping keyword count.
 
 ```python
 # Our organic keywords (top 100 by traffic)
-our = gr_semrush_domain_organic(domain="goldenrulephc.com", database="us",
                                  display_limit=100, display_sort="tr_desc")
 
 # Competitor keywords
@@ -126,8 +116,6 @@ gr_semrush_keyword_paid_results(phrase="plumber salt lake city", database="us")
 
 ```python
 # IMPORTANT: Always include target_type="root_domain"
-gr_semrush_backlinks_overview(target="goldenrulephc.com", target_type="root_domain")
-gr_semrush_backlinks_refdomains(target="goldenrulephc.com", target_type="root_domain",
                                  display_limit=50)
 
 # Compare with competitors
@@ -141,7 +129,6 @@ gr_semrush_backlinks_refdomains(target="competitor.com", target_type="root_domai
 ### 2.5 Anchor Text Audit
 
 ```python
-gr_semrush_backlinks_anchors(target="goldenrulephc.com", target_type="root_domain",
                               display_limit=25)
 ```
 
@@ -156,11 +143,9 @@ gr_semrush_backlinks_anchors(target="goldenrulephc.com", target_type="root_domai
 
 ```python
 # Top pages by organic traffic
-gr_semrush_domain_organic_urls(domain="goldenrulephc.com", database="us",
                                 display_limit=30, display_sort="traffic_desc")
 
 # Keyword profile for top blog posts
-gr_semrush_url_organic_keywords(url="https://goldenrulephc.com/blog/slug/", database="us")
 ```
 
 **Prioritize by:** High keyword count + low traffic = underperforming pages that need refresh.
