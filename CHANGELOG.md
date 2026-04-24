@@ -11,7 +11,7 @@ This major release establishes absolute portability and privacy alignment across
 - **Privacy Sanitization**: Conducted a repository-wide audit purging all hardcoded personal identities, email addresses, absolute proprietary file paths, and client domains.
 - **Skill Rebranding**: Standardized 36 externally contributed community skills under the unified `gfv-` identity framework, removing author-specific nomenclature.
 - **Structural Validation (`tools/validate_skills.py`)**: Promoted the missing `<verification_gate>` warning to a hard execution failure to ensure human-in-the-loop integrity cannot be bypassed.
-- **Architectural Standards**: Injected the official CEO Kit infrastructure template (Keychain authentication, PIL memory routing, Trigger/Skip frontmatter, Anti-Patterns) across the newly rebranded community skill sets.
+- **Architectural Standards**: Injected the official CEO Kit infrastructure template (Keychain authentication, Proactive Intelligence Layer memory routing, Trigger/Skip frontmatter, Anti-Patterns) across the newly rebranded community skill sets.
 
 ### Fixed
 - **`SKILLS-REGISTRY.md` Generation**: Rebuilt the dynamic registry synchronization pipeline, locking all 194 active capabilities to a validated 1:1 state and ensuring zero documentation gaps.
@@ -107,7 +107,7 @@ This release completes a comprehensive audit and consolidation of 13 external op
 ## 2026-04-17 7:07 PM PT — v1.33.0 — Kit Integrity Hardening + Skill Imports
 
 ### Why it matters
-This release is a comprehensive integrity hardening milestone. A 6-pass end-to-end audit across all 75 skills, documentation, and infrastructure scripts purged every instance of client-specific data (ServiceTitan, Globex Corp, Acme Home Services), geographic leaks (Utah, Iowa, Des Moines), personal identifiers, and legacy proprietary system references (PIL, Supabase, CAAI, ccflare) that had leaked into the product codebase during operational skill authoring. The kit now ships as a clean, fully agnostic GFV product — ready for any executive deployment without modification. Additionally, two new skills were imported: `import-skill` (deterministic external skill intake) and `dev-browser` (Playwright-based browser automation).
+This release is a comprehensive integrity hardening milestone. A 6-pass end-to-end audit across all 75 skills, documentation, and infrastructure scripts purged every instance of client-specific data (Legacy Field Service Platform, Globex Corp, Acme Home Services), geographic leaks (Region A, Region B, Region C), personal identifiers, and legacy proprietary system references (Proactive Intelligence Layer, Backend Database, Internal AI Infrastructure, token-dashboard) that had leaked into the product codebase during operational skill authoring. The kit now ships as a clean, fully agnostic GFV product — ready for any executive deployment without modification. Additionally, two new skills were imported: `import-skill` (deterministic external skill intake) and `dev-browser` (Playwright-based browser automation).
 
 ### Added
 - **`skills/import-skill/`** — Deterministic external skill intake with 10-point verification protocol. Ensures any skill imported from GitHub, npm, or raw sources is fully GFV-compliant before registration.
@@ -119,12 +119,12 @@ This release is a comprehensive integrity hardening milestone. A 6-pass end-to-e
 - **Installer parity** — Both `bootstrap.sh` and `bootstrap.ps1` now register all 75 skills (18 Beginner + 28 Intermediate + 29 Advanced) with identical tier assignments.
 
 ### Fixed — 6-Pass Integrity Audit (41 files, 853 insertions)
-- **Pass 1 (14 files):** Purged all `PIL`, `Proactive Intelligence`, `pil-server` references from skill author tags and content.
-- **Pass 2 (14 files):** Removed `Supabase` backend references, `gfv_memory.db`, `pil_morning_digest.py`, and `entity_embeddings` table names.
-- **Pass 3 (2 files):** Removed `ccflare` hardcoded examples and depersonalized `the Executive` name references in `import-skill`.
-- **Pass 4 (6 files):** Purged `ServiceTitan`, `CAAI`, `Utah`, `Iowa`, `Des Moines` geography, and client contact name `Greg` from examples.
-- **Pass 5 (12 files):** Purged all `Field Service Platform` aliases (the ServiceTitan rename). Added GFV website URL branding.
-- **Pass 6 (1 file):** Removed final `PIL` reference in `tools/gfv-brain-search.py` docstring and `Globex Corp` client example query.
+- **Pass 1 (14 files):** Purged all `Proactive Intelligence Layer`, `Proactive Intelligence`, `intelligence-server` references from skill author tags and content.
+- **Pass 2 (14 files):** Removed `Backend Database` backend references, `gfv_memory.db`, `daily_digest.py`, and `entity_embeddings` table names.
+- **Pass 3 (2 files):** Removed `token-dashboard` hardcoded examples and depersonalized `the Executive` name references in `import-skill`.
+- **Pass 4 (6 files):** Purged `Legacy Field Service Platform`, `Internal AI Infrastructure`, `Region A`, `Region B`, `Region C` geography, and client contact name `Greg` from examples.
+- **Pass 5 (12 files):** Purged all `Field Service Platform` aliases (the Legacy Field Service Platform rename). Added GFV website URL branding.
+- **Pass 6 (1 file):** Removed final `Proactive Intelligence Layer` reference in `tools/gfv-brain-search.py` docstring and `Globex Corp` client example query.
 
 ### Files Modified
 - README.md, AGENT-GUIDE.md, SKILL-AUTHORING-STANDARD.md, CHANGELOG.md
@@ -156,7 +156,7 @@ This release permanently decouples the kit from legacy proprietary ecosystem dep
 
 ### Fixed
 - **`skills/` Manifests** — Programmatic sweep of 70+ files patched the system-wide legacy reference from the non-existent `ceo-brain-search.py` string to the correct `gfv-brain-search.py` physical asset path.
-- **`bootstrap.sh`** — Severed forced macOS background installations for `ccflare` and `claude-mem` to adhere strictly to IDE agnosticism flags.
+- **`bootstrap.sh`** — Severed forced macOS background installations for `token-dashboard` and `claude-mem` to adhere strictly to IDE agnosticism flags.
 - **`tools/gfv-dream.py`** — Hardened the runtime against relying on personal unreleased Python pipelines, processing native transcript parsing securely via standard I/O pipes.
 
 ### Files Modified
@@ -185,7 +185,7 @@ This patch permanently resolves severe UX friction points and hardcoded agnostic
 ## 2026-04-16 4:52 PM PT — v1.32.0 — Agnostic Architecture Decoupling & Educator Persona
 
 ### Why it matters
-This release fundamentally severs the final dependencies tying the GetFresh Ventures Growth by Design CEO AI Kit to proprietary Proactive Intelligence Layer (PIL) structures and specific IDE configurations (like `.claude`), ensuring zero-friction out-of-the-box operation on any CEO's machine. Additionally, it implements a revolutionary UI/UX profiling system that actively teaches non-technical executives how to command an IDE interface via the "Sherpa Protocol," bridging the gap between advanced GTM operations and entry-level coding fluency.
+This release fundamentally severs the final dependencies tying the GetFresh Ventures Growth by Design CEO AI Kit to proprietary Proactive Intelligence Layer (Proactive Intelligence Layer) structures and specific IDE configurations (like `.claude`), ensuring zero-friction out-of-the-box operation on any CEO's machine. Additionally, it implements a revolutionary UI/UX profiling system that actively teaches non-technical executives how to command an IDE interface via the "Sherpa Protocol," bridging the gap between advanced GTM operations and entry-level coding fluency.
 
 ### Added
 - **`AGENT.md`** — Injected the "Educator Persona / Sherpa UX" ruleset, dynamically narrating mechanical AI operations (like executing background scripts) in plain English to educate beginners.
@@ -204,7 +204,7 @@ This release fundamentally severs the final dependencies tying the GetFresh Vent
 ### Files Modified
 - CHANGELOG.md, README.md, bootstrap.ps1, AGENT.md
 - bootstrap.sh
-- tools/gfv-telemetry.py, tools/gfv-dream.py, tools/ccflare.py, tools/gfv-brain-search.py, tools/gfv-audit.py
+- tools/gfv-telemetry.py, tools/gfv-dream.py, tools/token-dashboard.py, tools/gfv-brain-search.py, tools/gfv-audit.py
 - hooks/session-start.py, hooks/session-stop.py, hooks/pre-send-review.py
 - 72 target elements in the `skills/` directory (e.g., project-release, onboard)
 
@@ -363,7 +363,7 @@ First audit pass to actually EXECUTE every hook, tool, and script. Found a criti
 - **gfv-generalist.sh**: Fixed shebang from #!/bin/bash to #!/usr/bin/env bash
 
 ### Verified Working
-session-start.py, session-stop.py, pre-send-review.py, generate_audio.py, ccflare.py, task_manager.py (all 3 modes: linear/dag/debate), lint-agent.sh, lint-claude-md.sh, gfv-cost-estimator.sh, gfv-memento.py
+session-start.py, session-stop.py, pre-send-review.py, generate_audio.py, token-dashboard.py, task_manager.py (all 3 modes: linear/dag/debate), lint-agent.sh, lint-claude-md.sh, gfv-cost-estimator.sh, gfv-memento.py
 
 ### Files Modified
 12 files, ~30 net changes
@@ -484,12 +484,12 @@ The entire memory pipeline was broken: session-stop wrote to the wrong directory
 ## 2026-04-14 3:30 PM PT — v1.21.1 — Foundational Tools for All Tiers
 
 ### Why it matters
-Beginners were promised cross-session memory and frictionless UX but the tools that deliver it (claude-mem, Dippy, ccflare) were gated behind Tier 2+. This patch moves all foundational tools to every tier.
+Beginners were promised cross-session memory and frictionless UX but the tools that deliver it (claude-mem, Dippy, token-dashboard) were gated behind Tier 2+. This patch moves all foundational tools to every tier.
 
 ### Changed
-- **`bootstrap.sh`**: Moved claude-mem, Dippy, and ccflare installation out of Tier 2+ gate — all tiers now get cross-session memory, auto-approve safe commands, and token cost dashboards.
+- **`bootstrap.sh`**: Moved claude-mem, Dippy, and token-dashboard installation out of Tier 2+ gate — all tiers now get cross-session memory, auto-approve safe commands, and token cost dashboards.
 - **`skills/onboard/SKILL.md`**: Updated beginner defaults to include `cross_session_memory`, `auto_approve_safe`, `cost_dashboard`, and `inline_insights`.
-- **`README.md`** and **`AGENT-GUIDE.md`**: Added 3 new rows to feature progression tables (claude-mem, Dippy, ccflare).
+- **`README.md`** and **`AGENT-GUIDE.md`**: Added 3 new rows to feature progression tables (claude-mem, Dippy, token-dashboard).
 
 ### Files Modified
 - bootstrap.sh, skills/onboard/SKILL.md, README.md, AGENT-GUIDE.md
@@ -716,16 +716,16 @@ This release elevates the GetFresh Ventures Growth by Design CEO AI Kit from a d
 ## 2026-04-11 12:10 PM PT — v1.10.0 — System Resilience Protocol
 
 ### Why it matters
-This release closes the final two structural vulnerabilities in the GFV Enterprise OS. First, it implements a headless daemon (`pil_morning_digest.py`) allowing the agentic OS to synthesize CRM/Linear data entirely behind the scenes without requiring an active chat session. Second, it enforces "Untrusted DOM Paranoia" to prevent malicious Prompt Injection from parsing third-party web properties.
+This release closes the final two structural vulnerabilities in the GFV Enterprise OS. First, it implements a headless daemon (`daily_digest.py`) allowing the agentic OS to synthesize CRM/Linear data entirely behind the scenes without requiring an active chat session. Second, it enforces "Untrusted DOM Paranoia" to prevent malicious Prompt Injection from parsing third-party web properties.
 
 ### Added
 - **`SKILL-AUTHORING-STANDARD.md`** — Added Pattern 28: Prompt Injection Barrier (Untrusted DOM). Banned the primary orchestrator from directly parsing untrusted external DOMs and mandated sandboxed subagent extraction.
-- **`gfv-brain/scripts/pil_morning_digest.py`** — Created the headless Orchestrator daemon that sequentially sweeps Linear, HubSpot APIs, and WhatsApp to update the PIL without active user context.
+- **`gfv-brain/scripts/daily_digest.py`** — Created the headless Orchestrator daemon that sequentially sweeps Linear, HubSpot APIs, and WhatsApp to update the Proactive Intelligence Layer without active user context.
 - **`.agents/skills/ui-ux-pro-max/`** — Installed the core intelligence engine to mathematically enforce frontend aesthetics.
 
 ### Files Modified
 - CHANGELOG.md, README.md, SKILL-AUTHORING-STANDARD.md
-- gfv-brain/scripts/pil_morning_digest.py, .agents/skills/REGISTRY.md
+- gfv-brain/scripts/daily_digest.py, .agents/skills/REGISTRY.md
 
 ## 2026-04-11 12:05 PM PT — v1.9.0 — Structural Map Priority
 
@@ -748,7 +748,7 @@ This release systematically eliminates "Orchestrator Hallucination" by grafting 
 - **`SKILL-AUTHORING-STANDARD.md`** — Added Pattern 24: Phase 0 Documentation Discovery to require explicit, isolated API verification prior to any code generation.
 - **`SKILL-AUTHORING-STANDARD.md`** — Added Pattern 25: Progressive Disclosure Memory Loop to enforce 10x token efficiency (Index -> Timeline -> Fetch) for all search tools.
 - **`SKILL-AUTHORING-STANDARD.md`** — Added Pattern 26: Post-Execution Verification Isolation to mandate parallel verification and anti-pattern grep checks before an agent can commit.
-- **`.agents/workflows/pil-context-synthesis.md`** — Mandated Progressive Disclosure 3-Layer fetching parameters for all PIL querying commands.
+- **`.agents/workflows/pil-context-synthesis.md`** — Mandated Progressive Disclosure 3-Layer fetching parameters for all Proactive Intelligence Layer querying commands.
 
 ### Files Modified
 - CHANGELOG.md, README.md, SKILL-AUTHORING-STANDARD.md
@@ -843,7 +843,7 @@ This release transforms the GetFresh Ventures Growth by Design CEO AI Kit from a
 
 ### Added
 - **`skills/agent-protocol`** — Inter-agent communication standard: invoke/response syntax, loop prevention (depth=2, no circular), 4-step quality verification loop (self-verify → peer-verify → critic pre-screen → course correction), 3 standardized output formats, 10 non-negotiable communication rules
-- **`skills/context-engine`** — Company context loading with staleness detection (<30d/30-90d/>90d confidence tiers), privacy/anonymization rules, enrichment loop for capturing new context mid-session, /cs:setup onboarding questionnaire, PIL/HubSpot/Linear integration
+- **`skills/context-engine`** — Company context loading with staleness detection (<30d/30-90d/>90d confidence tiers), privacy/anonymization rules, enrichment loop for capturing new context mid-session, /cs:setup onboarding questionnaire, Proactive Intelligence Layer/HubSpot/Linear integration
 - **`skills/decision-logger`** — Two-layer decision memory: Layer 1 (raw transcripts, never auto-loaded), Layer 2 (approved-only decisions, loaded every session). DO_NOT_RESURFACE enforcement, conflict detection before logging, supersession tracking, /cs:decisions and /cs:review slash commands
 - **`skills/scenario-war-room`** — Cascading multi-variable risk modeling (max 3 variables): domain impact mapping across all C-suite roles, cascade effect mapping with interrupt points, 3 severity levels (base/stress/severe), early warning signals, hedging strategies with cost/impact/owner/deadline, stage-specific templates (pre-seed through Series B+, home services)
 - **`skills/competitive-intel`** — 5-layer competitive intelligence: competitor identification (2x2 threat matrix), 8-dimension tracking, analysis frameworks (SWOT, positioning maps, feature gap analysis), battlecard templates for sales, intelligence cadence (monthly scheduled + triggered events), win/loss analysis framework
@@ -885,7 +885,7 @@ This release transforms the GetFresh Ventures Growth by Design CEO AI Kit from a
 This release hardens the GetFresh Ventures Growth by Design CEO AI Kit from a static prompt library into a self-monitoring autonomous agent framework. CEOs now have native tooling for token cost visibility, secure deployment reviews, and persistent memory consolidation — closing the gap between ad-hoc AI usage and governed, repeatable execution.
 
 ### Added
-- **`tools/ccflare.py`** — Local executive dashboard for real-time Claude token burn tracking, including cache creation/read costs
+- **`tools/token-dashboard.py`** — Local executive dashboard for real-time Claude token burn tracking, including cache creation/read costs
 - **`tools/gfv-dream.sh`** — Autonomous memory consolidation script that parses Claude `.jsonl` session logs and compresses insights into durable knowledge
 - **`skills/review-pr`** — 3-pass deployment review skill (Security, Logic, GTM Strategy) modeled on Anthropic's internal security protocols
 - **`tools/lint-agent.sh`** — AST integrity validator for `AGENT.md` to prevent silent IDE tooling failures
@@ -904,7 +904,7 @@ This release hardens the GetFresh Ventures Growth by Design CEO AI Kit from a st
 - AGENT.md, CHANGELOG.md, ONBOARDING_PROMPT.md, README.md, bootstrap.sh
 - skills/autoresearch/SKILL.md, skills/onboard/SKILL.md, skills/project-release/SKILL.md
 - skills/review-pr/SKILL.md, skills/verify-execution/SKILL.md
-- tools/ccflare.py, tools/gfv-audit.sh, tools/gfv-dream.sh, tools/gfv-ralph.sh, tools/lint-agent.sh
+- tools/token-dashboard.py, tools/gfv-audit.sh, tools/gfv-dream.sh, tools/gfv-ralph.sh, tools/lint-agent.sh
 
 
 ## 2026-04-10 8:10 AM PT — v1.2.0 — Awesome Claude Edition
@@ -912,7 +912,7 @@ This release hardens the GetFresh Ventures Growth by Design CEO AI Kit from a st
 ### Added
 - Integrated `claude-mem` for persistent background vector-database memory across sessions natively via `bootstrap.sh`.
 - Added the `/autoresearch` meta-skill for autonomous multi-loop skill evaluation and mutation testing.
-- Integrated `ccflare` dashboard for cost and latency token visualization.
+- Integrated `token-dashboard` dashboard for cost and latency token visualization.
 - Implemented `Dippy` friction removal to auto-approve non-destructive system tools.
 - Included the "Ralph" (`tools/gfv-ralph.sh`) background execution loop.
 - Wrote `guides/prompt-eval-guide.md` to standardize custom binary evaluations.
@@ -964,7 +964,7 @@ This release hardens the GetFresh Ventures Growth by Design CEO AI Kit from a st
 - **Meta-Agent Optimization Constraints**: Hardened the authoring standard with Patterns 29, 30, and 31 (The Overfitting Barrier, Specialized Tool Isolation, and Root-Cause Failure Grouping).
 
 ### What's New in v1.10.0 (System Resilience Protocol)
-- **Headless Synthesis Daemon:** Built `pil_morning_digest.py` to allow the OS to update the Supabase Proactive Intelligence Layer from Linear/HubSpot automatically in the background.
+- **Headless Synthesis Daemon:** Built `daily_digest.py` to allow the OS to update the Backend Database Proactive Intelligence Layer from Linear/HubSpot automatically in the background.
 - **Prompt Injection Guard (Pattern 28):** Instituted a hard parity boundary banning orchestrators from directly reading browser UI DOMs, mitigating adversarial prompt attacks.
 - **UI/UX Intelligence Engine:** Shipped the `ui-ux-pro-max` BM25 search engine to mathematically govern 161 industry-specific design systems without LLM diffusion.
 
@@ -974,7 +974,7 @@ This release hardens the GetFresh Ventures Growth by Design CEO AI Kit from a st
 ### What's New in v1.8.0 (The Subagent Verification Protocol)
 - **Subagent Reporting Contract (Pattern 23):** Orchestrators must reject any findings that do not cite file paths, API names, and copyable snippets. 
 - **Phase 0 Discovery (Pattern 24):** Agents must read documentation explicitly prior to any execution to ban API hallucination.
-- **Progressive Disclosure Loops (Pattern 25):** Strict 3-Layer memory gating (Index -> Timeline -> Fetch) applied to all PIL queries for 10x token efficiency.
+- **Progressive Disclosure Loops (Pattern 25):** Strict 3-Layer memory gating (Index -> Timeline -> Fetch) applied to all Proactive Intelligence Layer queries for 10x token efficiency.
 - **Verification Isolation (Pattern 26):** Agents are banned from verifying their own execution. Orchestrators must deploy isolated Verification, Anti-Pattern, and Code Review bounds before creating a git commit.
 
 ### What's New in v1.7.0 (Deep Infrastructure Safeguards)
@@ -1009,7 +1009,7 @@ This release hardens the GetFresh Ventures Growth by Design CEO AI Kit from a st
 - **Skill count: 17 → 35** across advisory, operational, technical, and infrastructure categories
 
 ### What's New in v1.3.0 (Autonomous Execution Hardening)
-- **Precise Token Monitoring (`ccflare.py`):** Executive dashboard for real-time Claude usage costs including cache creation/read tokens
+- **Precise Token Monitoring (`token-dashboard.py`):** Executive dashboard for real-time Claude usage costs including cache creation/read tokens
 - **Autonomous Memory Consolidation (`gfv-dream.sh`):** Natively parses Claude session `.jsonl` logs and compresses insights into persistent memory
 - **Strict Deployment Pipeline (`/review-pr`):** 3-pass security review modeled on Anthropic's internal protocols
 - **Agent Validation (`lint-agent.sh`):** Prevents silent IDE failures from malformed agent configuration
@@ -1019,7 +1019,7 @@ This release hardens the GetFresh Ventures Growth by Design CEO AI Kit from a st
 - Persistent State Vector DB (`claude-mem`) for cross-session memory
 - Self-Optimizing Architecture (`/autoresearch`) for autonomous skill improvement
 - Frictionless Permissions (Dippy) for uninterrupted flow state
-- Cost & Usage Dashboards via `ccflare`
+- Cost & Usage Dashboards via `token-dashboard`
 - The "Ralph" Execution Loop for batch processing
 - Agent Agnostic Tools — works with Claude Code, Cursor, and Gemini
 
@@ -1067,7 +1067,7 @@ gxd-ceo-ai-kit/
 │   ├── outreach-cadence.md
 │   └── deal-progression.md
 ├── tools/                           ← Python/bash execution utilities
-│   ├── ccflare.py
+│   ├── token-dashboard.py
 │   ├── gfv-dream.sh
 │   ├── gfv-ralph.sh
 │   └── ... (4 more)
