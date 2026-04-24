@@ -1,13 +1,13 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/getfreshventures/gfv-assets/main/logo/gfv-logo-dark.png" alt="GetFresh Ventures Logo" height="60">
 
-  # GetFresh Ventures Growth by Design CEO AI Kit
+  # Growth by Design CEO AI Kit
 
   <p align="center">
     <strong>Elevate an AI agent into an Executive Chief of Staff via Proactive Intelligence</strong>
   </p>
 
-  [![Version](https://img.shields.io/badge/version-v1.38.0-blue.svg)](https://github.com/getfreshventures/ceo-ai-kit/releases)
+  [![Version](https://img.shields.io/badge/version-v1.38.0-blue.svg)](https://github.com/getfreshventures/gxd-ceo-ai-kit/releases)
   [![Status](https://img.shields.io/badge/status-production-success.svg)]()
   [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)]()
   [![License](https://img.shields.io/badge/license-MIT-green.svg)]()
@@ -28,7 +28,7 @@ A plug-and-play **Edge-Native Go-to-Market Operating System** that turns Claude 
 
 This kit enables the proprietary **Growth by Design (GxD)** architecture directly within your local environment. 
 
-**Runtime:** Local / Edge-Compute · 80+ Domain Skills · SQLite FTS5 Memory Caching
+**Runtime:** Local / Edge-Compute · 194 Domain Skills · SQLite FTS5 Memory Caching
 
 **The Brand (GxD)**: Growth by Design is the architecture of predictable revenue, uniting Marketing, Sales, and RevOps data into a single, unified ontology.
 
@@ -73,12 +73,12 @@ This kit enables the proprietary **Growth by Design (GxD)** architecture directl
                              │
                              ▼
 ┌───────────────────────────────────────────────────────────────┐
-│  GetFresh Ventures Growth by Design CEO AI Kit                                  │
+│  Growth by Design CEO AI Kit                                  │
 └──────┬──────────────┬─────────────────┬───────────────────────┘
        │              │                 │
        ▼              ▼                 ▼
 ┌──────────────┐ ┌─────────────┐ ┌──────────────────────┐
-│  80 Domain   │ │ Background  │ │ Local CEO Brain      │
+│  194 Domain  │ │ Background  │ │ Local CEO Brain      │
 │  Skills      │ │ Telemetry   │ │ (SQLite FTS5 Edge)   │
 │  (C-Suite,   │ │ (Python)    │ │ Unified Ontology     │
 │   Ops, Dev)  │ └──────┬──────┘ └──────────────────────┘
@@ -111,7 +111,7 @@ Local memory ensures contexts survive beyond a single terminal session.
 - Background hooks run `session-start` and `session-stop` automatically.
 
 ### The Skills Layer
-Over 75 discrete `.md` instruction files acting as programmatic apps. When you say "Run the weekly pipeline brief", the agent dynamically retrieves the `weekly-pipeline-brief` skill and follows its deep operational playbook step-by-step.
+Over 194 discrete `.md` instruction files acting as programmatic apps. When you say "Run the weekly pipeline brief", the agent dynamically retrieves the `weekly-pipeline-brief` skill and follows its deep operational playbook step-by-step.
 
 ---
 
@@ -157,7 +157,7 @@ Changes happen seamlessly within the IDE workspace. All backgrounds scripts exec
 ## Repository Structure
 
 ```text
-ceo-ai-kit/
+gxd-ceo-ai-kit/
 ├── bootstrap.sh               # macOS/Linux setup installer
 ├── bootstrap.ps1              # Windows setup installer
 ├── AGENT.md                   # The Global Persona boundaries and identity
@@ -165,7 +165,7 @@ ceo-ai-kit/
 ├── CHANGELOG.md               # Version release history
 ├── SKILLS-REGISTRY.md         # Full index of all capabilities
 ├── SKILL-AUTHORING-STANDARD.md# Architecture rules for new skills
-├── skills/                    # 80 Executable Domain Skills
+├── skills/                    # 194 Executable Domain Skills
 │   ├── ceo-advisor/
 │   ├── pipeline-pulse/
 │   ├── eeat-content-pod/      # Example: 4-agent orchestration
@@ -337,18 +337,18 @@ Audio synthesis and executive briefing generation.
 ## Quick Start
 
 ```bash
-git clone https://github.com/GetFresh-Ventures/ceo-ai-kit.git ~/Documents/GTM-Enablement-Kit
-cd ~/Documents/GTM-Enablement-Kit
+git clone https://github.com/GetFresh-Ventures/gxd-ceo-ai-kit.git ~/Documents/gxd-ceo-ai-kit
+cd ~/Documents/gxd-ceo-ai-kit
 ./bootstrap.sh          # Mac/Linux
 # .ootstrap.ps1       # Windows
 ```
 
-Then open `~/Documents/GTM-Enablement-Kit` inside **Cursor** and type `/onboard` in the Composer chat.
+Then open `~/Documents/gxd-ceo-ai-kit` inside **Cursor** and type `/onboard` in the Composer chat.
 
 ---
 
 ## License & Repo
 
-- **Repository:** [github.com/GetFresh-Ventures/ceo-ai-kit](https://github.com/GetFresh-Ventures/ceo-ai-kit)
+- **Repository:** [github.com/GetFresh-Ventures/gxd-ceo-ai-kit](https://github.com/GetFresh-Ventures/gxd-ceo-ai-kit)
 - **Website:** [getfreshventures.com](https://getfreshventures.com)
 - **Primary use:** Go-To-Market Enablement Operating System by GetFresh Ventures, powered by the Growth by Design (GxD) model for scaling companies.
