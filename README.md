@@ -13,7 +13,7 @@
   [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)]()
   [![License](https://img.shields.io/badge/license-MIT-green.svg)]()
 
-  [📰 Newsletter](https://growthbydesign.substack.com/) · [🔍 Free Growth Diagnostic](https://www.getfreshventures.com/diagnostic) · [🤝 Book a Discovery Call](https://www.getfreshventures.com/contact)
+  [📰 Newsletter](https://growthbydesign.substack.com/) · [🌐 Official Page](https://www.getfreshventures.com/ceo-ai-kit) · [🔍 Free Growth Diagnostic](https://www.getfreshventures.com/diagnostic) · [🤝 Book a Discovery Call](https://www.getfreshventures.com/contact)
 </div>
 
 ---
@@ -340,7 +340,7 @@ gxd-ceo-ai-kit/
 ### Stay Connected
 
 - **Newsletter:** [Growth by Design™ on Substack](https://growthbydesign.substack.com/) — Founder-first publication on scaling sustainably with AI
-- **Website:** [getfreshventures.com](https://www.getfreshventures.com)
+- **Website:** [The CEO AI Kit](https://www.getfreshventures.com/ceo-ai-kit) | [GetFresh Ventures](https://www.getfreshventures.com)
 - **Repository:** [github.com/GetFresh-Ventures/gxd-ceo-ai-kit](https://github.com/GetFresh-Ventures/gxd-ceo-ai-kit)
 
 ---
