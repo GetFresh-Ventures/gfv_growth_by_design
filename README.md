@@ -5,7 +5,7 @@
 
   <p align="center">
     <strong>194 local AI skills that turn any coding assistant into a private Chief of Staff for Go-To-Market orchestration.</strong><br>
-    <em>Powered by the <a href="https://www.getfreshventures.com">Growth by Design™</a> methodology from GetFresh Ventures.</em>
+    <em>Powered by the <a href="https://www.getfreshventures.com?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit">Growth by Design™</a> methodology from GetFresh Ventures.</em>
   </p>
 
   [![Version](https://img.shields.io/badge/version-v1.40.0-blue.svg)](https://github.com/GetFresh-Ventures/gxd-ceo-ai-kit/releases)
@@ -13,7 +13,7 @@
   [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)]()
   [![License](https://img.shields.io/badge/license-MIT-green.svg)]()
 
-  [📰 Newsletter](https://growthbydesign.substack.com/) · [🌐 Official Page](https://www.getfreshventures.com/ceo-ai-kit) · [🔍 Free Growth Diagnostic](https://www.getfreshventures.com/diagnostic) · [🤝 Book a Discovery Call](https://www.getfreshventures.com/contact)
+  [📰 Newsletter](https://growthbydesign.substack.com/) · [🌐 Official Page](https://www.getfreshventures.com/ceo-ai-kit?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit) · [🔍 Free Growth Diagnostic](https://www.getfreshventures.com/diagnostic?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit) · [🤝 Book a Discovery Call](https://www.getfreshventures.com/contact?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit)
 </div>
 
 ---
@@ -22,7 +22,7 @@
 
 Revenue generation is a systems engineering problem — not a hiring problem. Pipelines, conversion paths, attribution loops, campaign orchestration, lead scoring — these are interconnected subsystems with feedback mechanisms. Treating them as tasks assigned to humans creates latency. Every handoff is a delay. Every weekly sync is a batch process in a world that demands real-time.
 
-**Growth by Design™** is the exact methodology [GetFresh Ventures](https://www.getfreshventures.com) uses to embed agentic AI into GTM systems for growth-stage CEOs — the same approach that has impacted **$500M+ in client revenue** and engineered **6 successful exits** across 50+ companies.
+**Growth by Design™** is the exact methodology [GetFresh Ventures](https://www.getfreshventures.com?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit) uses to embed agentic AI into GTM systems for growth-stage CEOs — the same approach that has impacted **$500M+ in client revenue** and engineered **6 successful exits** across 50+ companies.
 
 This kit is that methodology, open-sourced.
 
@@ -133,7 +133,7 @@ Skills are composable instruction sets that augment the baseline intelligence of
 | [`agent-orchestrator`](skills/agent-orchestrator/) | Coordinate multi-agent pipeline tasks using DAG and Debate modes | Structured dispatch |
 | [`automation-recommender`](skills/automation-recommender/) | Analyze a codebase and recommend automations | Optimize your setup |
 
-> 💡 **Want this deployed with live data sources and autonomous agents?** Explore [Revenue Foundations →](https://www.getfreshventures.com/solutions/revenue-foundations)
+> 💡 **Want this deployed with live data sources and autonomous agents?** Explore [Revenue Foundations →](https://www.getfreshventures.com/solutions/revenue-foundations?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit)
 
 ### 👔 C-Suite Advisory (8 skills)
 *Specialized strategic advisory from each leadership perspective.*
@@ -149,7 +149,7 @@ Skills are composable instruction sets that augment the baseline intelligence of
 | [`founder-coach`](skills/founder-coach/) | Personal leadership, delegation, archetype identification | CEO as a human |
 | [`negotiation-advisor`](skills/negotiation-advisor/) | BATNA analysis, concession architecture, tactical deal scripts | Close the deal |
 
-> 💡 **Need a senior operator, not just advisory prompts?** Explore [Fractional GTM + AI Co-Pilot →](https://www.getfreshventures.com/solutions/fractional-gtm)
+> 💡 **Need a senior operator, not just advisory prompts?** Explore [Fractional GTM + AI Co-Pilot →](https://www.getfreshventures.com/solutions/fractional-gtm?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit)
 
 ### 💰 Revenue Enablement (8 skills)
 *Everything that directly generates or accelerates revenue.*
@@ -165,7 +165,7 @@ Skills are composable instruction sets that augment the baseline intelligence of
 | [`contract-reader`](skills/contract-reader/) | 4-layer legal contract analysis with red-flag detection | Know before you sign |
 | [`domain-intel`](skills/domain-intel/) | WHOIS, DNS, and domain expiry intelligence | Research the terrain |
 
-> 💡 **Want AI agents running your revenue stack 24/7?** Explore [AI Operations Engineering →](https://www.getfreshventures.com/solutions/ai-revops)
+> 💡 **Want AI agents running your revenue stack 24/7?** Explore [AI Operations Engineering →](https://www.getfreshventures.com/solutions/ai-revops?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit)
 
 ### 📄 Document Processing (5 skills)
 *Creating, editing, and processing business documents.*
@@ -197,7 +197,7 @@ Skills are composable instruction sets that augment the baseline intelligence of
 | [`sms-outreach`](skills/sms-outreach/) | SMS/WhatsApp multi-channel outreach with TCPA compliance | Beyond email |
 | [`scheduling-infra`](skills/scheduling-infra/) | Meeting scheduling with pre/post automation | Calendar intelligence |
 
-> 💡 **Want a personal AI operating system that compounds over time?** Explore [GFV Fellowship →](https://www.getfreshventures.com/fellowship)
+> 💡 **Want a personal AI operating system that compounds over time?** Explore [GFV Fellowship →](https://www.getfreshventures.com/fellowship?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit)
 
 ### 🚀 Growth Engine (17 skills)
 *Marketing, content, and growth optimization.*
@@ -222,7 +222,7 @@ Skills are composable instruction sets that augment the baseline intelligence of
 | [`partnership-marketing`](skills/partnership-marketing/) | Influencer, affiliate, creator, referral, PR programs | Partnership-driven growth |
 | [`programmatic-seo`](skills/programmatic-seo/) | Template-based SEO page generation at scale | Pages × data = traffic |
 
-> 💡 **Need engineering sprints that compress 6-month roadmaps into 30 days?** Explore [Growth Engineering →](https://www.getfreshventures.com/solutions/growth-engineering)
+> 💡 **Need engineering sprints that compress 6-month roadmaps into 30 days?** Explore [Growth Engineering →](https://www.getfreshventures.com/solutions/growth-engineering?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit)
 
 ### 🛠️ Developer & DevOps (14 skills)
 *Infrastructure skills for the technical operator.*
@@ -269,7 +269,7 @@ This kit is the **DIY foundation** of the Growth by Design™ methodology. For c
 | **Outcome** | Better-informed decisions | **4-14% revenue growth**, guaranteed |
 
 <div align="center">
-  <a href="https://www.getfreshventures.com/diagnostic"><strong>📊 Take the Free Growth Diagnostic →</strong></a><br>
+  <a href="https://www.getfreshventures.com/diagnostic?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit"><strong>📊 Take the Free Growth Diagnostic →</strong></a><br>
   <em>5 minutes. Custom scorecard. Prioritized gaps and next steps.</em>
 </div>
 
@@ -325,22 +325,22 @@ gxd-ceo-ai-kit/
 
 ## About Growth by Design™
 
-**Growth by Design™** is the proprietary methodology of [GetFresh Ventures](https://www.getfreshventures.com), an AI-native growth engineering firm based in North Vancouver, Canada. We embed agentic AI into GTM systems for growth-stage CEOs through fixed-fee, 90-day engineering sprints that deliver measurable revenue lift.
+**Growth by Design™** is the proprietary methodology of [GetFresh Ventures](https://www.getfreshventures.com?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit), an AI-native growth engineering firm based in North Vancouver, Canada. We embed agentic AI into GTM systems for growth-stage CEOs through fixed-fee, 90-day engineering sprints that deliver measurable revenue lift.
 
 ### Our Solutions
 
 | Stage | Solution | What You Get |
 |-------|---------|-------------|
-| **Pre-Revenue** | [Revenue Foundations](https://www.getfreshventures.com/solutions/revenue-foundations) | First revenue system + Personal AI OS |
-| **Growth Stage** | [AI Operations Engineering](https://www.getfreshventures.com/solutions/ai-revops) | AI agents in your CRM, pipeline, and customer success stack |
-| **Growth Stage** | [Fractional GTM + AI Co-Pilot](https://www.getfreshventures.com/solutions/fractional-gtm) | Senior GTM leadership without the $400K hire |
-| **Scale** | [Growth Engineering](https://www.getfreshventures.com/solutions/growth-engineering) | 6-month roadmaps compressed into 30-day deliveries |
-| **Exit-Ready** | [Exit Engineering](https://www.getfreshventures.com/solutions/exit-engineering) | Operations redesigned for 1.5-3x higher multiples |
+| **Pre-Revenue** | [Revenue Foundations](https://www.getfreshventures.com/solutions/revenue-foundations?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit) | First revenue system + Personal AI OS |
+| **Growth Stage** | [AI Operations Engineering](https://www.getfreshventures.com/solutions/ai-revops?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit) | AI agents in your CRM, pipeline, and customer success stack |
+| **Growth Stage** | [Fractional GTM + AI Co-Pilot](https://www.getfreshventures.com/solutions/fractional-gtm?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit) | Senior GTM leadership without the $400K hire |
+| **Scale** | [Growth Engineering](https://www.getfreshventures.com/solutions/growth-engineering?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit) | 6-month roadmaps compressed into 30-day deliveries |
+| **Exit-Ready** | [Exit Engineering](https://www.getfreshventures.com/solutions/exit-engineering?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit) | Operations redesigned for 1.5-3x higher multiples |
 
 ### Stay Connected
 
 - **Newsletter:** [Growth by Design™ on Substack](https://growthbydesign.substack.com/) — Founder-first publication on scaling sustainably with AI
-- **Website:** [The CEO AI Kit](https://www.getfreshventures.com/ceo-ai-kit) | [GetFresh Ventures](https://www.getfreshventures.com)
+- **Website:** [The CEO AI Kit](https://www.getfreshventures.com/ceo-ai-kit?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit) | [GetFresh Ventures](https://www.getfreshventures.com?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit)
 - **Repository:** [github.com/GetFresh-Ventures/gxd-ceo-ai-kit](https://github.com/GetFresh-Ventures/gxd-ceo-ai-kit)
 
 ---
@@ -348,5 +348,5 @@ gxd-ceo-ai-kit/
 <div align="center">
   <strong>Built by operators who have sat in your seat.</strong><br>
   <em>Fixed-fee execution. Working systems in 90 days. Measurable lift guaranteed.</em><br><br>
-  <a href="https://www.getfreshventures.com/contact">🤝 Book a Discovery Call →</a>
+  <a href="https://www.getfreshventures.com/contact?utm_source=github&utm_medium=readme&utm_campaign=ceo_ai_kit">🤝 Book a Discovery Call →</a>
 </div>
