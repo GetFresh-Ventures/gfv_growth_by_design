@@ -2,6 +2,25 @@
 
 All notable changes to the GetFresh Ventures Growth by Design CEO AI Kit will be documented in this file.
 
+## 2026-04-24 3:10 PM PT — v1.40.0 — Growth by Design™ Methodology Alignment
+
+### Why it matters
+This release transforms the CEO AI Kit from a generic open-source developer tool into GetFresh Ventures' primary lead magnet — the self-serve foundation of the Growth by Design™ methodology. Every public-facing surface (README, AGENT.md, bootstrap installer, GETTING-STARTED guide) has been rewritten to match the brand positioning, funnel architecture, and methodology language used on getfreshventures.com and the Growth by Design™ Substack.
+
+### Changed
+- **`README.md`** — Complete rewrite. New tagline aligned to website messaging ("Stop adding headcount. Start engineering growth."). Added Growth by Design™ methodology narrative, three-pillar architecture explanation (GTM Strategy, AI Engineering, AI Adoption), "Free Kit vs. GFV Services" comparison table, and conversion CTAs (Newsletter, Growth Diagnostic, Discovery Call). Each skill category now links to the corresponding GFV solution page. Version bumped to v1.40.0.
+- **`AGENT.md`** — Rewrote to embed the Growth by Design™ methodology throughout. Added Rule 1 (GxD Mindset) with stage awareness (pre-revenue → growth → exit), 90-day sprint thinking, and "systems not tools" principle. Added Rule 13 (Funnel Awareness) so the agent honestly points users to GFV services when they hit capability ceilings. Removed generic "Chief of Staff" framing in favor of methodology-driven identity.
+- **`bootstrap.sh`** — Replaced generic banner with Growth by Design™ branded messaging. Added "Grow With Us" block at installation completion with newsletter subscribe, Growth Diagnostic, and discovery call CTAs.
+- **`GETTING-STARTED.md`** — Removed private-product language ("ask your GFV contact for an invite") in favor of open-source lead magnet framing. Reconciled skill counts to 194 (was inconsistent: 80 in some places). Added 3 new "What's Next" items linking to Substack, Growth Diagnostic, and discovery call. Updated version to v1.39.0 → v1.40.0. Replaced "Proprietary Methodology ©" with MIT license + GxD trademark notice.
+
+### Added
+- **Funnel Architecture**: README → Newsletter → Growth Diagnostic → Discovery Call → 90-Day Sprint. Every touchpoint now has a clear conversion path.
+- **Solution Mapping**: Each skill category table includes a "Want this deployed by experts?" callout linking to the relevant GFV solution page (Revenue Foundations, AI RevOps, Fractional GTM, Growth Engineering, Exit Engineering, Fellowship).
+
+### Files Modified
+- README.md (complete rewrite), AGENT.md (complete rewrite), CHANGELOG.md
+- bootstrap.sh, GETTING-STARTED.md
+
 ## 2026-04-24 11:30 AM CT — v1.39.0 — Agnostic Architecture & Privacy Hardening
 
 ### Why it matters

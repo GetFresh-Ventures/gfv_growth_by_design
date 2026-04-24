@@ -1,7 +1,7 @@
 # Getting Started — Your First 30 Minutes
 
-**The Executive Enablement Walkthrough**
-*For CEOs, founders, and senior leaders using the GetFresh Ventures Growth by Design CEO AI Kit (Growth by Design).*
+**The Growth by Design™ Executive Walkthrough**
+*For CEOs, founders, and senior leaders using the Growth by Design™ CEO AI Kit.*
 
 ---
 
@@ -24,7 +24,7 @@ In the next 30 minutes, you will go from "AI is a blank chatbot" to "AI is my Ch
 
 ### What You Need
 - [ ] A Mac, Linux machine, or Windows PC
-- [ ] Access to the GetFresh Ventures GitHub organization (ask your GFV contact for an invite)
+- [ ] A GitHub account (the kit is open-source — no invite required)
 - [ ] **No pre-installed apps required.** The installation script will automatically download and set up your preferred AI Tool (Cursor or Claude Code) if you don't have it!
 
 ### What You Should Have Ready
@@ -75,7 +75,7 @@ cd ~\\Documents\\gxd-ceo-ai-kit
 |-------|----------|-------------|
 | **Beginner** | New to AI assistants | 18 core skills, cross-session memory, auto-approve, proactive tips, plain-English mode |
 | **Intermediate** ★ | Regular AI users | 46 skills + CRM integration, feedback loops, weekly learning capture |
-| **Advanced** | Power users | All 80 skills + Dream Mode, background automation, self-improving skills |
+| **Advanced** | Power users | All 194 skills + Dream Mode, background automation, self-improving skills |
 
 > **Not sure?** Pick **Intermediate**. You can change your level anytime by re-running the installer.
 
@@ -147,7 +147,7 @@ The AI checks pipeline state, pending approvals, meeting schedule, and surfaces 
 
 ## Understanding Your Skill Library
 
-You have access to **80 pre-built skills** organized into 8 categories. You don't need to memorize them — just describe what you need and the AI will route to the right skill automatically.
+You have access to **194 pre-built skills** organized into 8 categories. You don't need to memorize them — just describe what you need and the AI will route to the right skill automatically.
 
 ### Most-Used Skills for Executives
 
@@ -294,8 +294,11 @@ Once you're comfortable with the basics:
 2. **Master Executive Prompting** — Read `guides/prompting-for-executives.md` for high-payoff prompt patterns
 3. **CEO Mindset** — Read `guides/ceo-mindset.md` for the mental model shift that unlocks 10x AI leverage
 4. **Extend the Kit** — Create custom skills specific to your business using `/create-skill`
+5. **Subscribe to Growth by Design™** — [growthbydesign.substack.com](https://growthbydesign.substack.com/) — Operator-written playbooks on AI GTM, revenue systems, and scaling without dilution
+6. **Take the Growth Diagnostic** — [getfreshventures.com/diagnostic](https://www.getfreshventures.com/diagnostic) — Free 5-minute assessment with a custom scorecard
+7. **Talk to Us** — [getfreshventures.com/contact](https://www.getfreshventures.com/contact) — 30 minutes. We'll map your stage and tell you honestly if we're the right fit.
 
 ---
 
-*Version 1.32.2 — April 2026*
-*Proprietary Methodology © GetFresh Ventures. All Rights Reserved.*
+*Version 1.39.0 — April 2026*
+*Growth by Design™ is a trademark of GetFresh Ventures Corporation. The CEO AI Kit is released under the MIT License.*
