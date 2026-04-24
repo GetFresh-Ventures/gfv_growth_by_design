@@ -31,7 +31,7 @@ _gfv_gtm_team/
           Archived/               ← Old/superseded files
 ```
 
-Full path: `~/Library/CloudStorage/GoogleDrive-diraj@getfreshventures.com/Shared drives/_gfv_gtm_team/05 - Strategy/Revenue Planning/GFV x EightX: Strategic Planning Q4 2024/Expenses/`
+Full path: `~/Library/CloudStorage/GoogleDrive-executive@company.com/Shared drives/_gfv_gtm_team/05 - Strategy/Revenue Planning/GFV x EightX: Strategic Planning Q4 2024/Expenses/`
 
 ### Local Working Copy (iCloud)
 ```

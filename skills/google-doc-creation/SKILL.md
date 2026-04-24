@@ -44,7 +44,7 @@ python3 ~/Documents/Code/gfv-brain/scripts/create_google_doc.py \
 
 ### Auth
 
-- **Preferred:** Service Account at `~/.config/gfv/gfv_service_account.json` with domain-wide delegation (impersonates `diraj@getfreshventures.com`)
+- **Preferred:** Service Account at `~/.config/gfv/gfv_service_account.json` with domain-wide delegation (impersonates `executive@company.com`)
 - **Fallback:** `gws` CLI for content insertion, SA for styling pass
 
 ### What It Does Automatically
@@ -256,7 +256,7 @@ SA_KEY = os.path.expanduser("~/.config/gfv/gfv_service_account.json")
 creds = service_account.Credentials.from_service_account_file(
     SA_KEY,
     scopes=["https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/documents"],
-    subject="diraj@getfreshventures.com"
+    subject="executive@company.com"
 )
 drive = build("drive", "v3", credentials=creds, cache_discovery=False)
 docs_svc = build("docs", "v1", credentials=creds, cache_discovery=False)

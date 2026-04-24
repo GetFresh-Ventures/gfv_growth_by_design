@@ -20,7 +20,7 @@ Generate a comprehensive, executive-ready weekly progress report for the Aprio B
 
 ## When to Activate
 
-- When Diraj asks for an "Aprio report" or "update for Ian"
+- When the Executive asks for an "Aprio report" or "update for Ian"
 - End of week recap / sync prep
 - Before strategy calls with the Aprio team
 - Monthly SEO review cadence
@@ -29,7 +29,7 @@ Generate a comprehensive, executive-ready weekly progress report for the Aprio B
 
 Organic search is Aprio's primary traffic source. This rule applies to ALL Aprio work — not just reports.
 
-1. **NEVER modify title tags, H1 tags, URL slugs, or content structure on pages that existed BEFORE GFV engagement** (WP ID < 13076) without first reviewing GSC performance data and getting Diraj's explicit approval.
+1. **NEVER modify title tags, H1 tags, URL slugs, or content structure on pages that existed BEFORE GFV engagement** (WP ID < 13076) without first reviewing GSC performance data and getting the Executive's explicit approval.
 2. **Only additive changes on existing pages** — meta descriptions, OG tags, schema, internal links = safe. Title/heading/content changes = NOT safe without data review.
 3. **Pages WE created (WP ID ≥ 13076) are safe to modify** — zero existing organic history.
 4. **When in doubt, check GSC first** — if a page has >100 impressions/month, do not touch titles/headings.
@@ -156,7 +156,7 @@ else:
 |--------|------|---------------------|
 | **Ian McPhail** | CEO | Revenue impact, competitive positioning, market expansion (Canada), pipeline growth |
 | **Eugene Gurevich** | CTO | Technical SEO, site performance, integrations, infrastructure changes |
-| **Diraj** | Strategy & Execution | Content velocity, SEO rankings, competitive moat, engagement ROI |
+| **the Executive** | Strategy & Execution | Content velocity, SEO rankings, competitive moat, engagement ROI |
 
 **Tone:** Professional, data-driven, strategic. Every change is framed as **what we did + the competitive advantage it creates**. Aprio is a challenger brand against Diligent/BoardEffect — every report should reinforce how GFV is closing the SEO gap.
 
@@ -237,7 +237,7 @@ Pull from (in priority order) — **never from memory alone:**
 # Aprio Board Portal — SEO & Content Progress Report
 
 [Date] | [Engagement Phase]
-Prepared by: Diraj Goel, GetFresh Ventures
+Prepared by: the Executive Goel, GetFresh Ventures
 
 ---
 
@@ -407,10 +407,10 @@ Every report ever created, in chronological order. **Always read the most recent
 
 | Channel | Recipients | Format |
 |---------|-----------|--------|
-| Google Docs | Diraj (internal review) | Primary — Google Doc |
-| Email | Ian McPhail, Eugene Gurevich | PDF attachment after Diraj approval |
+| Google Docs | the Executive (internal review) | Primary — Google Doc |
+| Email | Ian McPhail, Eugene Gurevich | PDF attachment after the Executive approval |
 
-**DO NOT send email without Diraj's explicit "send it" approval.**
+**DO NOT send email without the Executive's explicit "send it" approval.**
 
 ## Quality Gate
 

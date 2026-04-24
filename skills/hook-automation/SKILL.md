@@ -43,7 +43,7 @@ Before modifying external systems, verify:
 - [ ] Is this a read or write operation?
 - [ ] Does this touch client-facing data?
 - [ ] Does this send any outbound communication?
-- [ ] Has Diraj approved this action (if write/send)?
+- [ ] Has the Executive approved this action (if write/send)?
 ```
 
 ### 3. Scope Validation
@@ -96,7 +96,7 @@ After successful task completion:
 ```
 Before any outbound communication:
   ┌─────────────────────────────────┐
-  │  STOP — Show Diraj the draft    │
+  │  STOP — Show the Executive the draft    │
   │  Wait for explicit "send it"    │
   │  NEVER auto-send anything       │
   └─────────────────────────────────┘

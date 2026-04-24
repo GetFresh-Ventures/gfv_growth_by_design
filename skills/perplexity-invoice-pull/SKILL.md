@@ -41,7 +41,7 @@ python3 ~/Documents/Code/gfv-brain/scripts/quickbooks_supabase_ingest.py
 ```python
 # Search for Perplexity billing emails
 IMAP search: FROM "perplexity" SUBJECT "purchase" OR "payment" OR "upgraded" OR "canceled"
-# Account: diraj@getfreshventures.com (GFV_GMAIL_APP_PASSWORD in Keychain)
+# Account: executive@company.com (GFV_GMAIL_APP_PASSWORD in Keychain)
 ```
 - "Thank you for your purchase" emails (API credit purchases)
 - "You've been upgraded" emails (plan changes)
@@ -87,7 +87,7 @@ import imaplib, email
 ### Step 4: Finance Handoff
 - Package report + CSV + HTML receipts
 - Draft email to tessa@getfreshventures.com
-- Get Diraj's "send it" approval before sending
+- Get the Executive's "send it" approval before sending
 
 ## Output Files
 

@@ -89,7 +89,7 @@ CjwKCAjw...,ServiceTitan Booked Job (Call Extension),2026-04-05 14:30:00,4500.00
 **ACTIVE**: The Vercel cron architecture fully automates this pipeline.
 1. ServiceTitan payloads execute nightly.
 2. Vercel probabilistically matches missing GCLIDs.
-3. Vercel acts as a `diraj@getfreshventures.com` Service Account, generating native JS JWT tokens.
+3. Vercel acts as a `executive@company.com` Service Account, generating native JS JWT tokens.
 4. Extracted metrics append to Google Sheets. 
 5. Google Ads Scheduled Uploads sweeps the sheet.
 

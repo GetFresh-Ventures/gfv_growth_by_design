@@ -20,7 +20,7 @@ The Consensus Reconciler resolves conflicting data across GFV's multi-system lan
 Source A (HubSpot):    "Golden Rule has 12 active deals"
 Source B (PandaDoc):   "Golden Rule has 8 active contracts"  
 Source C (ServiceTitan):"Golden Rule has 15 active jobs"
-Source D (Diraj):      "We have about 10 deals going"
+Source D (the Executive):      "We have about 10 deals going"
 
 → Which number is truth? Consensus Reconciler resolves this.
 ```
@@ -36,7 +36,7 @@ Source D (Diraj):      "We have about 10 deals going"
 ### 2. Weighted Consensus (Default)
 **When**: Most GFV operations, pipeline metrics, performance data
 - **Source weights**:
-  - Diraj (CEO override): **3x weight**
+  - CEO (Executive override): **3x weight**
   - Source-of-truth system (HubSpot for deals, ServiceTitan for jobs): **2x weight**
   - Secondary systems: **1x weight**
   - Cached/memory data: **0.5x weight**
@@ -45,7 +45,7 @@ Source D (Diraj):      "We have about 10 deals going"
 ### 3. Byzantine Fault Tolerance (Critical)
 **When**: Financial data, client reporting, board-level metrics
 - Requires **2/3 supermajority** agreement
-- If not met → flag as UNRESOLVED and escalate to Diraj
+- If not met → flag as UNRESOLVED and escalate to the Executive
 - Never auto-resolve financial data without supermajority
 
 ## Reconciliation Protocol
@@ -74,7 +74,7 @@ Resolution Cascade:
   1. If all sources agree (within threshold) → CONFIRMED
   2. If 2/3+ agree → MAJORITY CONFIRMED (log dissenting source)
   3. If weighted consensus exceeds threshold → WEIGHTED CONFIRMED
-  4. If no consensus → ESCALATE to Diraj with full data
+  4. If no consensus → ESCALATE to the Executive with full data
   
   NEVER silently pick one source. Always document resolution logic.
 ```
@@ -133,7 +133,7 @@ Weighted resolution:
 1. **NEVER** accept a single source without cross-validation for client-facing data
 2. **NEVER** average conflicting numbers — find the truth, don't split the difference
 3. **NEVER** silently drop a conflicting source — always log it
-4. **NEVER** auto-resolve financial data — always escalate to Diraj
+4. **NEVER** auto-resolve financial data — always escalate to the Executive
 
 ## References
 

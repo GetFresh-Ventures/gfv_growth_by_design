@@ -21,7 +21,7 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 - Supabase tables: `entity_embeddings`, `ont_entities`, `ont_facts`
 - Local SQLite: WhatsApp (59K msgs), Slack (2.5K msgs), `gfv_memory.db`
 
-**Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages (email, Slack, WhatsApp) without Diraj's explicit "send it" approval.
+**Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages (email, Slack, WhatsApp) without the Executive's explicit "send it" approval.
 
 **Active Clients**:
 - **Golden Rule PHC** — HVAC/plumbing/roofing: goldenrulephc.com, rivercityac.com, cornerstoneroofingexteriors.com

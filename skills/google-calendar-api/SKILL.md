@@ -26,7 +26,7 @@ description: >
 
 ## Overview
 
-Manages Google Calendar events for `diraj@getfreshventures.com` using Service Account delegation. Handles listing upcoming events, creating new meetings, and managing availability.
+Manages Google Calendar events for `executive@company.com` using Service Account delegation. Handles listing upcoming events, creating new meetings, and managing availability.
 
 ## Authentication
 
@@ -39,7 +39,7 @@ SA_FILE = os.path.expanduser('~/.config/gfv/gfv_service_account.json')
 credentials = service_account.Credentials.from_service_account_file(
     SA_FILE,
     scopes=['https://www.googleapis.com/auth/calendar']
-).with_subject('diraj@getfreshventures.com')
+).with_subject('executive@company.com')
 
 service = build('calendar', 'v3', credentials=credentials)
 ```
@@ -130,10 +130,10 @@ service.events().delete(
 body = {
     'timeMin': '2026-04-24T00:00:00-06:00',
     'timeMax': '2026-04-24T23:59:59-06:00',
-    'items': [{'id': 'diraj@getfreshventures.com'}]
+    'items': [{'id': 'executive@company.com'}]
 }
 freebusy = service.freebusy().query(body=body).execute()
-busy_times = freebusy['calendars']['diraj@getfreshventures.com']['busy']
+busy_times = freebusy['calendars']['executive@company.com']['busy']
 ```
 
 ## Time Zones
@@ -143,10 +143,10 @@ busy_times = freebusy['calendars']['diraj@getfreshventures.com']['busy']
 | Golden Rule (Utah) | Mountain | `America/Denver` |
 | Golden Rule (Iowa) | Central | `America/Chicago` |
 | Aprio (National) | Eastern | `America/New_York` |
-| Diraj | Pacific | `America/Los_Angeles` |
+| the Executive | Pacific | `America/Los_Angeles` |
 
 ## Anti-Patterns
-- ❌ Creating events without Diraj's approval
+- ❌ Creating events without the Executive's approval
 - ❌ Sending calendar invites to external clients without review
 - ❌ Using personal OAuth when SA delegation works
 - ❌ Ignoring time zone differences between clients

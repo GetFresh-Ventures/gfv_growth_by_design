@@ -21,7 +21,7 @@ Generate a comprehensive, executive-ready weekly progress report for the Golden 
 ## When to Activate
 
 - Before the Thursday weekly call with Golden Rule
-- When Diraj asks for a "Golden Rule weekly report" or "update for Mark"
+- When the Executive asks for a "Golden Rule weekly report" or "update for Mark"
 - End of week sync / recap
 - Any time the team needs a written record of what changed
 
@@ -100,7 +100,7 @@ print(f"Report: {url}")
 | **Greg Romans** | Marketing Manager | Action items, call attribution, campaign performance |
 | **Derrick Dickey** | Technology & Data | ServiceTitan integration, tracking, API access |
 | **Arvin** | Technical Implementation | Landing pages, dashboard connectors, automation |
-| **Diraj** | Strategy & Execution | Overall velocity, competitive position, phase gates |
+| **the Executive** | Strategy & Execution | Overall velocity, competitive position, phase gates |
 
 **Tone:** Direct, story-driven, no jargon. Every change is framed as **what changed + why it matters**. Numbers over opinions. Bold the key stats.
 
@@ -125,7 +125,7 @@ The report follows the established template from the Apr 6 report. The format is
 # Golden Rule Utah — Weekly Progress Report
 
 [Date] | [Phase Tag: e.g., "Phase 2: Canary — Week 3"]
-Prepared by: Diraj Goel, GetFresh Ventures
+Prepared by: the Executive Goel, GetFresh Ventures
 
 ---
 
@@ -230,7 +230,7 @@ Prepared by: Diraj Goel, GetFresh Ventures
 ### Mark Paup — CEO ([N] Actions)
 1. **[Action title]** — [Date] — [Why this matters]
 
-### Diraj — Strategy & Execution ([N] Actions)
+### the Executive — Strategy & Execution ([N] Actions)
 1. **[Action title]** — [Date] — [Why this matters]
 
 ---
@@ -318,7 +318,7 @@ Every report ever created, in chronological order. **Always read the most recent
 | CC | Tessa, Arvin | Email CC |
 | BCC | Tallulah | Email BCC |
 
-**DO NOT send email without Diraj's explicit "send it" approval.**
+**DO NOT send email without the Executive's explicit "send it" approval.**
 
 ## User Preferences (from Apr 6 + Apr 13 reviews)
 
@@ -332,8 +332,8 @@ Every report ever created, in chronological order. **Always read the most recent
 8. Wants **integrated data view**, not exports for attribution
 9. "Everything We've Changed" needs **story-driven context** explaining WHY
 10. **Table text:** 10pt body, 10pt headers — NOT default large Google Docs table font
-11. **DO NOT generate PDF** until Diraj explicitly says to
-12. **DO NOT send** until Diraj reviews the Google Doc first
+11. **DO NOT generate PDF** until the Executive explicitly says to
+12. **DO NOT send** until the Executive reviews the Google Doc first
 13. **Each week picks up from the previous week** — show planned vs actual
 14. **All reports filed in the same folder** with consistent naming
 15. **No HubSpot** — not connected for Golden Rule
@@ -355,7 +355,7 @@ Before delivering:
 - [ ] Previous report referenced for week-over-week comparison
 - [ ] Planned vs Actual section included (starting Week 3)
 - [ ] Google Doc styled with `apply_professional_styling()`
-- [ ] **CRITICAL: You MUST write a python script to pull the live Google Doc content and verify the fonts (ensure they aren't defaulted to Aerial), formatting, and layout BEFORE finalizing and sharing it with Diraj.**
+- [ ] **CRITICAL: You MUST write a python script to pull the live Google Doc content and verify the fonts (ensure they aren't defaulted to Aerial), formatting, and layout BEFORE finalizing and sharing it with the Executive.**
 - [ ] Saved in correct Golden Rule Drive folder
 - [ ] Report Registry updated in this SKILL.md
 

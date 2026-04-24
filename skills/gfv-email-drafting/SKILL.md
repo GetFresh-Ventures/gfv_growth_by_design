@@ -1,7 +1,7 @@
 ---
 name: gfv-email-drafting
 description: >
-  GFV email drafting and sending skill. Defines Diraj's voice, formatting expectations,
+  GFV email drafting and sending skill. Defines the Executive's voice, formatting expectations,
   banned words, and Gmail SMTP integration. Use when asked to draft, write, compose, or send
   any email. NEVER auto-send — always show draft for approval first.
   Skip when: internal notes, Slack messages, or non-email communication.
@@ -25,13 +25,13 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 - Supabase tables: `ont_entities`, `ont_facts` (relationship history)
 - HubSpot: deal status, last contact date, engagement history
 
-**Output** — NEVER send without Diraj's explicit "send it" approval. Always present the full draft first.
+**Output** — NEVER send without the Executive's explicit "send it" approval. Always present the full draft first.
 
 ---
 
 ## Overview
 
-Composes emails in Diraj's authentic voice using Gmail SMTP. Every outbound message goes through a draft-review cycle — no exceptions.
+Composes emails in the Executive's authentic voice using Gmail SMTP. Every outbound message goes through a draft-review cycle — no exceptions.
 
 ## When to Trigger
 - "Draft an email to..."
@@ -45,7 +45,7 @@ Composes emails in Diraj's authentic voice using Gmail SMTP. Every outbound mess
 - Internal notes → save to PIL/memory
 - WhatsApp → different channel, different rules
 
-## Voice Model — Diraj's Writing Style
+## Voice Model — the Executive's Writing Style
 
 ### Tone
 - **Conversational professional** — not corporate, not casual
@@ -79,7 +79,7 @@ Composes emails in Diraj's authentic voice using Gmail SMTP. Every outbound mess
 - **Short paragraphs** — 1-3 sentences each
 - **Line breaks** between paragraphs
 - **No bullet points** in emails (save for docs)
-- **Signature**: `Diraj Goel | GetFresh Ventures | getfreshventures.com`
+- **Signature**: `the Executive Goel | GetFresh Ventures | getfreshventures.com`
 
 ## Protocol
 
@@ -104,7 +104,7 @@ Include:
 
 ### Step 3: Present for Review
 ```
-Show Diraj the FULL draft:
+Show the Executive the FULL draft:
 - Subject: [subject line]
 - To: [recipient email]
 - Body: [full email text]
@@ -125,11 +125,11 @@ password = subprocess.check_output([
 
 msg = MIMEText(body)
 msg['Subject'] = subject
-msg['From'] = 'diraj@getfreshventures.com'
+msg['From'] = 'executive@company.com'
 msg['To'] = recipient
 
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as s:
-    s.login('diraj@getfreshventures.com', password)
+    s.login('executive@company.com', password)
     s.send_message(msg)
 ```
 

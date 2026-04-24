@@ -39,8 +39,8 @@ SCOPES = [
 credentials = service_account.Credentials.from_service_account_file(
     SA_FILE, scopes=SCOPES
 )
-# Delegate to Diraj's account
-delegated = credentials.with_subject('diraj@getfreshventures.com')
+# Delegate to the Executive's account
+delegated = credentials.with_subject('executive@company.com')
 
 # Build any Google API client
 drive_service = build('drive', 'v3', credentials=delegated)
@@ -71,12 +71,12 @@ PASSWORD = subprocess.check_output([
 
 # Send (SMTP)
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-    smtp.login('diraj@getfreshventures.com', PASSWORD)
+    smtp.login('executive@company.com', PASSWORD)
     smtp.send_message(msg)
 
 # Read (IMAP)
 with imaplib.IMAP4_SSL('imap.gmail.com') as imap:
-    imap.login('diraj@getfreshventures.com', PASSWORD)
+    imap.login('executive@company.com', PASSWORD)
     imap.select('INBOX')
     _, messages = imap.search(None, 'UNSEEN')
 ```

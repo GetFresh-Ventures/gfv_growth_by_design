@@ -129,7 +129,7 @@ PandaDoc API → pil_pandadoc_sync.py → entity_embeddings (source='pandadoc')
 | Standard | 250 requests / minute |
 
 ## Anti-Patterns
-- ❌ Creating/sending contracts without Diraj's approval
+- ❌ Creating/sending contracts without the Executive's approval
 - ❌ Assuming a deal is signed without checking PandaDoc status
 - ❌ Not syncing contract dates to HubSpot deal
 

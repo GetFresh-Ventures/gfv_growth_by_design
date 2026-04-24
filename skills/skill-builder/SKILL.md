@@ -26,7 +26,7 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 - Supabase tables: `entity_embeddings`, `ont_entities`, `ont_facts`
 - Local SQLite: WhatsApp (59K msgs), Slack (2.5K msgs), `gfv_memory.db`
 
-**Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages without Diraj's explicit "send it" approval.
+**Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages without the Executive's explicit "send it" approval.
 
 **Skill Location** — All skills live in `gfv-brain/skills/`. Register in `gfv-brain/skills/REGISTRY.md`.
 
@@ -142,7 +142,7 @@ Every generated skill must pass:
 2. **Source of truth or bust** — Ground in live systems, never memory alone
 3. **Not handled until in the system** — Reading ≠ Processing
 4. **Safe auto-resolve, draft-first for judgment** — Auto-do safely, ask for risky
-5. **Voice-native** — Sound like Diraj, not like AI
+5. **Voice-native** — Sound like the Executive, not like AI
 6. **Draft Review Before Send** — No outbound without CEO approval
 
 ## References

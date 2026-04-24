@@ -61,7 +61,7 @@ After successful deployment (HTTP 200), **you must perform a visual audit:**
 
 Organic search is Aprio's primary traffic source. Every change must be evaluated against this gate:
 
-1. **NEVER modify title tags, H1 tags, URL slugs, or content on pages that existed BEFORE GFV engagement** without first reviewing that page's GSC performance data (impressions, clicks, position) and getting Diraj's explicit approval.
+1. **NEVER modify title tags, H1 tags, URL slugs, or content on pages that existed BEFORE GFV engagement** without first reviewing that page's GSC performance data (impressions, clicks, position) and getting the Executive's explicit approval.
 2. **Only additive changes on existing pages** — adding meta descriptions, OG tags, schema markup, or internal links is safe. Changing titles, headings, or content structure is NOT safe without data review.
 3. **Pages WE created are safe to modify** — they have zero existing organic history.
 4. **When in doubt, check GSC first** — if a page has >100 impressions/month, treat it as "existing with traffic" and apply rule #1.

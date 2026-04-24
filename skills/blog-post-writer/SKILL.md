@@ -21,7 +21,7 @@ Check `~/Documents/Code/gfv-brain/scripts/pil_config.py` for service mappings.
 - Supabase tables: `entity_embeddings`, `ont_entities`, `ont_facts`
 - Local SQLite: WhatsApp (59K msgs), Slack (2.5K msgs), `gfv_memory.db`
 
-**Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages (email, Slack, WhatsApp) without Diraj's explicit "send it" approval.
+**Output** — Save results to `~/Documents/Code/gfv-brain/` or PIL via Supabase. Never send external messages (email, Slack, WhatsApp) without the Executive's explicit "send it" approval.
 
 **Active Clients**:
 - **Golden Rule PHC** — HVAC/plumbing/roofing: goldenrulephc.com, rivercityac.com, cornerstoneroofingexteriors.com
@@ -91,7 +91,7 @@ Requirements:
 - Tone: Authoritative but accessible, VC-insider perspective
 - Structure: 5+ sections, 3 sub-sections each, 3+ paragraphs per sub-section
 - Include: Real startup examples, data points with citations, founder quotes
-- E-E-A-T signals: Reference GFV portfolio companies, Diraj's experience, industry data
+- E-E-A-T signals: Reference GFV portfolio companies, the Executive's experience, industry data
 - GEO optimization: Include quotable one-liners, structured data points, comparison tables
 - CTA: Natural integration of GFV Fellowship program where relevant
 - Format: Proper markdown with h2/h3 hierarchy

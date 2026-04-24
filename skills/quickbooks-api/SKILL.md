@@ -141,7 +141,7 @@ QuickBooks API → pil_quickbooks_sync.py → Supabase entity_embeddings (source
 | Throttle | 10 concurrent requests |
 
 ## Anti-Patterns
-- ❌ Creating invoices without Diraj's approval
+- ❌ Creating invoices without the Executive's approval
 - ❌ Modifying payment records
 - ❌ Ignoring token refresh (will get 401s)
 - ❌ Not reconciling with bank statements

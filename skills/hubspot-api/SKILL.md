@@ -151,7 +151,7 @@ Always implement exponential backoff on 429 responses.
 ## Anti-Patterns
 - ❌ Hitting HubSpot API without checking PIL first
 - ❌ Stating deal status from memory — always verify from API
-- ❌ Modifying deals without Diraj's approval
+- ❌ Modifying deals without the Executive's approval
 - ❌ Creating duplicate contacts
 
 ## Related Skills

@@ -105,7 +105,7 @@ This release is a comprehensive integrity hardening milestone. A 6-pass end-to-e
 ### Fixed — 6-Pass Integrity Audit (41 files, 853 insertions)
 - **Pass 1 (14 files):** Purged all `PIL`, `Proactive Intelligence`, `pil-server` references from skill author tags and content.
 - **Pass 2 (14 files):** Removed `Supabase` backend references, `gfv_memory.db`, `pil_morning_digest.py`, and `entity_embeddings` table names.
-- **Pass 3 (2 files):** Removed `ccflare` hardcoded examples and depersonalized `Diraj` name references in `import-skill`.
+- **Pass 3 (2 files):** Removed `ccflare` hardcoded examples and depersonalized `the Executive` name references in `import-skill`.
 - **Pass 4 (6 files):** Purged `ServiceTitan`, `CAAI`, `Utah`, `Iowa`, `Des Moines` geography, and client contact name `Greg` from examples.
 - **Pass 5 (12 files):** Purged all `Field Service Platform` aliases (the ServiceTitan rename). Added GFV website URL branding.
 - **Pass 6 (1 file):** Removed final `PIL` reference in `tools/gfv-brain-search.py` docstring and `aprio` client example query.

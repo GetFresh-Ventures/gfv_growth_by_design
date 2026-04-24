@@ -380,7 +380,7 @@ Key steps after letterboxing:
 
 ## Image Generation: Cost Hierarchy
 
-**RULE: Default to FREE. Only use paid API when Diraj explicitly approves.**
+**RULE: Default to FREE. Only use paid API when the Executive explicitly approves.**
 
 ### Method 1a (FREE — Wrapper Fallback): Antigravity `generate_image`
 
@@ -440,7 +440,7 @@ export GEMINI_API_KEY=$(security find-generic-password -s "gemini-api-key" -w 2>
 
 1. **Try Method 1b first** (direct API) — native 16:9, best quality, near-free
 2. **If API key missing or rate-limited** → fall back to Method 1a (wrapper) + letterbox post-processing
-3. **If Diraj approves paid** → use Method 2 (`generate_slides.py`) for batch processing with built-in logo compositing
+3. **If the Executive approves paid** → use Method 2 (`generate_slides.py`) for batch processing with built-in logo compositing
 
 ### Method 2 (PAID — Requires Approval): `generate_slides.py`
 
@@ -455,7 +455,7 @@ python3 ~/Documents/Code/gfv-brain/scripts/generate_slides.py \
   --output-dir <output_dir> --pdf <output.pdf>
 ```
 
-**Only use when:** Diraj says "use the API" or "use paid" or approves the cost.
+**Only use when:** the Executive says "use the API" or "use paid" or approves the cost.
 
 ### Method 3 (FREE — Best Quality): GFV Slide Builder Gem (browser)
 

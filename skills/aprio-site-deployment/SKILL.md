@@ -24,7 +24,7 @@ This skill codifies the **only reliable method** for deploying content to `aprio
 ## Prerequisites
 
 1. **Active WordPress admin session** in Chrome (logged into `aprioboardportal.com/wp-admin/`)
-   - Username: `diraj` | Email: `diraj@getfreshventures.com`
+   - Username: `diraj` | Email: `executive@company.com`
    - App password (REST API): stored in `aprio-dashboard/scripts/wp_auth_finder.py` line 7
    - The app password works for REST API Basic Auth reads but NOT writes — you need an active browser cookie session for write operations via CDP
 2. **Chrome running with remote debugging on port 9222** (the Antigravity browser profile does this automatically)
