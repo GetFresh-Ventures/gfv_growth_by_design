@@ -36,24 +36,13 @@ This kit enables the proprietary **Growth by Design (GxD)** architecture directl
 
 ---
 
-## What's New in v1.37.0 (GetFresh Ventures Growth by Design CEO AI Kit Path Decoupling)
-- **Universal Local Integration**: Configured `bootstrap.sh` to globally symlink all `~/.claude/tools/` into place for cross-repo edge computing stability without `venv` entanglement.
-- **Zero Hallucinated Stubs**: Surgically scoured 19 mocked legacy `python3 /home/user/scripts/*` integrations spread across `google-doc-creation`, `seo-audit`, `gfv-hooks`, and `scheduling-infra` out of existence, bridging their actions to native API tools and core local modules.
-- **iMessage Portation**: Replicated ElizaOS `plugin-bluebubbles` integration natively into `chief-of-staff` to command loop iOS communication streams.
+## What's New
 
----
+For a complete history of updates, see the [CHANGELOG.md](CHANGELOG.md).
 
-## What's New in v1.35.0
-- **Master Command Centers**: Fundamentally reorganized the architecture around 4 central command hubs: Chief of Staff, Revenue Command, Strategic Advisory, and Content Intelligence.
-- **Legacy Aliasing**: Implemented a symlink-style alias layer in the bootstrap scripts, mapping legacy atomized skills like `/deal-review` to their new primary Command Centers.
-- **Data-First Mandates**: Upgraded core skills (`ugc-video`, `negotiation-advisor`) to natively query HubSpot, Fathom, and linear via API for verified context before rendering output.
-
----
-
-## What's New in v1.34.0
-- **13-Repo Consolidation**: Deep-mined 13 external SEO/marketing repos, integrating non-redundant methodologies into 5 existing skills and adding 4 new skills (80 total).
-- **Princeton GEO Framework**: Added the 9 Optimization Methods with exact visibility % boosts, AI platform ranking factor weights for ChatGPT/Perplexity/Google AI/Copilot.
-- **Full Pipeline Verification**: All 80 skills pass 12-point `import-skill` pipeline — installer parity, proprietary leak scan, doc coverage, quality bar.
+- **Growth by Design (GxD) Rebrand**: Fully rebranded to the open-source Growth by Design CEO AI Kit, establishing an agnostic, privacy-first foundation.
+- **Universal Local Integration**: Configured `bootstrap.sh` to globally symlink all tools into place for cross-repo edge computing stability without `venv` entanglement.
+- **Zero Hallucinated Stubs**: Surgically removed mocked legacy integrations, bridging all actions to native API tools and core local modules across 194 Domain Skills.
 
 ---
 
