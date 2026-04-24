@@ -15,10 +15,13 @@
 
 ---
 
-## 🚀 What's New in v1.38.0
-- **Zero-Stub Guarantee**: Remediated 139 hallucinated skill script references, replacing them with pure generic instructions.
-- **Universal Zero-Error Validation**: Injected missing frontmatter and verification gates across 40+ skills, ensuring 100% passage for `validate_skills.py`.
-- **Venv Isolation Framework**: Overhauled `.cursorrules`/`.windsurfrules` injection to safely guide dependency-heavy API skills to the localized virtual environment without poisoning the global stdlib runner.
+## 🚀 What's New in v1.39.0
+
+For a complete history of updates, see the [CHANGELOG.md](CHANGELOG.md).
+
+- **Growth by Design (GxD) Rebrand**: Fully rebranded to the open-source Growth by Design CEO AI Kit, establishing an agnostic, privacy-first foundation.
+- **Universal Local Integration**: Configured `bootstrap.sh` to globally symlink all tools into place for cross-repo edge computing stability without `venv` entanglement.
+- **Deep PII Scrub**: Surgically removed proprietary client and personnel identifiers, bridging all actions to native API tools and core local modules across 194 Domain Skills.
 
 ---
 
@@ -34,15 +37,8 @@ This kit enables the proprietary **Growth by Design (GxD)** architecture directl
 
 **The Solution**: An Edge-Native intelligence layer that installs directly onto your laptop. It removes the friction between strategic planning and agentic execution, allowing you to orchestrate complex GTM strategies autonomously.
 
----
-
-## What's New
-
-For a complete history of updates, see the [CHANGELOG.md](CHANGELOG.md).
-
-- **Growth by Design (GxD) Rebrand**: Fully rebranded to the open-source Growth by Design CEO AI Kit, establishing an agnostic, privacy-first foundation.
-- **Universal Local Integration**: Configured `bootstrap.sh` to globally symlink all tools into place for cross-repo edge computing stability without `venv` entanglement.
-- **Zero Hallucinated Stubs**: Surgically removed mocked legacy integrations, bridging all actions to native API tools and core local modules across 194 Domain Skills.
+### The Role of AI Skills
+At the core of the GxD AI Kit are **194 Domain Skills**. These skills act as composable, specialized instruction sets that augment the baseline intelligence of an LLM. Instead of relying on generic chat completion, the LLM retrieves a specific skill document (e.g., `seo-audit`, `ppc-keyword-strategy`, or `ab-test-setup`) at runtime. These skills provide the AI with proven playbooks, exact data schemas, and API workflows, ensuring the AI operates with the rigor of a seasoned RevOps engineer or Director of Marketing rather than an entry-level assistant.
 
 ---
 
