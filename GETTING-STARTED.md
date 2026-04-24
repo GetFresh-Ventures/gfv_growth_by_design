@@ -44,7 +44,7 @@ Open your terminal:
 Paste this command and press Enter:
 
 ```bash
-git clone https://github.com/GetFresh-Ventures/ceo-ai-kit.git ~/Documents/GTM-Enablement-Kit
+git clone https://github.com/GetFresh-Ventures/gxd-ceo-ai-kit.git ~/Documents/gxd-ceo-ai-kit
 ```
 
 > **What just happened?** You downloaded the entire kit to a highly visible folder in your Documents. Your data stays local — nothing is uploaded to the cloud.
@@ -57,13 +57,13 @@ Navigate to the kit and run the bootstrap script:
 
 **Mac / Linux:**
 ```bash
-cd ~/Documents/GTM-Enablement-Kit
+cd ~/Documents/gxd-ceo-ai-kit
 ./bootstrap.sh
 ```
 
 **Windows:**
 ```powershell
-cd ~\\Documents\\GTM-Enablement-Kit
+cd ~\\Documents\\gxd-ceo-ai-kit
 .\\bootstrap.ps1
 ```
 
@@ -96,7 +96,7 @@ This part sounds intimidating, but it's just opening a folder and typing a messa
 
 1. Open **Cursor** (the application you downloaded earlier).
 2. From the top menu bar, click **File > Open Folder**.
-3. Navigate to your `Documents` folder and select the `GTM-Enablement-Kit` folder.
+3. Navigate to your `Documents` folder and select the `gxd-ceo-ai-kit` folder.
 4. Once the folder opens, press **Cmd+I** (Mac) or **Ctrl+I** (Windows) to open the Cursor Composer Chat panel.
 
 In the chat box, type:
@@ -222,7 +222,7 @@ The real ROI comes from consistent weekly use. Here's the recommended cadence:
 You can change your experience level anytime:
 
 ```bash
-cd ~/.ceo-ai-kit
+cd ~/.gxd-ceo-ai-kit
 ./bootstrap.sh
 ```
 
@@ -279,7 +279,7 @@ Ensure the `~/ceo-brain/` and `~/gtm-brain/` directories exist and `gfv-brain-se
 
 ### "How do I update to the latest version?"
 ```bash
-cd ~/.ceo-ai-kit
+cd ~/.gxd-ceo-ai-kit
 git pull
 ./bootstrap.sh
 ```
