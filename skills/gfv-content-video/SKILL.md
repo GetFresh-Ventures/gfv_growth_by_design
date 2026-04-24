@@ -1,6 +1,8 @@
 ---
 name: video-marketing
 description: When the user wants to plan video marketing, create video scripts, or optimize for short-form or long-form video. Also use when the user mentions "video marketing," "video script," "short-form video," "long-form video," "TikTok script," "Reels script," "YouTube script," "video hook," or "video content strategy." For on-site video SEO, use video-optimization.
+  Use when: The executive requests execution of this domain.
+  Skip when: The task is outside the scope of this module.
 metadata:
   version: 1.0.1
 ---
@@ -109,6 +111,28 @@ Achieves 70%+ completion for algorithmic boost. Frameworks: Hook-Value-CTA, AIDA
 - **youtube-seo**: YouTube SEO, description, thumbnail (platform skill)
 - **video-optimization**: Website video SEO; VideoObject; video sitemap; Google prioritizes YouTube
 
+
+
+## When to Trigger
+- When requested by the Executive.
+- When the task aligns with the core competency of this skill.
+
+## When to Skip
+- When the data or answers already exist in the PIL memory bus.
+- When the task requires physical intervention or manual approval before drafting.
+
+## GFV Integration
+**Credentials** — Never use `.env` files. All secrets live in macOS Keychain:
+`security find-generic-password -s "<service>" -a "<account>" -w`
+**Data Sources** — Before querying external APIs, check PIL first (`search_pil`, `gfv_memory.db`).
+**Output** — Save results to `~/Documents/Code/gfv-brain/`. Never send external messages without the Executive`s explicit "send it" approval.
+
+## Anti-Patterns
+- **Summarizing instead of resolving**: Do not just summarize what needs to be done. Do the work.
+- **Bypassing the Gate**: Do not execute risky actions without human-in-the-loop validation.
+
+## References
+- **GFV Standard**: CEO Enablement Kit Architecture
 
 <verification_gate>
 # Delivery Gate

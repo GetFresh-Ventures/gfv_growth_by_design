@@ -1,6 +1,8 @@
 ---
 name: article-content
 description: When the user wants to write, generate, or create article body content—blog post body, long-form content, how-to guide, listicle. Also use when the user mentions "write article," "article content," "blog post content," "article body," "long-form content creation," "generate article," "article draft," "how-to guide content," "listicle content," "information gain," or "content density." For single post page structure, schema, and SEO metadata, use article-page-generator. For blog index/listing page, use blog-page-generator. For short ad, landing, or email copy, use copywriting.
+  Use when: The executive requests execution of this domain.
+  Skip when: The task is outside the scope of this module.
 metadata:
   version: 1.1.0
 ---
@@ -219,6 +221,28 @@ When content is AI-assisted: **human review** before publish; **verify facts** a
 - **content-optimization**: H2 keywords; Multimedia (tables, lists); keyword density
 - **generative-engine-optimization**: GEO strategy; AI citation
 
+
+
+## When to Trigger
+- When requested by the Executive.
+- When the task aligns with the core competency of this skill.
+
+## When to Skip
+- When the data or answers already exist in the PIL memory bus.
+- When the task requires physical intervention or manual approval before drafting.
+
+## GFV Integration
+**Credentials** — Never use `.env` files. All secrets live in macOS Keychain:
+`security find-generic-password -s "<service>" -a "<account>" -w`
+**Data Sources** — Before querying external APIs, check PIL first (`search_pil`, `gfv_memory.db`).
+**Output** — Save results to `~/Documents/Code/gfv-brain/`. Never send external messages without the Executive`s explicit "send it" approval.
+
+## Anti-Patterns
+- **Summarizing instead of resolving**: Do not just summarize what needs to be done. Do the work.
+- **Bypassing the Gate**: Do not execute risky actions without human-in-the-loop validation.
+
+## References
+- **GFV Standard**: CEO Enablement Kit Architecture
 
 <verification_gate>
 # Delivery Gate

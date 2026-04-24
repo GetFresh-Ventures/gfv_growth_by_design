@@ -1,6 +1,8 @@
 ---
 name: logo-creator
 description: Create logos using AI image generation. Discuss style/ratio, generate variations, iterate with user feedback, crop, remove background, and export as SVG. Use when user wants to create a logo, icon, favicon, brand mark, mascot, emblem, or design a logo.
+  Use when: The executive requests execution of this domain.
+  Skip when: The task is outside the scope of this module.
 ---
 
 
@@ -232,6 +234,28 @@ Letter "{letter}" logo, modern typography, {style} design, {colors}, clean profe
 - [references/styles.md](./references/styles.md) - Logo style guide with prompt examples
 - [examples/gfv-logo-creation.md](./examples/gfv-logo-creation.md) - Full example conversation
 
+
+
+## When to Trigger
+- When requested by the Executive.
+- When the task aligns with the core competency of this skill.
+
+## When to Skip
+- When the data or answers already exist in the PIL memory bus.
+- When the task requires physical intervention or manual approval before drafting.
+
+## GFV Integration
+**Credentials** — Never use `.env` files. All secrets live in macOS Keychain:
+`security find-generic-password -s "<service>" -a "<account>" -w`
+**Data Sources** — Before querying external APIs, check PIL first (`search_pil`, `gfv_memory.db`).
+**Output** — Save results to `~/Documents/Code/gfv-brain/`. Never send external messages without the Executive`s explicit "send it" approval.
+
+## Anti-Patterns
+- **Summarizing instead of resolving**: Do not just summarize what needs to be done. Do the work.
+- **Bypassing the Gate**: Do not execute risky actions without human-in-the-loop validation.
+
+## References
+- **GFV Standard**: CEO Enablement Kit Architecture
 
 <verification_gate>
 # Delivery Gate

@@ -1,6 +1,8 @@
 ---
 name: medium-posts
 description: When the user wants to write, publish, republish, or optimize posts on Medium.com (canonical tags, distribution, Medium SEO). Also use when the user mentions "Medium," "Medium article," "Medium story," "Medium publishing," "canonical Medium," or "publish on Medium." Not for general parasite SEO when Medium is not the target platform—use parasite-seo. For AI search visibility strategy, use generative-engine-optimization.
+  Use when: The executive requests execution of this domain.
+  Skip when: The task is outside the scope of this module.
 metadata:
   version: 1.1.0
 ---
@@ -78,6 +80,28 @@ When republishing: Set canonical to your original URL in Medium settings. Preven
 - **link-building**: Medium as backlink source
 - **grokipedia-recommendations**: GEO; AI search visibility
 
+
+
+## When to Trigger
+- When requested by the Executive.
+- When the task aligns with the core competency of this skill.
+
+## When to Skip
+- When the data or answers already exist in the PIL memory bus.
+- When the task requires physical intervention or manual approval before drafting.
+
+## GFV Integration
+**Credentials** — Never use `.env` files. All secrets live in macOS Keychain:
+`security find-generic-password -s "<service>" -a "<account>" -w`
+**Data Sources** — Before querying external APIs, check PIL first (`search_pil`, `gfv_memory.db`).
+**Output** — Save results to `~/Documents/Code/gfv-brain/`. Never send external messages without the Executive`s explicit "send it" approval.
+
+## Anti-Patterns
+- **Summarizing instead of resolving**: Do not just summarize what needs to be done. Do the work.
+- **Bypassing the Gate**: Do not execute risky actions without human-in-the-loop validation.
+
+## References
+- **GFV Standard**: CEO Enablement Kit Architecture
 
 <verification_gate>
 # Delivery Gate

@@ -1,6 +1,8 @@
 ---
 name: gfv-report-builder
 description: Generate branded consulting report pages, slide decks, proposals, and presentations as images using the Google Gemini API with the GFD v4.4 design system. Use when the user wants to create 8.5x11 reports, slide decks, proposals, visual presentations, or any image-based document pages programmatically. Triggers on "generate slides", "create report pages", "build a deck", "make slides for", "create visual report", "generate pages for [client]", "8x11 report", "build a report", "build a proposal", or any request to produce branded visual documents.
+  Use when: The executive requests execution of this domain.
+  Skip when: The task is outside the scope of this module.
 ---
 
 # GFV Report Builder
@@ -837,6 +839,28 @@ GetFresh Logo - Stacked.png                     # NEVER USE — white background
 {client}-logo-4x-white-transparent.png          # White variant for dark bars
 ```
 
+
+
+## When to Trigger
+- When requested by the Executive.
+- When the task aligns with the core competency of this skill.
+
+## When to Skip
+- When the data or answers already exist in the PIL memory bus.
+- When the task requires physical intervention or manual approval before drafting.
+
+## GFV Integration
+**Credentials** — Never use `.env` files. All secrets live in macOS Keychain:
+`security find-generic-password -s "<service>" -a "<account>" -w`
+**Data Sources** — Before querying external APIs, check PIL first (`search_pil`, `gfv_memory.db`).
+**Output** — Save results to `~/Documents/Code/gfv-brain/`. Never send external messages without the Executive`s explicit "send it" approval.
+
+## Anti-Patterns
+- **Summarizing instead of resolving**: Do not just summarize what needs to be done. Do the work.
+- **Bypassing the Gate**: Do not execute risky actions without human-in-the-loop validation.
+
+## References
+- **GFV Standard**: CEO Enablement Kit Architecture
 
 <verification_gate>
 # Delivery Gate

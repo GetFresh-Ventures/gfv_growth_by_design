@@ -1,6 +1,8 @@
 ---
 name: gfv-website-release
 description: Push a versioned release for the GetFresh Ventures website — updates GitHub (README, CHANGELOG, tag), creates GitHub Release, deploys to Vercel via push, and posts a Linear project update. Hard gates enforce no skipped steps.
+  Use when: The executive requests execution of this domain.
+  Skip when: The task is outside the scope of this module.
 ---
 
 # GFV Website Release Workflow
@@ -278,6 +280,28 @@ v2.0.0: Full Conversion Engineering Overhaul
 - PDT → CDT: add 2 hours (e.g., 3:00 PM PDT = 5:00 PM CDT)
 - UTC → CDT: subtract 5 hours (e.g., 22:00 UTC = 5:00 PM CDT)
 
+
+
+## When to Trigger
+- When requested by the Executive.
+- When the task aligns with the core competency of this skill.
+
+## When to Skip
+- When the data or answers already exist in the PIL memory bus.
+- When the task requires physical intervention or manual approval before drafting.
+
+## GFV Integration
+**Credentials** — Never use `.env` files. All secrets live in macOS Keychain:
+`security find-generic-password -s "<service>" -a "<account>" -w`
+**Data Sources** — Before querying external APIs, check PIL first (`search_pil`, `gfv_memory.db`).
+**Output** — Save results to `~/Documents/Code/gfv-brain/`. Never send external messages without the Executive`s explicit "send it" approval.
+
+## Anti-Patterns
+- **Summarizing instead of resolving**: Do not just summarize what needs to be done. Do the work.
+- **Bypassing the Gate**: Do not execute risky actions without human-in-the-loop validation.
+
+## References
+- **GFV Standard**: CEO Enablement Kit Architecture
 
 <verification_gate>
 # Delivery Gate

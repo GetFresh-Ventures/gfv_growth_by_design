@@ -1,6 +1,8 @@
 ---
 name: gfv-hooks
 short_description: "Configure lifecycle hooks for your AI agent"
+  Use when: The executive requests execution of this domain.
+  Skip when: The task is outside the scope of this module.
 description: >
   Event-driven lifecycle automation for AI-native companies. Provides a complete hooks
   infrastructure with session persistence, decision audit trails, safety gates, and
@@ -589,7 +591,29 @@ All factual findings and systemic claims must utilize the following confidence i
 - 🟡 **Medium** — Deduced from local memory logs or recent but not validated real-time data.
 - 🔴 **Assumed** — No source available, utilizing best-judgment baseline.
 
-## <verification_gate>
+## 
+## When to Trigger
+- When requested by the Executive.
+- When the task aligns with the core competency of this skill.
+
+## When to Skip
+- When the data or answers already exist in the PIL memory bus.
+- When the task requires physical intervention or manual approval before drafting.
+
+## GFV Integration
+**Credentials** — Never use `.env` files. All secrets live in macOS Keychain:
+`security find-generic-password -s "<service>" -a "<account>" -w`
+**Data Sources** — Before querying external APIs, check PIL first (`search_pil`, `gfv_memory.db`).
+**Output** — Save results to `~/Documents/Code/gfv-brain/`. Never send external messages without the Executive`s explicit "send it" approval.
+
+## Anti-Patterns
+- **Summarizing instead of resolving**: Do not just summarize what needs to be done. Do the work.
+- **Bypassing the Gate**: Do not execute risky actions without human-in-the-loop validation.
+
+## References
+- **GFV Standard**: CEO Enablement Kit Architecture
+
+<verification_gate>
 **Self-Verification Protocol:** Before finalizing your response, you MUST silently evaluate your drafted output against the initial request. Have you provided concrete Action Items with ownership? Did you use the Bottom Line First formatting? Have you applied Confidence Tags to your claims? If not, rewrite the response before submitting.
 
 ## After This Skill

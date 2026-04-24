@@ -1,6 +1,8 @@
 ---
 name: gfv-dream-mode
 description: Run the GFV Dream Mode to autonomously consolidate fragmented session memories, logs, and findings into durable architectural knowledge in the Proactive Intelligence Layer (PIL).
+  Use when: The executive requests execution of this domain.
+  Skip when: The task is outside the scope of this module.
 ---
 
 # GFV Dream Mode: Memory Consolidation Routine
@@ -91,6 +93,28 @@ Once Dream Mode is finished, report to the CEO:
 - Phase completion status (all 3 phases passed or which phase failed).
 - A confirmation that the short-term cache has been flushed and the agent is ready for a fresh, high-velocity session.
 
+
+
+## When to Trigger
+- When requested by the Executive.
+- When the task aligns with the core competency of this skill.
+
+## When to Skip
+- When the data or answers already exist in the PIL memory bus.
+- When the task requires physical intervention or manual approval before drafting.
+
+## GFV Integration
+**Credentials** — Never use `.env` files. All secrets live in macOS Keychain:
+`security find-generic-password -s "<service>" -a "<account>" -w`
+**Data Sources** — Before querying external APIs, check PIL first (`search_pil`, `gfv_memory.db`).
+**Output** — Save results to `~/Documents/Code/gfv-brain/`. Never send external messages without the Executive`s explicit "send it" approval.
+
+## Anti-Patterns
+- **Summarizing instead of resolving**: Do not just summarize what needs to be done. Do the work.
+- **Bypassing the Gate**: Do not execute risky actions without human-in-the-loop validation.
+
+## References
+- **GFV Standard**: CEO Enablement Kit Architecture
 
 <verification_gate>
 # Delivery Gate
